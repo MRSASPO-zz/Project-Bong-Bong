@@ -1,0 +1,177 @@
+fileFormatVersion: 2
+guid: b7815951621dd2141aa82423354de533
+timeCreated: 1464765620
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Maru Body_0
+    21300002: Maru Body_1
+    21300004: Maru Body_2
+    21300006: Maru Body_3
+    21300008: Maru Body_4
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 9
+  spritePivot: {x: 0.45030594, y: 0.647407}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Maru Body_0
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 703
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 23}
+        - {x: -21, y: 19}
+        - {x: -21, y: -18}
+        - {x: -20, y: -23}
+        - {x: 19, y: -23}
+        - {x: 21, y: -17}
+        - {x: 21, y: 19}
+        - {x: 18, y: 23}
+    - name: Maru Body_1
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 526
+        width: 380
+        height: 381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 123, y: -149.5}
+        - {x: 143, y: -131.5}
+        - {x: 159, y: -111.5}
+        - {x: 172, y: -90.5}
+        - {x: 180, y: -69.5}
+        - {x: 188, y: -47.5}
+        - {x: 190, y: -35.5}
+        - {x: 190, y: 32.5}
+        - {x: 188, y: 43.5}
+        - {x: 178, y: 75.5}
+        - {x: 171, y: 90.5}
+        - {x: 155, y: 115.5}
+        - {x: 146, y: 128.5}
+        - {x: 129, y: 144.5}
+        - {x: 123, y: 150.5}
+        - {x: 94, y: 168.5}
+        - {x: 65, y: 182.5}
+        - {x: 49, y: 187.5}
+        - {x: 26, y: 190.5}
+        - {x: -29, y: 190.5}
+        - {x: -44, y: 188.5}
+        - {x: -70, y: 180.5}
+        - {x: -94, y: 169.5}
+        - {x: -123, y: 151.5}
+        - {x: -133, y: 141.5}
+        - {x: -162, y: 107.5}
+        - {x: -168, y: 95.5}
+        - {x: -182, y: 66.5}
+        - {x: -189, y: 38.5}
+        - {x: -190, y: 33.5}
+        - {x: -190, y: -33.5}
+        - {x: -186, y: -55.5}
+        - {x: -179, y: -75.5}
+        - {x: -165, y: -102.5}
+        - {x: -143, y: -130.5}
+        - {x: -124, y: -148.5}
+        - {x: -114, y: -156.5}
+        - {x: -99, y: -166.5}
+        - {x: -81, y: -175.5}
+        - {x: -70, y: -181.5}
+        - {x: -43, y: -188.5}
+        - {x: -33, y: -190.5}
+        - {x: 36, y: -190.5}
+        - {x: 61, y: -185.5}
+        - {x: 102, y: -165.5}
+    - name: Maru Body_2
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 698
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 23}
+        - {x: -21, y: -20}
+        - {x: -15, y: -23}
+        - {x: 18, y: -23}
+        - {x: 21, y: -17}
+        - {x: 21, y: 22}
+        - {x: 20, y: 23}
+    - name: Maru Body_3
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 495
+        width: 54
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Maru Body_4
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 489
+        width: 54
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
