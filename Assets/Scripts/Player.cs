@@ -2,8 +2,10 @@
 using System.Collections;
 using CnControls;
 
-[RequireComponent (typeof (Controller2D))]
+[RequireComponent(typeof(Controller2D))]
 public class Player : MonoBehaviour {
+    int maxHealth = 3;
+    int damage;
     float moveSpeed = 6;
     float accelerationTimeAirborne = .2f;
     float accelerationTimeGrounded = .1f;
@@ -31,6 +33,21 @@ public class Player : MonoBehaviour {
     Vector3 velocity;
 
     Controller2D controller;
+
+    public int GetCurrHealth()
+    {
+        return maxHealth - damage;
+    }
+
+    public void TakeDamage()
+    {
+        this.damage += 1;
+    }
+
+    public void Heal()
+    {
+        this.damage -= 1;
+    }
 
     void Start() {
         controller = GetComponent<Controller2D>();
