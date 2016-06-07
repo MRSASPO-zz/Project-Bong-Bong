@@ -14,6 +14,7 @@ public class Controller2D : RayCastController {
         collisions.faceDirection = 1;
     }
 
+    //Wrapper for platform movements
     public void Move(Vector3 velocity, bool standingOnPlatform) {
         Move(velocity, Vector2.zero, standingOnPlatform);
     }
@@ -115,8 +116,9 @@ public class Controller2D : RayCastController {
                         continue;
                     }
                     if (playerInput.y == -1) {
+                        Debug.Log(playerInput.y);
                         collisions.fallingThroughPlatform = true;
-                        Invoke("ResetFallingThroughPlatform", .5f);
+                        Invoke("ResetFallingThroughPlatform", .2f); //sets the time for another fall thru
                         continue;
                     }
                 }
