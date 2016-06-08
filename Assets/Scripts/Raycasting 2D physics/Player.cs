@@ -22,9 +22,9 @@ public class Player : MonoBehaviour {
     public GameObject char2;
     public GameObject char3;
 
-    int maxHealth = 3;
-    int damage;
-    
+    readonly int maxHealth = 3;
+    public int damage;
+
     //hidden values that deal with character movement are in this section
     float accelerationTimeAirborne = .2f;
     float accelerationTimeGrounded = .1f;
@@ -58,6 +58,7 @@ public class Player : MonoBehaviour {
         controller = GetComponent<Controller2D>(); //Attaches a controller2D script to gameobject
         setGravityPhysics();
         ActivateChar1();
+        damage = 0;
     }
 
     private void setGravityPhysics() {
@@ -73,14 +74,16 @@ public class Player : MonoBehaviour {
         char3.SetActive(false);
     }
 
-    void Update() {
+    void Update()
+    {
         Vector2 joystickInput = new Vector2(CnInputManager.GetAxisRaw("Horizontal"), CnInputManager.GetAxisRaw("Vertical"));
         int wallDirX = (controller.collisions.left) ? -1 : 1; //if facing left, wallDirX = -1, else 1
 
         setSmoothedVelocityXPhysics(joystickInput);
 
         bool wallSliding = false;
-        if (isFallingAndTouchingWall()) {
+        if (isFallingAndTouchingWall())
+        {
             wallSliding = true; // Set sprites here if wall jumping
             setWallSlidePhysics(joystickInput, wallDirX);
         }
@@ -90,11 +93,22 @@ public class Player : MonoBehaviour {
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime, joystickInput);
 
-        if (controller.collisions.above || controller.collisions.below) {
+        if (controller.collisions.above || controller.collisions.below)
+        {
             velocity.y = 0;
         }
 
         characterSwapButtonPressed();
+
+        if (isDead())
+        {
+            Die();
+        }
+    }
+
+    private bool isDead()
+    {
+        return GetCurrHealth() == 0;
     }
 
     private void JumpButtonPressed(int wallDirX, bool wallSliding) {
@@ -173,5 +187,11 @@ public class Player : MonoBehaviour {
 
     private bool isFallingAndTouchingWall() {
         return (controller.collisions.left || controller.collisions.right) && !controller.collisions.below && velocity.y < 0;
+    }
+
+    void Die()
+    {
+        //Restart
+        Application.LoadLevel(Application.loadedLevel);
     }
 }
