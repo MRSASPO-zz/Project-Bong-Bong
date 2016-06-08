@@ -14,6 +14,7 @@ public class HUD : MonoBehaviour {
 
     void Update()
     {
+        print(player.GetCurrHealth());
         HeartUI.sprite = HeartSprites[player.GetCurrHealth()];
     }
 }

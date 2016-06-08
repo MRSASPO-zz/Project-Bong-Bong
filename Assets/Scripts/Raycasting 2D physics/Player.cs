@@ -108,7 +108,7 @@ public class Player : MonoBehaviour {
 
     private bool isDead()
     {
-        return GetCurrHealth() == 0;
+        return GetCurrHealth() <= 0;
     }
 
     private void JumpButtonPressed(int wallDirX, bool wallSliding) {

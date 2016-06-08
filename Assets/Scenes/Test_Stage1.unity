@@ -184,7 +184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0727615fa23a2774f93bc3b45faa04b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 698406045}
   verticalOffset: 1
   lookAheadDistX: 4
   lookSmoothTimeX: 0.5
@@ -202,11 +202,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HeartSprites:
-  - {fileID: 21300000, guid: f6be1c7121bd8f8459c50620118402a4, type: 3}
-  - {fileID: 21300002, guid: f6be1c7121bd8f8459c50620118402a4, type: 3}
-  - {fileID: 21300004, guid: f6be1c7121bd8f8459c50620118402a4, type: 3}
   - {fileID: 21300006, guid: f6be1c7121bd8f8459c50620118402a4, type: 3}
-  HeartUI: {fileID: 0}
+  - {fileID: 21300004, guid: f6be1c7121bd8f8459c50620118402a4, type: 3}
+  - {fileID: 21300002, guid: f6be1c7121bd8f8459c50620118402a4, type: 3}
+  - {fileID: 21300000, guid: f6be1c7121bd8f8459c50620118402a4, type: 3}
+  HeartUI: {fileID: 1155365567}
 --- !u!1 &230430621
 GameObject:
   m_ObjectHideFlags: 0
@@ -596,9 +596,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b556f1723dec2244bb46477c368ded9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wallLeap: {x: 18, y: 17}
+  moveSpeed: 10
+  maxJumpHeight: 6
+  minJumpHeight: 1
   wallSlideSpeedMax: 3
   wallStickTime: 0.25
+  timeToWallUnstick: 0
+  wallLeap: {x: 18, y: 17}
+  char1: {fileID: 0}
+  char2: {fileID: 0}
+  char3: {fileID: 0}
+  damage: 0
 --- !u!114 &698406045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1109,8 +1117,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -22.85, y: 11.33}
-  m_SizeDelta: {x: 10, y: 10}
+  m_AnchoredPosition: {x: 201.9, y: 460.7}
+  m_SizeDelta: {x: 408, y: 408}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1155365567
 MonoBehaviour:
