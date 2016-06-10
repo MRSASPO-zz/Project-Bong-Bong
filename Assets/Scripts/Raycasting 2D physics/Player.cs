@@ -28,7 +28,7 @@ public class Player : MonoBehaviour {
     //hidden values that deal with character movement are in this section
     float accelerationTimeAirborne = .2f;
     float accelerationTimeGrounded = .1f;
-    float timeToJumpApex = .4f;
+    float timeToJumpApex = .3f;
     float gravity;
     float maxJumpVelocity;
     float minJumpVelocity;

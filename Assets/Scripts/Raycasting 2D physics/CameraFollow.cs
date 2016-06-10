@@ -12,7 +12,7 @@ public class CameraFollow : MonoBehaviour {
     //min and max_x for the camera's size, to set the boundaries of the camera, offset is to the center of the camera
     public float min_x = 0;
     public float max_x = 50;
-    const float CAMERA_OFFSET = 7.5f;
+    const float CAMERA_OFFSET = 10f;
 
     FocusArea focusArea;
 
