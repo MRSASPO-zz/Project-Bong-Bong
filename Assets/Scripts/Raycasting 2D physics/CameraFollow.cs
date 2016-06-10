@@ -9,6 +9,11 @@ public class CameraFollow : MonoBehaviour {
     public float verticalSmoothTime;
     public Vector2 focusAreaSize;
 
+    //min and max_x for the camera's size, to set the boundaries of the camera, offset is to the center of the camera
+    public float min_x = 0;
+    public float max_x = 50;
+    const float CAMERA_OFFSET = 7.5f;
+
     FocusArea focusArea;
 
     float currentLookAheadX;
@@ -46,13 +51,19 @@ public class CameraFollow : MonoBehaviour {
 
         focusPosition.y = Mathf.SmoothDamp(transform.position.y, focusPosition.y, ref smoothVelocityY, verticalSmoothTime);
         focusPosition += Vector2.right * currentLookAheadX;
-        transform.position = (Vector3)focusPosition + Vector3.forward * -10;
+
+        Vector3 goalTransformedPosition = (Vector3)focusPosition + Vector3.forward * -10;
+
+        //Change the clamp value if needed
+        transform.position = new Vector3(Mathf.Clamp(goalTransformedPosition.x, min_x+CAMERA_OFFSET, max_x-CAMERA_OFFSET), 
+            goalTransformedPosition.y, 
+            goalTransformedPosition.z);
     }
 
-    void OnDrawGizmos() {
+    /*void OnDrawGizmos() {
         Gizmos.color = new Color(1, 0, 0, .5f);
         Gizmos.DrawCube(focusArea.centre, focusAreaSize);
-    }
+    }*/
 
     struct FocusArea {
         public Vector2 centre;

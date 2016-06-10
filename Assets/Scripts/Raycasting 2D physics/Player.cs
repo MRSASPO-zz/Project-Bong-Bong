@@ -82,12 +82,12 @@ public class Player : MonoBehaviour {
         setSmoothedVelocityXPhysics(joystickInput);
 
         bool wallSliding = false;
+        //Only wall slides if (LR collide) && (is falling and midair) && (wall is not invisible wall) && (wall is walljumpable)
         if (isFallingAndTouchingWall())
-        {
+        { 
             wallSliding = true; // Set sprites here if wall jumping
             setWallSlidePhysics(joystickInput, wallDirX);
         }
-
         JumpButtonPressed(wallDirX, wallSliding);
 
         velocity.y += gravity * Time.deltaTime;
@@ -114,8 +114,10 @@ public class Player : MonoBehaviour {
     private void JumpButtonPressed(int wallDirX, bool wallSliding) {
         if (CnInputManager.GetButtonDown("Jump")) {
             if (wallSliding) {
-                setWallJumpPhysics(wallDirX);
-
+                print(controller.collisions.colliderTag);
+                if(controller.collisions.colliderTag == "WallJumpable") {
+                    setWallJumpPhysics(wallDirX);
+                }
             }
             if (controller.collisions.below) {
                 velocity.y = maxJumpVelocity;
@@ -185,8 +187,12 @@ public class Player : MonoBehaviour {
         }
     }
 
-    private bool isFallingAndTouchingWall() {
-        return (controller.collisions.left || controller.collisions.right) && !controller.collisions.below && velocity.y < 0;
+    private bool isFallingAndTouchingWall() { 
+        bool isLeftRightCollide = (controller.collisions.left || controller.collisions.right);
+        bool isFallingAndMidAir = !controller.collisions.below && velocity.y < 0;
+        bool isNotInvisibleWall = !(controller.collisions.colliderTag == "Invisible Wall");
+        bool isWallJump = (controller.collisions.colliderTag == "WallJumpable");
+        return isLeftRightCollide && isFallingAndMidAir && isNotInvisibleWall && isWallJump;
     }
 
     void Die()

@@ -81,6 +81,7 @@ public class Controller2D : RayCastController {
                     ClimbSlope(ref velocity, slopeAngle);
                     velocity.x += distanceToSlopeStart * directionX;
                 }
+                //not climbing slope
                 if(!collisions.climbingSlope || slopeAngle > maxClimbAngle) {
                     velocity.x = (hit.distance - skinWidth) * directionX;
                     rayLength = hit.distance;
@@ -91,6 +92,7 @@ public class Controller2D : RayCastController {
 
                     collisions.left = (directionX == -1); //If hit something and going left, then set to true
                     collisions.right = (directionX == 1); //else set right to true
+                    collisions.colliderTag = hit.collider.tag; //Check if the tag is the invisiblewall
                 }
             }
         }
@@ -199,6 +201,7 @@ public class Controller2D : RayCastController {
         public Vector3 velocityOld;
         public int faceDirection;
         public bool fallingThroughPlatform;
+        public string colliderTag;
 
         public void Reset() {
             above = below = false;
@@ -208,6 +211,7 @@ public class Controller2D : RayCastController {
 
             slopeAngleOld = slopeAngle;
             slopeAngle = 0;
+            colliderTag = "";
         }
     }
 }
