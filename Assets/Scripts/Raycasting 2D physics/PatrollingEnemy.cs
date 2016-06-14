@@ -3,7 +3,7 @@ using System.Collections;
 
 [RequireComponent(typeof(Controller2D))]
 public class PatrollingEnemy : MonoBehaviour {
-    public LayerMask enemyMask;
+    public LayerMask enemyCollisionMask;
     public float speed = 3;
 
     Controller2D controller;
@@ -22,16 +22,18 @@ public class PatrollingEnemy : MonoBehaviour {
     }
 
     void Update() {
-        colliderBounds = GetComponent<BoxCollider2D>().bounds;
-        Vector2 linecastPosLeft = new Vector2(colliderBounds.min.x, colliderBounds.min.y);
-        Vector2 linecastPosRight = new Vector2(colliderBounds.max.x, colliderBounds.min.y);
-        bool isGrounded = Physics2D.Linecast(linecastPosLeft, linecastPosLeft + Vector2.down, enemyMask);
+        Vector2 rayOrigin = (directionX == -1) ? controller.raycastOrigins.bottomLeft : controller.raycastOrigins.bottomRight;
+        float rayLength = 2*.015f;
+        RaycastHit2D collisionHit = Physics2D.Raycast(rayOrigin, Vector2.right * directionX, rayLength, enemyCollisionMask);
+        Debug.DrawRay(rayOrigin, Vector2.right * directionX * rayLength, Color.blue);
 
-
+        if (collisionHit) {
+            directionX = directionX / -1;
+        }
         velocity.x = directionX * speed;
         velocity.y += gravity * Time.deltaTime;
-        //controller.Move(velocity * Time.deltaTime, Vector2.zero);
-
+        controller.Move(velocity*Time.deltaTime, Vector2.zero);
+        //transform.Translate();
         if (controller.collisions.above || controller.collisions.below) {
             velocity.y = 0;
         }

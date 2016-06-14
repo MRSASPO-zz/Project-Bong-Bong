@@ -122,6 +122,16 @@ public class Player : MonoBehaviour {
             }
         }
 
+        if (controller.collisions.verticalMovementTag == "Melee Enemy" || controller.collisions.horizontalMovementTag == "Melee Enemy") {
+            //print(controller.collisions.verticalMovementTag);
+            //print(controller.collisions.horizontalMovementTag);
+            if (!invulnerable) {
+                TakeDamage();
+                Knockback();
+                invulnerability();
+                Invoke("resetInvulnerability", 3.0f);
+            }
+        }
 
         if (isDead())
         {
