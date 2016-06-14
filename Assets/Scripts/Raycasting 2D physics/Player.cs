@@ -10,8 +10,8 @@ public class Player : MonoBehaviour {
     **/
     //public Values that deal with character movement are in this section
     public float moveSpeed = 10;
-    public float maxJumpHeight = 6;
-    public float minJumpHeight = 1;
+    public float maxJumpHeight = 2.5f;
+    public float minJumpHeight = 1.1f;
     public float wallSlideSpeedMax = 3;
     public float wallStickTime = .25f;
     public float timeToWallUnstick = 0;

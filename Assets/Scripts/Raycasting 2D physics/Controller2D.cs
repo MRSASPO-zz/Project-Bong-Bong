@@ -35,10 +35,10 @@ public class Controller2D : RayCastController {
 
         HorizontalCollisions(ref velocity);
 
-        if(velocity.y != 0) {
+        if (velocity.y != 0) {
             VerticalCollisions(ref velocity);
         }
-        
+
         transform.Translate(velocity);
 
         if (standingOnPlatform) {
@@ -118,7 +118,6 @@ public class Controller2D : RayCastController {
                         continue;
                     }
                     if (playerInput.y == -1) {
-                        Debug.Log(playerInput.y);
                         collisions.fallingThroughPlatform = true;
                         Invoke("ResetFallingThroughPlatform", .2f); //sets the time for another fall thru
                         continue;

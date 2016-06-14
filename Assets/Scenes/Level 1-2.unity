@@ -188,6 +188,7 @@ Transform:
   - {fileID: 458711367}
   - {fileID: 839864083}
   m_Father: {fileID: 0}
+<<<<<<< eb6c72493f2163276414a411df7e485f5a2282c5
   m_RootOrder: 5
 --- !u!1 &340332754 stripped
 GameObject:
@@ -204,6 +205,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 809fda35105e8574ca08f346919a1ef6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+  m_RootOrder: 6
+>>>>>>> Added script for patrolling enemies, not finished yet. Fixed the bug where the tile maps are turning out white instead of the actual tiles
 --- !u!1 &343872703
 GameObject:
   m_ObjectHideFlags: 0
@@ -246,7 +250,7 @@ Transform:
   - {fileID: 1951201207}
   - {fileID: 1376257880}
   m_Father: {fileID: 540360569}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!1001 &356673726
 Prefab:
   m_ObjectHideFlags: 0
@@ -648,7 +652,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!4 &540360569 stripped
 Transform:
   m_PrefabParentObject: {fileID: 409868, guid: c67ef47b7df6564428f62cd09d5b6546, type: 2}
@@ -1438,7 +1442,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
 --- !u!1001 &1125297828
 Prefab:
   m_ObjectHideFlags: 0
@@ -1684,6 +1688,116 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 81acfa4b78dfa47499a6c2fd6e521ebd, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1235373153
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1235373155}
+  - 212: {fileID: 1235373154}
+  - 61: {fileID: 1235373158}
+  - 114: {fileID: 1235373157}
+  - 114: {fileID: 1235373156}
+  m_Layer: 0
+  m_Name: Enemy_PH
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1235373154
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1235373153}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300026, guid: 8e9b0c60fa9dfc2479c142e4b9ec3e05, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+--- !u!4 &1235373155
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1235373153}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 36, y: -14, z: 0}
+  m_LocalScale: {x: 2, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+--- !u!114 &1235373156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1235373153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b449400dabceb24cbd08b7e68ebdd46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+--- !u!114 &1235373157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1235373153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1477a1548c596f24b9430f80bcad6e9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionMask:
+    serializedVersion: 2
+    m_Bits: 512
+  dangerousObstacleMask:
+    serializedVersion: 2
+    m_Bits: 0
+  horizontalRayCount: 5
+  verticalRayCount: 5
+  horizontalRaySpacing: 0
+  verticalRaySpacing: 0
+  collider: {fileID: 0}
+  playerInput: {x: 0, y: 0}
+--- !u!61 &1235373158
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1235373153}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0.5, y: 0.5}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1001 &1236309910
 Prefab:
   m_ObjectHideFlags: 0
@@ -1736,6 +1850,18 @@ Prefab:
       value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 176312, guid: c67ef47b7df6564428f62cd09d5b6546, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 140226, guid: c67ef47b7df6564428f62cd09d5b6546, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 141042, guid: c67ef47b7df6564428f62cd09d5b6546, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 110682, guid: c67ef47b7df6564428f62cd09d5b6546, type: 2}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -1924,7 +2050,7 @@ RectTransform:
   - {fileID: 636316521}
   - {fileID: 1835544582}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -2208,7 +2334,7 @@ Transform:
   - {fileID: 1479303407}
   - {fileID: 1408059516}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!1 &1408059513
 GameObject:
   m_ObjectHideFlags: 0
@@ -2312,6 +2438,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< eb6c72493f2163276414a411df7e485f5a2282c5
   m_RootOrder: 7
 --- !u!1 &1451381331 stripped
 GameObject:
@@ -2328,6 +2455,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 809fda35105e8574ca08f346919a1ef6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+  m_RootOrder: 8
+>>>>>>> Added script for patrolling enemies, not finished yet. Fixed the bug where the tile maps are turning out white instead of the actual tiles
 --- !u!1 &1479303404
 GameObject:
   m_ObjectHideFlags: 0
