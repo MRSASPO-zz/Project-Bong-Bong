@@ -92,7 +92,7 @@ public class Player : MonoBehaviour {
         bool wallSliding = false;
         //Only wall slides if (LR collide) && (is falling and midair) && (wall is not invisible wall) && (wall is walljumpable)
         if (isFallingAndTouchingWall())
-        { 
+        {
             wallSliding = true; // Set sprites here if wall jumping
             setWallSlidePhysics(joystickInput, wallDirX);
         }
@@ -110,37 +110,48 @@ public class Player : MonoBehaviour {
 
         //print("Vertical collition = " + controller.collisions.verticalColliderTag);
         //print("Horizontal collition = " + controller.collisions.horizontalColliderTag);
-        print("invulnerable = " + invulnerable);
-        if (controller.collisions.horizontalColliderTag=="Dangerous Obstacle" || controller.collisions.verticalColliderTag == "Dangerous Obstacle")
+        //print("invulnerable = " + invulnerable);
+        if (collideWithDangerousObstacle())
         {
             if (!invulnerable)
             {
                 TakeDamage();
-                if (controller.collisions.velocityOld.x <= 0)
-                {
-                    velocity.x = maxJumpVelocity;
-                }else
-                {
-                    velocity.x = -maxJumpVelocity;
-                }
-                if (controller.collisions.velocityOld.y <= 0)
-                {
-                    velocity.y = maxJumpVelocity;
-                }else
-                {
-                    velocity.y = -maxJumpVelocity;
-                }
-
-
+                Knockback();
+                invulnerability();
+                Invoke("resetInvulnerability", 3.0f);
             }
-            invulnerability();
-            Invoke("resetInvulnerability", 3.0f);
         }
+
 
         if (isDead())
         {
             Die();
         }
+    }
+
+    private void Knockback()
+    {
+        if (controller.collisions.velocityOld.x <= 0)
+        {
+            velocity.x = maxJumpVelocity;
+        }
+        else
+        {
+            velocity.x = -maxJumpVelocity;
+        }
+        if (controller.collisions.velocityOld.y <= 0)
+        {
+            velocity.y = maxJumpVelocity;
+        }
+        else
+        {
+            velocity.y = -maxJumpVelocity;
+        }
+    }
+
+    private bool collideWithDangerousObstacle()
+    {
+        return controller.collisions.horizontalColliderTag == "Dangerous Obstacle" || controller.collisions.verticalColliderTag == "Dangerous Obstacle";
     }
 
     private bool isDead()
