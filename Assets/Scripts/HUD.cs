@@ -5,16 +5,13 @@ using UnityEngine.UI;
 public class HUD : MonoBehaviour {
     public Sprite[] HeartSprites;
     public Image HeartUI;
-    private Player player;
+    public Player player;
 
-    void Start()
-    {
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-    }
+
 
     void Update()
     {
-       // print(player.GetCurrHealth());
+        //print(player.GetCurrHealth());
         HeartUI.sprite = HeartSprites[player.GetCurrHealth()];
     }
 }

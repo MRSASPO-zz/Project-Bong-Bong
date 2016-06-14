@@ -44,14 +44,14 @@ public class Player : MonoBehaviour {
         return maxHealth - damage;
     }
 
-    public void TakeDamage()
+    public void TakeDamage(int dmg)
     {
-        this.damage += 1;
+        this.damage += dmg;
     }
 
-    public void Heal()
+    public void Heal(int heal)
     {
-        this.damage -= 1;
+        this.damage -= heal;
     }
 
     void Start() {
@@ -99,6 +99,8 @@ public class Player : MonoBehaviour {
         }
 
         characterSwapButtonPressed();
+
+        //if (controller.collisions.)
 
         if (isDead())
         {
