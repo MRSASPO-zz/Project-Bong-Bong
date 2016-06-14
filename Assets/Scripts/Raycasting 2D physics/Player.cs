@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using CnControls;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Controller2D))]
 public class Player : MonoBehaviour {
@@ -35,6 +36,7 @@ public class Player : MonoBehaviour {
     float velocityXSmoothing;
     Vector3 velocity;
     Controller2D controller; //Controller2D handles the actual movement of the transforms, Player class only deals with the physical calculations
+    bool invulnerable; //Invulnerability period for player
 
     //value to help with character switch
     int selectedChar = 0;
@@ -44,14 +46,19 @@ public class Player : MonoBehaviour {
         return maxHealth - damage;
     }
 
-    public void TakeDamage(int dmg)
+    public void TakeDamage()
     {
-        this.damage += dmg;
+        this.damage += 1;
     }
 
-    public void Heal(int heal)
+    public void TakeLethalDamage()
     {
-        this.damage -= heal;
+        this.damage = this.maxHealth;
+    }
+
+    public void Heal()
+    {
+        this.damage -= 1;
     }
 
     void Start() {
@@ -59,6 +66,7 @@ public class Player : MonoBehaviour {
         setGravityPhysics();
         ActivateChar1();
         damage = 0;
+        invulnerable = false;
     }
 
     private void setGravityPhysics() {
@@ -100,7 +108,34 @@ public class Player : MonoBehaviour {
 
         characterSwapButtonPressed();
 
-        //if (controller.collisions.)
+        //print("Vertical collition = " + controller.collisions.verticalColliderTag);
+        //print("Horizontal collition = " + controller.collisions.horizontalColliderTag);
+        print("invulnerable = " + invulnerable);
+        if (controller.collisions.horizontalColliderTag=="Dangerous Obstacle" || controller.collisions.verticalColliderTag == "Dangerous Obstacle")
+        {
+            if (!invulnerable)
+            {
+                TakeDamage();
+                if (controller.collisions.velocityOld.x <= 0)
+                {
+                    velocity.x = maxJumpVelocity;
+                }else
+                {
+                    velocity.x = -maxJumpVelocity;
+                }
+                if (controller.collisions.velocityOld.y <= 0)
+                {
+                    velocity.y = maxJumpVelocity;
+                }else
+                {
+                    velocity.y = -maxJumpVelocity;
+                }
+
+
+            }
+            invulnerability();
+            Invoke("resetInvulnerability", 3.0f);
+        }
 
         if (isDead())
         {
@@ -113,11 +148,21 @@ public class Player : MonoBehaviour {
         return GetCurrHealth() <= 0;
     }
 
+    public void invulnerability()
+    {
+        invulnerable = true;
+    }
+
+    public void resetInvulnerability()
+    {
+        invulnerable = false;
+    }
+
     private void JumpButtonPressed(int wallDirX, bool wallSliding) {
         if (CnInputManager.GetButtonDown("Jump")) {
             if (wallSliding) {
-                print(controller.collisions.colliderTag);
-                if(controller.collisions.colliderTag == "WallJumpable") {
+                print(controller.collisions.horizontalColliderTag);
+                if(controller.collisions.horizontalColliderTag == "WallJumpable") {
                     setWallJumpPhysics(wallDirX);
                 }
             }
@@ -192,14 +237,14 @@ public class Player : MonoBehaviour {
     private bool isFallingAndTouchingWall() { 
         bool isLeftRightCollide = (controller.collisions.left || controller.collisions.right);
         bool isFallingAndMidAir = !controller.collisions.below && velocity.y < 0;
-        bool isNotInvisibleWall = !(controller.collisions.colliderTag == "Invisible Wall");
-        bool isWallJump = (controller.collisions.colliderTag == "WallJumpable");
+        bool isNotInvisibleWall = !(controller.collisions.horizontalColliderTag == "Invisible Wall");
+        bool isWallJump = (controller.collisions.horizontalColliderTag == "WallJumpable");
         return isLeftRightCollide && isFallingAndMidAir && isNotInvisibleWall && isWallJump;
     }
 
     void Die()
     {
         //Restart
-        Application.LoadLevel(Application.loadedLevel);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

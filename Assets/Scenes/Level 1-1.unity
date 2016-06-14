@@ -630,7 +630,7 @@ Transform:
   - {fileID: 1827990814}
   - {fileID: 155991593}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!1001 &689758934
 Prefab:
   m_ObjectHideFlags: 0
@@ -1535,6 +1535,7 @@ MonoBehaviour:
   - {fileID: 21300002, guid: f6be1c7121bd8f8459c50620118402a4, type: 3}
   - {fileID: 21300000, guid: f6be1c7121bd8f8459c50620118402a4, type: 3}
   HeartUI: {fileID: 136789459}
+  player: {fileID: 681873523}
 --- !u!1 &1970088737
 GameObject:
   m_ObjectHideFlags: 0

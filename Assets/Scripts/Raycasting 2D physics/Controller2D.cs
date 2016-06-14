@@ -92,7 +92,7 @@ public class Controller2D : RayCastController {
 
                     collisions.left = (directionX == -1); //If hit something and going left, then set to true
                     collisions.right = (directionX == 1); //else set right to true
-                    collisions.colliderTag = collisionHit.collider.tag; //Check if the tag is the invisiblewall
+                    collisions.horizontalColliderTag = collisionHit.collider.tag; //Check if the tag is the invisiblewall
                 }
             }
         }
@@ -133,6 +133,7 @@ public class Controller2D : RayCastController {
 
                 collisions.below = (directionY == -1); //If hit something and going down, then set to true
                 collisions.above = (directionY == 1); //else set up to true
+                collisions.verticalColliderTag = collisionHit.collider.tag;
             }
         }
         if (collisions.climbingSlope) {
@@ -200,7 +201,8 @@ public class Controller2D : RayCastController {
         public Vector3 velocityOld;
         public int faceDirection;
         public bool fallingThroughPlatform;
-        public string colliderTag;
+        public string horizontalColliderTag;
+        public string verticalColliderTag;
 
         public void Reset() {
             above = below = false;
@@ -210,7 +212,8 @@ public class Controller2D : RayCastController {
 
             slopeAngleOld = slopeAngle;
             slopeAngle = 0;
-            colliderTag = "";
+            horizontalColliderTag = "";
+            verticalColliderTag = "";
         }
     }
 }
