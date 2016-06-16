@@ -118,14 +118,14 @@ public class Controller2D : RayCastController {
                     if (directionY == 1 || collisionHit.distance == 0) {
                         continue;
                     }
-                    if (collisions.fallingThroughPlatform) {
+                    /*if (collisions.fallingThroughPlatform) {
                         continue;
                     }
                     if (playerInput.y == -1) {
                         collisions.fallingThroughPlatform = true;
                         Invoke("ResetFallingThroughPlatform", .2f); //sets the time for another fall thru
                         continue;
-                    }
+                    }*/
                 }
 
                 velocity.y = (collisionHit.distance - skinWidth)* directionY;

@@ -1,9 +1,10 @@
 fileFormatVersion: 2
 guid: f750bb7408e61e44dab5b179ad3b999d
-timeCreated: 1465550737
+timeCreated: 1465961489
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Wolf_0
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,26 +31,82 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
-  alphaIsTransparency: 0
-  textureType: -1
+  spritePixelsToUnits: 363
+  alphaIsTransparency: 1
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Wolf_0
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 551
+        width: 726
+        height: 399
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 322, y: 0}
+        - {x: 322, y: 12}
+        - {x: 315, y: 134}
+        - {x: 309, y: 229}
+        - {x: 345, y: 247}
+        - {x: 363, y: 275}
+        - {x: 363, y: 295}
+        - {x: 338, y: 342}
+        - {x: 331, y: 341}
+        - {x: 327, y: 306}
+        - {x: 330, y: 263}
+        - {x: -74, y: 294}
+        - {x: -79, y: 303}
+        - {x: -59, y: 392}
+        - {x: -71, y: 398}
+        - {x: -102, y: 375}
+        - {x: -105, y: 399}
+        - {x: -117, y: 399}
+        - {x: -169, y: 328}
+        - {x: -363, y: 193}
+        - {x: -363, y: 177}
+        - {x: -349, y: 179}
+        - {x: -191, y: 212}
+        - {x: -122, y: 185}
+        - {x: -112, y: 186}
+        - {x: -106, y: 196}
+        - {x: -117, y: 156}
+        - {x: -173, y: 11}
+        - {x: -172, y: 0}
+        - {x: -165, y: 0}
+        - {x: -151, y: 7}
+        - {x: -58, y: 150}
+        - {x: 7, y: 4}
+        - {x: 16, y: 0}
+        - {x: 18, y: 0}
+        - {x: 24, y: 5}
+        - {x: 7, y: 104}
+        - {x: 18, y: 99}
+        - {x: 144, y: 159}
+        - {x: 152, y: 151}
+        - {x: 191, y: 0}
+        - {x: 204, y: 0}
+        - {x: 206, y: 7}
+        - {x: 234, y: 131}
+        - {x: 309, y: 0}
     outline: []
   spritePackingTag: 
   userData: 

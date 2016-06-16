@@ -7,6 +7,7 @@ public class PatrollingEnemy : MonoBehaviour {
     public float speed = 3;
 
     Controller2D controller;
+    SpriteRenderer image;
     Transform controllerTransform;
     float width, height;
     float gravity;
@@ -15,8 +16,9 @@ public class PatrollingEnemy : MonoBehaviour {
     Bounds colliderBounds;
     void Start() {
         controller = GetComponent<Controller2D>();
+        image = GetComponent<SpriteRenderer>();
         gravity = -(2 * 2.5f) / Mathf.Pow(0.3f, 2); //"max jump height" = 2.5, "time to apex" = 0.3f, equiv values for the player
-        directionX = 1; //initially moving rightwards
+        directionX = -1; //initially moving leftwards
         controllerTransform = this.transform;
         
     }
@@ -27,8 +29,9 @@ public class PatrollingEnemy : MonoBehaviour {
         RaycastHit2D collisionHit = Physics2D.Raycast(rayOrigin, Vector2.right * directionX, rayLength, enemyCollisionMask);
         Debug.DrawRay(rayOrigin, Vector2.right * directionX * rayLength, Color.blue);
 
-        if (collisionHit) {
+        if (collisionHit || controller.collisions.right || controller.collisions.left) {
             directionX = directionX / -1;
+            image.flipX = !image.flipX;
         }
         velocity.x = directionX * speed;
         velocity.y += gravity * Time.deltaTime;

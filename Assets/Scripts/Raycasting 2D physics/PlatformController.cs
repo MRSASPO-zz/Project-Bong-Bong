@@ -14,6 +14,7 @@ public class PlatformController : RayCastController {
     public float waitTime;
     [Range(0, 2)]
     public float easeAmount; //clamping easeAmount to 0 and 2
+    public bool activated;
 
     int fromWayPointIndex;
     float percentBetween2Waypoints; // b/w 0 and 1
@@ -49,33 +50,36 @@ public class PlatformController : RayCastController {
     }
 
     Vector3 CalculatePlatformMovement() {
-        if(Time.time < nextMoveTime) {
-            return Vector3.zero;
-        }
-
-        fromWayPointIndex %= globalWayPoints.Length;
-        int toWayPointIndex = (fromWayPointIndex + 1)%globalWayPoints.Length;
-        float distanceBetweenWayPoints = Vector3.Distance(globalWayPoints[fromWayPointIndex], globalWayPoints[toWayPointIndex]);
-        percentBetween2Waypoints += Time.deltaTime * speed / distanceBetweenWayPoints;
-        percentBetween2Waypoints = Mathf.Clamp01(percentBetween2Waypoints);
-        float easePercentBetweenWaypoints = Ease(percentBetween2Waypoints);
-
-
-        Vector3 newPos = Vector3.Lerp(globalWayPoints[fromWayPointIndex], globalWayPoints[toWayPointIndex], easePercentBetweenWaypoints);
-
-        if(percentBetween2Waypoints >= 1) {
-            percentBetween2Waypoints = 0;
-            fromWayPointIndex++;
-            if (!cyclic) {
-                if (fromWayPointIndex >= globalWayPoints.Length - 1) {
-                    fromWayPointIndex = 0;
-                    System.Array.Reverse(globalWayPoints);
-                }
+        if (activated) {
+            if (Time.time < nextMoveTime) {
+                return Vector3.zero;
             }
-            nextMoveTime = Time.time + waitTime;
-        }
 
-        return newPos - transform.position;
+            fromWayPointIndex %= globalWayPoints.Length;
+            int toWayPointIndex = (fromWayPointIndex + 1) % globalWayPoints.Length;
+            float distanceBetweenWayPoints = Vector3.Distance(globalWayPoints[fromWayPointIndex], globalWayPoints[toWayPointIndex]);
+            percentBetween2Waypoints += Time.deltaTime * speed / distanceBetweenWayPoints;
+            percentBetween2Waypoints = Mathf.Clamp01(percentBetween2Waypoints);
+            float easePercentBetweenWaypoints = Ease(percentBetween2Waypoints);
+
+
+            Vector3 newPos = Vector3.Lerp(globalWayPoints[fromWayPointIndex], globalWayPoints[toWayPointIndex], easePercentBetweenWaypoints);
+
+            if (percentBetween2Waypoints >= 1) {
+                percentBetween2Waypoints = 0;
+                fromWayPointIndex++;
+                if (!cyclic) {
+                    if (fromWayPointIndex >= globalWayPoints.Length - 1) {
+                        fromWayPointIndex = 0;
+                        System.Array.Reverse(globalWayPoints);
+                    }
+                }
+                nextMoveTime = Time.time + waitTime;
+            }
+
+            return newPos - transform.position;
+        }
+        return Vector3.zero;
     }
 
     void MovePassengers(bool beforeMovePlatform) {
@@ -95,7 +99,21 @@ public class PlatformController : RayCastController {
 
         float directionX = Mathf.Sign(velocity.x);
         float directionY = Mathf.Sign(velocity.y);
+        if(velocity == Vector3.zero) {
+            
+            float rayLength = skinWidth * 2;
+            for (int i = 0; i< verticalRayCount; i++) {
+                Vector2 rayOrigin = raycastOrigins.topLeft;
+                rayOrigin += Vector2.right * (verticalRaySpacing * i);
+                RaycastHit2D hit = Physics2D.Raycast(rayOrigin, Vector2.up, rayLength, passengerMask);
+                Debug.DrawRay(rayOrigin, Vector2.up * rayLength, Color.red);
 
+                if (hit && hit.distance != 0) {
+                    activated = true;
+                }
+            }
+            return;
+        }
         //Vertically Moving Platform
         if (velocity.y != 0) {
             float rayLength = Mathf.Abs(velocity.y) + skinWidth;

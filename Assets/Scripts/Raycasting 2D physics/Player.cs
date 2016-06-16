@@ -90,7 +90,6 @@ public class Player : MonoBehaviour {
         setSmoothedVelocityXPhysics(joystickInput);
 
         bool wallSliding = false;
-        //Only wall slides if (LR collide) && (is falling and midair) && (wall is not invisible wall) && (wall is walljumpable)
         if (isFallingAndTouchingWall())
         {
             wallSliding = true; // Set sprites here if wall jumping
@@ -108,9 +107,6 @@ public class Player : MonoBehaviour {
 
         characterSwapButtonPressed();
 
-        //print("Vertical collition = " + controller.collisions.verticalColliderTag);
-        //print("Horizontal collition = " + controller.collisions.horizontalColliderTag);
-        //print("invulnerable = " + invulnerable);
         if (collideWithDangerousObstacle())
         {
             if (!invulnerable)
@@ -123,8 +119,6 @@ public class Player : MonoBehaviour {
         }
 
         if (controller.collisions.verticalMovementTag == "Melee Enemy" || controller.collisions.horizontalMovementTag == "Melee Enemy") {
-            //print(controller.collisions.verticalMovementTag);
-            //print(controller.collisions.horizontalMovementTag);
             if (!invulnerable) {
                 TakeDamage();
                 Knockback();
@@ -135,6 +129,10 @@ public class Player : MonoBehaviour {
 
         if (isDead())
         {
+            Die();
+        }
+        
+        if(controller.collisions.verticalColliderTag == "Invisible Wall") {
             Die();
         }
     }
@@ -201,23 +199,25 @@ public class Player : MonoBehaviour {
 
     private void characterSwapButtonPressed() {
         if (CnInputManager.GetButtonUp("Fire1")) {
-            selectedChar = (selectedChar + 1) % 3;
-            switch (selectedChar) {
-                case 0: //1st char
-                    char1.SetActive(true);
-                    char2.SetActive(false);
-                    char3.SetActive(false);
-                    break;
-                case 1://2nd char
-                    char1.SetActive(false);
-                    char2.SetActive(true);
-                    char3.SetActive(false);
-                    break;
-                case 2://last char
-                    char1.SetActive(false);
-                    char2.SetActive(false);
-                    char3.SetActive(true);
-                    break;
+            if (controller.collisions.below) {
+                selectedChar = (selectedChar + 1) % 3;
+                switch (selectedChar) {
+                    case 0: //1st char
+                        char1.SetActive(true);
+                        char2.SetActive(false);
+                        char3.SetActive(false);
+                        break;
+                    case 1://2nd char
+                        char1.SetActive(false);
+                        char2.SetActive(true);
+                        char3.SetActive(false);
+                        break;
+                    case 2://last char
+                        char1.SetActive(false);
+                        char2.SetActive(false);
+                        char3.SetActive(true);
+                        break;
+                }
             }
             //Debug.Log("char1 active = " + char1.activeSelf + "; char2 active = " + char2.activeSelf + "; char3.active = " + char3.activeSelf);
         }
