@@ -101,7 +101,7 @@ public class PlatformController : RayCastController {
         float directionY = Mathf.Sign(velocity.y);
         if(velocity == Vector3.zero) {
             
-            float rayLength = skinWidth * 2;
+            float rayLength = skinWidth;
             for (int i = 0; i< verticalRayCount; i++) {
                 Vector2 rayOrigin = raycastOrigins.topLeft;
                 rayOrigin += Vector2.right * (verticalRaySpacing * i);
