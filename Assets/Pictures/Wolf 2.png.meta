@@ -1,9 +1,10 @@
 fileFormatVersion: 2
 guid: b34879095dc1f724782a9884a634c187
-timeCreated: 1466099589
+timeCreated: 1466131187
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Wolf 2_0
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -38,18 +39,74 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 363
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Wolf 2_0
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 576
+        width: 760
+        height: 407
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 0}
+        - {x: 32, y: 3}
+        - {x: 13, y: 103}
+        - {x: 184, y: 181}
+        - {x: 221, y: 111}
+        - {x: 245, y: 20}
+        - {x: 248, y: 3}
+        - {x: 252, y: 0}
+        - {x: 261, y: 0}
+        - {x: 272, y: 37}
+        - {x: 285, y: 16}
+        - {x: 296, y: 0}
+        - {x: 306, y: 0}
+        - {x: 307, y: 12}
+        - {x: 298, y: 166}
+        - {x: 353, y: 257}
+        - {x: 380, y: 287}
+        - {x: 380, y: 304}
+        - {x: 357, y: 360}
+        - {x: 351, y: 361}
+        - {x: 344, y: 359}
+        - {x: 344, y: 275}
+        - {x: -75, y: 308}
+        - {x: -97, y: 307}
+        - {x: -75, y: 393}
+        - {x: -80, y: 407}
+        - {x: -86, y: 407}
+        - {x: -88, y: 406}
+        - {x: -121, y: 407}
+        - {x: -138, y: 407}
+        - {x: -152, y: 363}
+        - {x: -380, y: 204}
+        - {x: -380, y: 188}
+        - {x: -366, y: 190}
+        - {x: -212, y: 223}
+        - {x: -126, y: 195}
+        - {x: -81, y: 212}
+        - {x: -83, y: 184}
+        - {x: -133, y: 58}
+        - {x: -152, y: 8}
+        - {x: -149, y: 0}
+        - {x: -139, y: 0}
+        - {x: -132, y: 9}
+        - {x: 15, y: 2}
+        - {x: 19, y: 0}
     outline: []
   spritePackingTag: 
   userData: 
