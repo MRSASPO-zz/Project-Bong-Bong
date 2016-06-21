@@ -496,6 +496,9 @@ MonoBehaviour:
   enemyCollisionMask:
     serializedVersion: 2
     m_Bits: 1024
+  wallMask:
+    serializedVersion: 2
+    m_Bits: 512
   speed: 3
 --- !u!114 &438942904
 MonoBehaviour:
@@ -520,6 +523,8 @@ MonoBehaviour:
   verticalRaySpacing: 0
   collider: {fileID: 0}
   playerInput: {x: 0, y: 0}
+  pushedByPlatform: 0
+  platformTag: 
 --- !u!61 &438942905
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1439,6 +1444,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 11422180, guid: 46b2167b47eca4247bdbb6391b8a0a33, type: 2}
+      propertyPath: wallMask.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 46b2167b47eca4247bdbb6391b8a0a33, type: 2}
   m_IsPrefabParent: 0
@@ -1573,6 +1582,9 @@ MonoBehaviour:
   enemyCollisionMask:
     serializedVersion: 2
     m_Bits: 1024
+  wallMask:
+    serializedVersion: 2
+    m_Bits: 512
   speed: 3
 --- !u!114 &1304176519
 MonoBehaviour:
@@ -1597,6 +1609,8 @@ MonoBehaviour:
   verticalRaySpacing: 0
   collider: {fileID: 0}
   playerInput: {x: 0, y: 0}
+  pushedByPlatform: 0
+  platformTag: 
 --- !u!61 &1304176520
 BoxCollider2D:
   m_ObjectHideFlags: 0

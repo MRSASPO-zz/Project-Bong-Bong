@@ -14,7 +14,7 @@ public class CameraMovementL14 : MonoBehaviour {
     }
 
     void Update() {
-        transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x, target.transform.position.y, transform.position.z), speed);
+        transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x, target.transform.position.y, transform.position.z), speed * Time.deltaTime * 100);
         transform.Translate(new Vector3(speed*Time.deltaTime, 0, 0));
     }
 

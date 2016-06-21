@@ -4,6 +4,7 @@ using System.Collections;
 [RequireComponent(typeof(Controller2D))]
 public class PatrollingEnemy : MonoBehaviour {
     public LayerMask enemyCollisionMask;
+    public LayerMask wallMask;
     public float speed = 3;
 
     Controller2D controller;
@@ -23,9 +24,10 @@ public class PatrollingEnemy : MonoBehaviour {
         Vector2 rayOrigin = (directionX == -1) ? controller.raycastOrigins.bottomLeft : controller.raycastOrigins.bottomRight;
         float rayLength = 2*.015f;
         RaycastHit2D collisionHit = Physics2D.Raycast(rayOrigin, Vector2.right * directionX, rayLength, enemyCollisionMask);
+        RaycastHit2D wallHit = Physics2D.Raycast(rayOrigin, Vector2.right * directionX, rayLength, wallMask);
         Debug.DrawRay(rayOrigin, Vector2.right * directionX * rayLength, Color.blue);
 
-        if (collisionHit || controller.collisions.right || controller.collisions.left) {
+        if (collisionHit ||wallHit) {
             directionX = directionX / -1;
             image.flipX = !image.flipX;
         }
