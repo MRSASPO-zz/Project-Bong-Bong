@@ -34,30 +34,31 @@ public class Player : MonoBehaviour {
     float maxJumpVelocity;
     float minJumpVelocity;
     float velocityXSmoothing;
-    Vector3 velocity;
+    [HideInInspector]
+    public Vector3 velocity;
     Controller2D controller; //Controller2D handles the actual movement of the transforms, Player class only deals with the physical calculations
     bool invulnerable; //Invulnerability period for player
+
+    //These 3 of the collisionInfo that is set by the moving platform controller, the values will be reset upon when this script has its own run method
+    int pushedByPlatform;
+    string horizontalCollisionTag;
 
     //value to help with character switch
     int selectedChar = 0;
 
-    public int GetCurrHealth()
-    {
+    public int GetCurrHealth() {
         return maxHealth - damage;
     }
 
-    public void TakeDamage()
-    {
+    public void TakeDamage() {
         this.damage += 1;
     }
 
-    public void TakeLethalDamage()
-    {
+    public void TakeLethalDamage() {
         this.damage = this.maxHealth;
     }
 
-    public void Heal()
-    {
+    public void Heal() {
         this.damage -= 1;
     }
 
@@ -82,26 +83,26 @@ public class Player : MonoBehaviour {
         char3.SetActive(false);
     }
 
-    void Update()
-    {
+    void Update() {
         Vector2 joystickInput = new Vector2(CnInputManager.GetAxisRaw("Horizontal"), CnInputManager.GetAxisRaw("Vertical"));
         int wallDirX = (controller.collisions.left) ? -1 : 1; //if facing left, wallDirX = -1, else 1
+
+        pushedByPlatform = controller.pushedByPlatform;
+        horizontalCollisionTag = controller.platformTag;
 
         setSmoothedVelocityXPhysics(joystickInput);
 
         bool wallSliding = false;
-        if (isFallingAndTouchingWall())
-        {
+        if (isFallingAndTouchingWall()) {
             wallSliding = true; // Set sprites here if wall jumping
             setWallSlidePhysics(joystickInput, wallDirX);
         }
+
         JumpButtonPressed(wallDirX, wallSliding);
 
-        velocity.y += gravity * Time.deltaTime;
-        controller.Move(velocity * Time.deltaTime, joystickInput);
-
-        if (controller.collisions.above || controller.collisions.below)
-        {
+        velocity.y += gravity * Time.deltaTime; //apply gravity
+        controller.Move(velocity * Time.deltaTime, joystickInput, pushedByPlatform, horizontalCollisionTag); //move character
+        if (controller.collisions.above || controller.collisions.below) {
             velocity.y = 0;
         }
 
@@ -139,21 +140,21 @@ public class Player : MonoBehaviour {
 
     private void Knockback()
     {
-        if (controller.collisions.velocityOld.x <= 0)
+        if (controller.collisions.velocityOld.x < 0)
         {
-            velocity.x = maxJumpVelocity;
+            velocity.x = maxJumpVelocity/2;
         }
-        else
+        else if(controller.collisions.velocityOld.x > 0)
         {
-            velocity.x = -maxJumpVelocity;
-        }
+            velocity.x = -maxJumpVelocity/2;
+        } 
         if (controller.collisions.velocityOld.y <= 0)
         {
-            velocity.y = maxJumpVelocity;
+            velocity.y = maxJumpVelocity/2;
         }
         else
         {
-            velocity.y = -maxJumpVelocity;
+            velocity.y = -maxJumpVelocity/2;
         }
     }
 

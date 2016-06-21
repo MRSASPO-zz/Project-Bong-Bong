@@ -257,7 +257,7 @@ MonoBehaviour:
   lookSmoothTimeX: 0.5
   verticalSmoothTime: 0.2
   focusAreaSize: {x: 3, y: 5}
-  min_x: 0
+  min_x: -50
   max_x: 50
 --- !u!81 &173027500
 AudioListener:
@@ -524,6 +524,8 @@ MonoBehaviour:
   verticalRaySpacing: 0
   collider: {fileID: 0}
   playerInput: {x: 0, y: 0}
+  pushedByPlatform: 0
+  platformTag: 
 --- !u!61 &239944474
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -867,7 +869,7 @@ MonoBehaviour:
   - {fileID: 21300002, guid: f6be1c7121bd8f8459c50620118402a4, type: 3}
   - {fileID: 21300000, guid: f6be1c7121bd8f8459c50620118402a4, type: 3}
   HeartUI: {fileID: 1690518706}
-  player: {fileID: 0}
+  player: {fileID: 239944472}
 --- !u!1 &419973880
 GameObject:
   m_ObjectHideFlags: 0
