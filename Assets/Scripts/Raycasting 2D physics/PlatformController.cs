@@ -89,7 +89,7 @@ public class PlatformController : RayCastController {
                 passengerDictionary.Add(passenger.transform, passenger.transform.GetComponent<Controller2D>());
             }
             if(passenger.moveBeforePlatform == beforeMovePlatform) {
-                passengerDictionary[passenger.transform].Move(passenger.velocity, passenger.standingOnPlatform, passenger.pushedByPlatform, passenger.platformTag);
+                passengerDictionary[passenger.transform].Move(passenger.velocity, passenger.standingOnPlatform);
             }
         }
     }
@@ -130,7 +130,7 @@ public class PlatformController : RayCastController {
                         float pushX = (directionY == 1) ? velocity.x : 0;
                         float pushY = velocity.y - (hit.distance - skinWidth) * directionY;
 
-                        passengerMovement.Add(new PassengerMovement(hit.transform, new Vector3(pushX, pushY), directionY == 1, true, 0));
+                        passengerMovement.Add(new PassengerMovement(hit.transform, new Vector3(pushX, pushY), directionY == 1, true));
                     }
 
                 }
@@ -152,7 +152,7 @@ public class PlatformController : RayCastController {
                         float pushX = velocity.x - (hit.distance - skinWidth) * directionX;
                         float pushY = -skinWidth;
                         
-                        passengerMovement.Add(new PassengerMovement(hit.transform, new Vector3(pushX, pushY), false, true, (int)directionX, GetComponent<BoxCollider2D>().tag));
+                        passengerMovement.Add(new PassengerMovement(hit.transform, new Vector3(pushX, pushY), false, true));
                     }
                 }
             }
@@ -172,7 +172,7 @@ public class PlatformController : RayCastController {
                         float pushX = velocity.x;
                         float pushY = velocity.y;
 
-                        passengerMovement.Add(new PassengerMovement(hit.transform, new Vector3(pushX, pushY), true, false, 0));
+                        passengerMovement.Add(new PassengerMovement(hit.transform, new Vector3(pushX, pushY), true, false));
                     }
 
                 }
@@ -185,16 +185,11 @@ public class PlatformController : RayCastController {
         public Vector3 velocity;
         public bool standingOnPlatform;
         public bool moveBeforePlatform;
-        public int pushedByPlatform;
-        //pushedByPlatform == 0, not pushed by platform, -1, pushed in the negative dir, 1, pushed in pos direction
-        public string platformTag;
-        public PassengerMovement(Transform _transform, Vector3 _velocity, bool _standingOnPlatform, bool _moveBeforePlatform, int _pushedByPlatform, string _platformTag = "") {
+        public PassengerMovement(Transform _transform, Vector3 _velocity, bool _standingOnPlatform, bool _moveBeforePlatform) {
             transform = _transform;
             velocity = _velocity;
             standingOnPlatform = _standingOnPlatform;
             moveBeforePlatform = _moveBeforePlatform;
-            pushedByPlatform = _pushedByPlatform;
-            platformTag = _platformTag;
         }
     }
 

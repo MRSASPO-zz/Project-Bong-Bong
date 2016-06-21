@@ -40,8 +40,8 @@ public class Player : MonoBehaviour {
     bool invulnerable; //Invulnerability period for player
 
     //These 3 of the collisionInfo that is set by the moving platform controller, the values will be reset upon when this script has its own run method
-    int pushedByPlatform;
-    string horizontalCollisionTag;
+    //int pushedByPlatform;
+    //string horizontalCollisionTag;
 
     //value to help with character switch
     int selectedChar = 0;
@@ -87,8 +87,8 @@ public class Player : MonoBehaviour {
         Vector2 joystickInput = new Vector2(CnInputManager.GetAxisRaw("Horizontal"), CnInputManager.GetAxisRaw("Vertical"));
         int wallDirX = (controller.collisions.left) ? -1 : 1; //if facing left, wallDirX = -1, else 1
 
-        pushedByPlatform = controller.pushedByPlatform;
-        horizontalCollisionTag = controller.platformTag;
+        //pushedByPlatform = controller.pushedByPlatform;
+        //horizontalCollisionTag = controller.platformTag;
 
         setSmoothedVelocityXPhysics(joystickInput);
 
@@ -101,7 +101,7 @@ public class Player : MonoBehaviour {
         JumpButtonPressed(wallDirX, wallSliding);
 
         velocity.y += gravity * Time.deltaTime; //apply gravity
-        controller.Move(velocity * Time.deltaTime, joystickInput, pushedByPlatform, horizontalCollisionTag); //move character
+        controller.Move(velocity * Time.deltaTime, joystickInput); //move character
         if (controller.collisions.above || controller.collisions.below) {
             velocity.y = 0;
         }

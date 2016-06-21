@@ -25,9 +25,9 @@ public class BossL14Controller : RayCastController {
         //Moving in the +x direction
         velocity.x = speed * Time.deltaTime;
         //y position follows player
-        //transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x, target.transform.position.y-5, transform.position.z), speed);
+        transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x, target.transform.position.y-5, transform.position.z), speed);
         Vector3 targetcurrentvelocity = target.velocity;
-        transform.position = Vector3.SmoothDamp(transform.position, new Vector3(transform.position.x, target.transform.position.y - 4, transform.position.z), ref targetcurrentvelocity, 0.2f);
+        //transform.position = Vector3.SmoothDamp(transform.position, new Vector3(transform.position.x, target.transform.position.y - 4, transform.position.z), ref targetcurrentvelocity, 0.2f);
 
         CalculatePassengerMovement(velocity);
         MovePassengers(true);
@@ -42,7 +42,7 @@ public class BossL14Controller : RayCastController {
                 passengerDictionary.Add(passenger.transform, passenger.transform.GetComponent<Controller2D>());
             }
             if (passenger.moveBeforePlatform == beforeMovePlatform) {
-                passengerDictionary[passenger.transform].Move(passenger.velocity, passenger.standingOnPlatform, passenger.pushedByPlatform, passenger.platformTag);
+                passengerDictionary[passenger.transform].Move(passenger.velocity, passenger.standingOnPlatform);
             }
         }
     }
@@ -67,7 +67,7 @@ public class BossL14Controller : RayCastController {
                         movedPassengers.Add(hit.transform);
                         float pushX = (directionY == 1) ? velocity.x : 0;
                         float pushY = velocity.y - (hit.distance - skinWidth) * directionY;
-
+                            
                         passengerMovement.Add(new PassengerMovement(hit.transform, new Vector3(pushX, pushY), directionY == 1, true, 0));
                     }
 
