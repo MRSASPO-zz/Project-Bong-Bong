@@ -911,6 +911,38 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 160020, guid: 753abdcdcb235794d8fa6a74bbc1b0a7, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 158092, guid: 753abdcdcb235794d8fa6a74bbc1b0a7, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 147356, guid: 753abdcdcb235794d8fa6a74bbc1b0a7, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 131438, guid: 753abdcdcb235794d8fa6a74bbc1b0a7, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 174448, guid: 753abdcdcb235794d8fa6a74bbc1b0a7, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 133668, guid: 753abdcdcb235794d8fa6a74bbc1b0a7, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 193242, guid: 753abdcdcb235794d8fa6a74bbc1b0a7, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 133668, guid: 753abdcdcb235794d8fa6a74bbc1b0a7, type: 2}
+      propertyPath: m_TagString
+      value: Dangerous Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 753abdcdcb235794d8fa6a74bbc1b0a7, type: 2}
   m_IsPrefabParent: 0

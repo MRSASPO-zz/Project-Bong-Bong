@@ -919,7 +919,7 @@ Prefab:
       propertyPath: m_TagString
       value: Invisible Wall
       objectReference: {fileID: 0}
-    - target: {fileID: 115580, guid: ada8612a0269ca04cbecc41b8fa7460a, type: 2}
+    - target: {fileID: 0}
       propertyPath: m_TagString
       value: Invisible Wall
       objectReference: {fileID: 0}
@@ -935,11 +935,11 @@ Prefab:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 115580, guid: ada8612a0269ca04cbecc41b8fa7460a, type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 173852, guid: ada8612a0269ca04cbecc41b8fa7460a, type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
@@ -960,6 +960,66 @@ Prefab:
       value: Invisible Wall
       objectReference: {fileID: 0}
     - target: {fileID: 146246, guid: ada8612a0269ca04cbecc41b8fa7460a, type: 2}
+      propertyPath: m_TagString
+      value: Invisible Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: Dangerous Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: Invisible Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: Invisible Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 146158, guid: ada8612a0269ca04cbecc41b8fa7460a, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 174366, guid: ada8612a0269ca04cbecc41b8fa7460a, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 174366, guid: ada8612a0269ca04cbecc41b8fa7460a, type: 2}
+      propertyPath: m_TagString
+      value: Dangerous Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 170356, guid: ada8612a0269ca04cbecc41b8fa7460a, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 159588, guid: ada8612a0269ca04cbecc41b8fa7460a, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 145740, guid: ada8612a0269ca04cbecc41b8fa7460a, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 170356, guid: ada8612a0269ca04cbecc41b8fa7460a, type: 2}
+      propertyPath: m_TagString
+      value: Invisible Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 159588, guid: ada8612a0269ca04cbecc41b8fa7460a, type: 2}
+      propertyPath: m_TagString
+      value: Invisible Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 145740, guid: ada8612a0269ca04cbecc41b8fa7460a, type: 2}
       propertyPath: m_TagString
       value: Invisible Wall
       objectReference: {fileID: 0}
