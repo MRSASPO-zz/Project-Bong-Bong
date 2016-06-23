@@ -10,6 +10,7 @@ public class BossL14Controller : RayCastController {
     public Player target;
 
     public float speed;
+    public float max_x;
 
     List<PassengerMovement> passengerMovement;
     Dictionary<Transform, Controller2D> passengerDictionary = new Dictionary<Transform, Controller2D>();
@@ -25,13 +26,16 @@ public class BossL14Controller : RayCastController {
         //Moving in the +x direction
         velocity.x = speed * Time.deltaTime;
         //y position follows player
-        transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x, target.transform.position.y-7, transform.position.z), speed*Time.deltaTime*100);
+        
         Vector3 targetcurrentvelocity = target.velocity;
+        transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x, target.transform.position.y - 11, transform.position.z), Time.deltaTime);
+        //transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x, target.transform.position.y - 7, transform.position.z), speed * Time.deltaTime * 100);
         //transform.position = Vector3.SmoothDamp(transform.position, new Vector3(transform.position.x, target.transform.position.y - 4, transform.position.z), ref targetcurrentvelocity, 0.2f);
-
         CalculatePassengerMovement(velocity);
         MovePassengers(true);
         transform.Translate(velocity);
+        float max_pos_x = Mathf.Clamp(transform.position.x, -100, max_x);
+        transform.position = new Vector3(max_pos_x, transform.position.y, transform.position.z);
         MovePassengers(false);
     }
 

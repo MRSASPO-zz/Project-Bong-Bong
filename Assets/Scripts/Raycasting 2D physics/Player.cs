@@ -132,7 +132,7 @@ public class Player : MonoBehaviour {
         {
             Die();
         }
-        
+        print(controller.collisions.verticalColliderTag);
         if(controller.collisions.verticalColliderTag == "Invisible Wall") {
             Die();
         }
@@ -142,19 +142,19 @@ public class Player : MonoBehaviour {
     {
         if (controller.collisions.velocityOld.x < 0)
         {
-            velocity.x = maxJumpVelocity/2;
+            velocity.x = maxJumpVelocity;
         }
         else if(controller.collisions.velocityOld.x > 0)
         {
-            velocity.x = -maxJumpVelocity/2;
+            velocity.x = -maxJumpVelocity;
         } 
         if (controller.collisions.velocityOld.y <= 0)
         {
-            velocity.y = maxJumpVelocity/2;
+            velocity.y = maxJumpVelocity;
         }
         else
         {
-            velocity.y = -maxJumpVelocity/2;
+            velocity.y = -maxJumpVelocity;
         }
     }
 

@@ -7,8 +7,8 @@ public class RayCastController : MonoBehaviour {
     public LayerMask collisionMask;
 
     public const float skinWidth = .015f;
-    public int horizontalRayCount = 5;
-    public int verticalRayCount = 5;
+    public int horizontalRayCount;
+    public int verticalRayCount;
 
     [HideInInspector]
     public float horizontalRaySpacing;
@@ -42,7 +42,7 @@ public class RayCastController : MonoBehaviour {
         bounds.Expand(skinWidth * -2);
 
         horizontalRayCount = Mathf.Clamp(horizontalRayCount, 2, int.MaxValue);
-        verticalRayCount = Mathf.Clamp(horizontalRayCount, 2, int.MaxValue);
+        verticalRayCount = Mathf.Clamp(verticalRayCount, 2, int.MaxValue);
 
         horizontalRaySpacing = bounds.size.y / (horizontalRayCount - 1);
         verticalRaySpacing = bounds.size.x / (verticalRayCount - 1);
