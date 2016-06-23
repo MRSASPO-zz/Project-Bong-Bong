@@ -9,6 +9,7 @@ TagManager:
   - WallJumpable
   - Dangerous Obstacle
   - Melee Enemy
+  - Lethal
   layers:
   - Default
   - TransparentFX

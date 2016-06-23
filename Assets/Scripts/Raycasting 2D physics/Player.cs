@@ -108,18 +108,9 @@ public class Player : MonoBehaviour {
 
         characterSwapButtonPressed();
 
-        if (collideWithDangerousObstacle())
-        {
-            if (!invulnerable)
-            {
-                TakeDamage();
-                Knockback();
-                invulnerability();
-                Invoke("resetInvulnerability", 3.0f);
-            }
-        }
-
-        if (controller.collisions.verticalMovementTag == "Melee Enemy" || controller.collisions.horizontalMovementTag == "Melee Enemy") {
+        bool isCollideWithDangerousObstacle = controller.collisions.horizontalColliderTag == "Dangerous Obstacle" || controller.collisions.verticalColliderTag == "Dangerous Obstacle";
+        bool isTouchingWithMeleeEnemy = controller.collisions.verticalMovementTag == "Melee Enemy" || controller.collisions.horizontalMovementTag == "Melee Enemy";
+        if (isCollideWithDangerousObstacle || isTouchingWithMeleeEnemy) {
             if (!invulnerable) {
                 TakeDamage();
                 Knockback();
@@ -128,12 +119,12 @@ public class Player : MonoBehaviour {
             }
         }
 
-        if (isDead())
+        bool isCollidingVerticallyWithInvisibleWall = controller.collisions.verticalColliderTag == "Invisible Wall";
+        bool isCollidingWithLethalObject = controller.collisions.verticalColliderTag == "Lethal" || controller.collisions.horizontalColliderTag == "Lethal";
+        print("vertical : "+controller.collisions.verticalMovementTag);
+        print("horizontal : " +controller.collisions.horizontalMovementTag);
+        if (isDead() || isCollidingVerticallyWithInvisibleWall || isCollidingWithLethalObject)
         {
-            Die();
-        }
-        print(controller.collisions.verticalColliderTag);
-        if(controller.collisions.verticalColliderTag == "Invisible Wall") {
             Die();
         }
     }
@@ -156,11 +147,6 @@ public class Player : MonoBehaviour {
         {
             velocity.y = -maxJumpVelocity;
         }
-    }
-
-    private bool collideWithDangerousObstacle()
-    {
-        return controller.collisions.horizontalColliderTag == "Dangerous Obstacle" || controller.collisions.verticalColliderTag == "Dangerous Obstacle";
     }
 
     private bool isDead()
