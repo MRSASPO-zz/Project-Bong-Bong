@@ -40,3 +40,9 @@ The level of achievement that we are aiming for is `Project: Gemini`, here we li
 By Milestone 1, we have a working prototype of our project. A demo of the app can be reached in this page tagged as `v0.1`. Currently implemented features are basic 2D platformer physics for the player and automatic camera following the player around the play area as the player moves around.
 
 By Milestone 2, we have done the death mechanics, implemented the melee enemy that patrols around the map. We have also finished up on a basic character switching. We have completed 5 levels, chapter 1 has 4 levels and it takes place in a wooded area, with moving platforms and several obstacles to cross before meeting a boss at the final level while the first level of chapter 2 takes place in a town. A demo of this app can be reached in this page under `releases` tagged as `v0.2`, here the exe file you open has levels 1-1 to 2-1, with 1-4 being the boss level as mentioned above. Levels can be changed by pressing the "Change level" button on the top right hand corner or by reaching the end goal with the flag.
+
+
+#Credits
+Thanks goes to Zack Alverdo for some of the tiles used and Author Greggman for uploading this on OpengameArt.org, link is found here: http://opengameart.org/content/platformer-tilesets
+Tilemaps are made using Tiled, the github page is as follows: https://github.com/bjorn/tiled , while the download page is as follows: http://www.mapeditor.org/
+Tilemaps are exported to Unity by means of Tiled2Unity, github page: https://github.com/Seanba/Tiled2Unity , download page: http://www.seanba.com/tiled2unity
