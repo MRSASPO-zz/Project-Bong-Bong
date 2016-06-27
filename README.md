@@ -44,5 +44,7 @@ By Milestone 2, we have done the death mechanics, implemented the melee enemy th
 
 #Credits
 Thanks goes to Zack Alverdo for some of the tiles used and Author Greggman for uploading this on OpengameArt.org, link is found here: http://opengameart.org/content/platformer-tilesets
+
 Tilemaps are made using Tiled, the github page is as follows: https://github.com/bjorn/tiled , while the download page is as follows: http://www.mapeditor.org/
+
 Tilemaps are exported to Unity by means of Tiled2Unity, github page: https://github.com/Seanba/Tiled2Unity , download page: http://www.seanba.com/tiled2unity
