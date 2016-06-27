@@ -258,7 +258,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &469495758
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -923,23 +923,51 @@ Prefab:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 131438, guid: 753abdcdcb235794d8fa6a74bbc1b0a7, type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 174448, guid: 753abdcdcb235794d8fa6a74bbc1b0a7, type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 133668, guid: 753abdcdcb235794d8fa6a74bbc1b0a7, type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 193242, guid: 753abdcdcb235794d8fa6a74bbc1b0a7, type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 133668, guid: 753abdcdcb235794d8fa6a74bbc1b0a7, type: 2}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: Dangerous Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 165832, guid: 753abdcdcb235794d8fa6a74bbc1b0a7, type: 2}
+      propertyPath: m_TagString
+      value: Dangerous Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 115184, guid: 753abdcdcb235794d8fa6a74bbc1b0a7, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 165832, guid: 753abdcdcb235794d8fa6a74bbc1b0a7, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 184412, guid: 753abdcdcb235794d8fa6a74bbc1b0a7, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 178014, guid: 753abdcdcb235794d8fa6a74bbc1b0a7, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 184412, guid: 753abdcdcb235794d8fa6a74bbc1b0a7, type: 2}
+      propertyPath: m_TagString
+      value: Dangerous Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 115184, guid: 753abdcdcb235794d8fa6a74bbc1b0a7, type: 2}
       propertyPath: m_TagString
       value: Dangerous Obstacle
       objectReference: {fileID: 0}
@@ -966,7 +994,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1337768791
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1249,11 +1277,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 476720, guid: 72a2d5ce34c69be449465f3f5b8ae49f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 4.01
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 476720, guid: 72a2d5ce34c69be449465f3f5b8ae49f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -54.94
+      value: -53
       objectReference: {fileID: 0}
     - target: {fileID: 476720, guid: 72a2d5ce34c69be449465f3f5b8ae49f, type: 2}
       propertyPath: m_LocalPosition.z
