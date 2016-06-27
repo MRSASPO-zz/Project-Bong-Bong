@@ -13,10 +13,11 @@ We aim to provide an enriching and enjoyable experience for people of all ages i
 We hope to be able to bring out the best of mobile gaming and show to the world that it can be as good as any other forms of gaming.
 
 #Features Planned to be done by the next milestone
-* 2D platform physics to be done (Including but not limited to moving platforms, wall jumps, slopes, "dangerous" obstacles) - Done except for "dangerous" obstacles.
-* Enemies and basic enemy AI (At least melee units with simple collisions mechanics)
-* Death mechanics for player and enemies
-* Switching mechanics between the 3 available player characters
+* finish up the rest of the chapters
+* include game music and animations
+* do up a game-win screen to transition to next stage
+* do up a pause screen and a start screen
+* action mechanics for the other 2 characters (char1's jump is already done)
 
 #Proposed Level of Achievement
 The level of achievement that we are aiming for is `Project: Gemini`, here we list the requirements as stated below:
@@ -38,4 +39,4 @@ The level of achievement that we are aiming for is `Project: Gemini`, here we li
 #Milestones
 By Milestone 1, we have a working prototype of our project. A demo of the app can be reached in this page tagged as `v0.1`. Currently implemented features are basic 2D platformer physics for the player and automatic camera following the player around the play area as the player moves around.
 
-By Milestone 2, we plan to start on the implementation of death mechanics and 2 different enemy types, 1 ranged and 1 melee. In addition, we also plan to do basic pathfinding for these enemies. Also we plan to do 2 bosses with differing mechanics. 
+By Milestone 2, we have done the death mechanics, implemented the melee enemy that patrols around the map. We have also finished up on a basic character switching. We have completed 5 levels, chapter 1 has 4 levels and it takes place in a wooded area, with moving platforms and several obstacles to cross before meeting a boss at the final level while the first level of chapter 2 takes place in a town. A demo of this app can be reached in this page tagged as `v0.2`, here the exe file you open has levels 1-1 to 2-1, with 1-4 being the boss level as mentioned above. Levels can be changed by pressing the "Change level" button on the top right hand corner or by reaching the end goal with the flag.
