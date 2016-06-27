@@ -39,28 +39,8 @@ public class Player : MonoBehaviour {
     Controller2D controller; //Controller2D handles the actual movement of the transforms, Player class only deals with the physical calculations
     bool invulnerable; //Invulnerability period for player
 
-    //These 3 of the collisionInfo that is set by the moving platform controller, the values will be reset upon when this script has its own run method
-    //int pushedByPlatform;
-    //string horizontalCollisionTag;
-
     //value to help with character switch
     int selectedChar = 0;
-
-    public int GetCurrHealth() {
-        return maxHealth - damage;
-    }
-
-    public void TakeDamage() {
-        this.damage += 1;
-    }
-
-    public void TakeLethalDamage() {
-        this.damage = this.maxHealth;
-    }
-
-    public void Heal() {
-        this.damage -= 1;
-    }
 
     void Start() {
         controller = GetComponent<Controller2D>(); //Attaches a controller2D script to gameobject
@@ -86,30 +66,39 @@ public class Player : MonoBehaviour {
     void Update() {
         Vector2 joystickInput = new Vector2(CnInputManager.GetAxisRaw("Horizontal"), CnInputManager.GetAxisRaw("Vertical"));
         int wallDirX = (controller.collisions.left) ? -1 : 1; //if facing left, wallDirX = -1, else 1
-
-        //pushedByPlatform = controller.pushedByPlatform;
-        //horizontalCollisionTag = controller.platformTag;
-
         setSmoothedVelocityXPhysics(joystickInput);
 
-        bool wallSliding = false;
-        if (isFallingAndTouchingWall()) {
-            wallSliding = true; // Set sprites here if wall jumping
-            setWallSlidePhysics(joystickInput, wallDirX);
+        if (char1.activeSelf) {
+            //Maru, maru can jump but cannot do anything else
+            bool wallSliding = false;
+            if (isFallingAndTouchingWall()) {
+                wallSliding = true; // Set sprites here if wall jumping
+                setWallSlidePhysics(joystickInput, wallDirX);
+            }
+            JumpButtonPressed(wallDirX, wallSliding);
+        } else if (char2.activeSelf) {
+            //CODE HERE for Kaku's punch attack, nothing about wall sliding or jumping because he doesn't use it
+        } else if (char3.activeSelf) {
+            //CODE HERE for Kone's ranged attack
         }
-
-        JumpButtonPressed(wallDirX, wallSliding);
 
         velocity.y += gravity * Time.deltaTime; //apply gravity
         controller.Move(velocity * Time.deltaTime, joystickInput); //move character
+
         if (controller.collisions.above || controller.collisions.below) {
             velocity.y = 0;
         }
 
         characterSwapButtonPressed();
 
+        checkAndTriggerDamage();
+        checkAndTriggerDeath();
+    }
+
+    private void checkAndTriggerDamage() {
         bool isCollideWithDangerousObstacle = controller.collisions.horizontalColliderTag == "Dangerous Obstacle" || controller.collisions.verticalColliderTag == "Dangerous Obstacle";
         bool isTouchingWithMeleeEnemy = controller.collisions.verticalMovementTag == "Melee Enemy" || controller.collisions.horizontalMovementTag == "Melee Enemy";
+
         if (isCollideWithDangerousObstacle || isTouchingWithMeleeEnemy) {
             if (!invulnerable) {
                 TakeDamage();
@@ -118,13 +107,13 @@ public class Player : MonoBehaviour {
                 Invoke("resetInvulnerability", 3.0f);
             }
         }
+    }
 
+    private void checkAndTriggerDeath() {
         bool isCollidingVerticallyWithInvisibleWall = controller.collisions.verticalColliderTag == "Invisible Wall";
         bool isCollidingWithLethalObject = controller.collisions.verticalColliderTag == "Lethal" || controller.collisions.horizontalColliderTag == "Lethal";
-        print("vertical : "+controller.collisions.verticalMovementTag);
-        print("horizontal : " +controller.collisions.horizontalMovementTag);
-        if (isDead() || isCollidingVerticallyWithInvisibleWall || isCollidingWithLethalObject)
-        {
+        bool isDead = GetCurrHealth() <= 0;
+        if (isDead || isCollidingVerticallyWithInvisibleWall || isCollidingWithLethalObject) {
             Die();
         }
     }
@@ -149,11 +138,6 @@ public class Player : MonoBehaviour {
         }
     }
 
-    private bool isDead()
-    {
-        return GetCurrHealth() <= 0;
-    }
-
     public void invulnerability()
     {
         invulnerable = true;
@@ -164,11 +148,42 @@ public class Player : MonoBehaviour {
         invulnerable = false;
     }
 
+    //When the swap is pressed
+    private void characterSwapButtonPressed() {
+        if (CnInputManager.GetButtonUp("Fire1")) {
+            characterSwap();
+        }
+    }
+
+    private void characterSwap() {
+        //Check for assignment, if not assigned then returns
+        print(selectedChar);
+        selectedChar = (selectedChar + 1) % 3;
+        switch (selectedChar) {
+            case 0: //1st char
+                char1.SetActive(true);
+                char2.SetActive(false);
+                char3.SetActive(false);
+                break;
+            case 1://2nd char
+                char1.SetActive(false);
+                char2.SetActive(true);
+                char3.SetActive(false);
+                break;
+            case 2://last char
+                char1.SetActive(false);
+                char2.SetActive(false);
+                char3.SetActive(true);
+                break;
+        }
+    }
+
+    //These few functions deal with the several character based button inputs, the button used here is "Jump" but the character may not jump if its not char1 etc.
     private void JumpButtonPressed(int wallDirX, bool wallSliding) {
         if (CnInputManager.GetButtonDown("Jump")) {
             if (wallSliding) {
                 print(controller.collisions.horizontalColliderTag);
-                if(controller.collisions.horizontalColliderTag == "WallJumpable") {
+                if (controller.collisions.horizontalColliderTag == "WallJumpable") {
                     setWallJumpPhysics(wallDirX);
                 }
             }
@@ -184,40 +199,38 @@ public class Player : MonoBehaviour {
         }
     }
 
-    private void characterSwapButtonPressed() {
-        if (CnInputManager.GetButtonUp("Fire1")) {
-            if (controller.collisions.below) {
-                selectedChar = (selectedChar + 1) % 3;
-                switch (selectedChar) {
-                    case 0: //1st char
-                        char1.SetActive(true);
-                        char2.SetActive(false);
-                        char3.SetActive(false);
-                        break;
-                    case 1://2nd char
-                        char1.SetActive(false);
-                        char2.SetActive(true);
-                        char3.SetActive(false);
-                        break;
-                    case 2://last char
-                        char1.SetActive(false);
-                        char2.SetActive(false);
-                        char3.SetActive(true);
-                        break;
-                }
-            }
-            //Debug.Log("char1 active = " + char1.activeSelf + "; char2 active = " + char2.activeSelf + "; char3.active = " + char3.activeSelf);
-        }
+    private void AttackButtonPressed() {
+
     }
 
     private void setSmoothedVelocityXPhysics(Vector2 joystickInput) {
-        float targetVelocityX = joystickInput.x * moveSpeed;
-        velocity.x = Mathf.SmoothDamp(
-            velocity.x,
-            targetVelocityX,
-            ref velocityXSmoothing,
-            (controller.collisions.below ? accelerationTimeGrounded : accelerationTimeAirborne)
-            );
+        float targetVelocityX;
+        if (char1.activeSelf) {
+            targetVelocityX = joystickInput.x * moveSpeed;
+            velocity.x = Mathf.SmoothDamp(
+                velocity.x,
+                targetVelocityX,
+                ref velocityXSmoothing,
+                (controller.collisions.below ? accelerationTimeGrounded : accelerationTimeAirborne)
+                );
+        } else if (char2.activeSelf) {
+            targetVelocityX = joystickInput.x * moveSpeed/2;
+            velocity.x = Mathf.SmoothDamp(
+                velocity.x,
+                targetVelocityX,
+                ref velocityXSmoothing,
+                (controller.collisions.below ? accelerationTimeGrounded : accelerationTimeAirborne)
+                );
+        } else if(char3.activeSelf) {
+            targetVelocityX = 0;
+            velocity.x = Mathf.SmoothDamp(
+                velocity.x,
+                targetVelocityX,
+                ref velocityXSmoothing,
+                (controller.collisions.below ? accelerationTimeGrounded : accelerationTimeAirborne)
+                );
+        }
+        
     }
 
     private void setWallJumpPhysics(int wallDirX) {
@@ -254,5 +267,21 @@ public class Player : MonoBehaviour {
     {
         //Restart
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public int GetCurrHealth() {
+        return maxHealth - damage;
+    }
+
+    public void TakeDamage() {
+        this.damage += 1;
+    }
+
+    public void TakeLethalDamage() {
+        this.damage = this.maxHealth;
+    }
+
+    public void Heal() {
+        this.damage -= 1;
     }
 }
