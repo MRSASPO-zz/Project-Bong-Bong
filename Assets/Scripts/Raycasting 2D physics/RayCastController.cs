@@ -35,6 +35,9 @@ public class RayCastController : MonoBehaviour {
         raycastOrigins.bottomRight = new Vector2(bounds.max.x, bounds.min.y);
         raycastOrigins.topLeft = new Vector2(bounds.min.x, bounds.max.y);
         raycastOrigins.topRight = new Vector2(bounds.max.x, bounds.max.y);
+
+        raycastOrigins.centerLeft = new Vector2(bounds.min.x, bounds.center.y);
+        raycastOrigins.centerRight = new Vector2(bounds.max.x, bounds.center.y);
     }
 
     public void calculateRaySpacing() {
@@ -51,5 +54,6 @@ public class RayCastController : MonoBehaviour {
     public struct RaycastOrigins {
         public Vector2 topLeft, topRight;
         public Vector2 bottomLeft, bottomRight;
+        public Vector2 centerLeft, centerRight;
     }
 }
