@@ -42,12 +42,21 @@ public class Player : MonoBehaviour {
     //value to help with character switch
     int selectedChar = 0;
 
-    void Start() {
+    [HideInInspector]
+    public bool melee;
+    public Collider2D attackTriggerLeft;
+    public Collider2D attackTriggerRight;
+    public float meleeAttackCooldown;
+    private float meeleeAttackTimer;
+
+    void Awake() {
         controller = GetComponent<Controller2D>(); //Attaches a controller2D script to gameobject
         setGravityPhysics();
         ActivateChar1();
         damage = 0;
         invulnerable = false;
+        attackTriggerRight.enabled = false;
+        attackTriggerLeft.enabled = false;
     }
 
     private void setGravityPhysics() {
@@ -78,6 +87,7 @@ public class Player : MonoBehaviour {
             JumpButtonPressed(wallDirX, wallSliding);
         } else if (char2.activeSelf) {
             //CODE HERE for Kaku's punch attack, nothing about wall sliding or jumping because he doesn't use it
+            MeleeButtonPressed(joystickInput);
         } else if (char3.activeSelf) {
             //CODE HERE for Kone's ranged attack
         }
@@ -157,7 +167,6 @@ public class Player : MonoBehaviour {
 
     private void characterSwap() {
         //Check for assignment, if not assigned then returns
-        print(selectedChar);
         selectedChar = (selectedChar + 1) % 3;
         switch (selectedChar) {
             case 0: //1st char
@@ -199,8 +208,29 @@ public class Player : MonoBehaviour {
         }
     }
 
-    private void AttackButtonPressed() {
+    private void MeleeButtonPressed(Vector2 joyStickInput) {
+        if (CnInputManager.GetButtonDown("Jump") && !melee) {
+            melee = true;
+            meeleeAttackTimer = meleeAttackCooldown;
+            int dirX = controller.collisions.faceDirection;
+            if (dirX > 0) {
+                attackTriggerRight.enabled = true;
+            } else {
+                attackTriggerLeft.enabled = true;
+            }
+        }
+        if (melee) {
+            if (meeleeAttackTimer > 0) {
+                meeleeAttackTimer -= Time.deltaTime;
 
+                
+            } else {
+                melee = false;
+                attackTriggerLeft.enabled = false;
+                attackTriggerRight.enabled = false;
+            }
+        }
+        //anim.SetBool("Melee", melee);
     }
 
     private void setSmoothedVelocityXPhysics(Vector2 joystickInput) {

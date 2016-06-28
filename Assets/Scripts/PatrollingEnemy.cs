@@ -40,4 +40,8 @@ public class PatrollingEnemy : MonoBehaviour {
         }
     }
 
+    void Damage(int dmg) {
+        print("damage: " + dmg);
+    }
+
 }
