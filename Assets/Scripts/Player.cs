@@ -29,7 +29,7 @@ public class Player : MonoBehaviour {
     //hidden values that deal with character movement are in this section
     float accelerationTimeAirborne = .2f;
     float accelerationTimeGrounded = .1f;
-    float timeToJumpApex = .3f;
+    float timeToJumpApex = .35f;
     float gravity;
     float maxJumpVelocity;
     float minJumpVelocity;
@@ -107,15 +107,17 @@ public class Player : MonoBehaviour {
 
     private void checkAndTriggerDamage() {
         bool isCollideWithDangerousObstacle = controller.collisions.horizontalColliderTag == "Dangerous Obstacle" || controller.collisions.verticalColliderTag == "Dangerous Obstacle";
-        bool isTouchingWithMeleeEnemy = controller.collisions.verticalMovementTag == "Melee Enemy" || controller.collisions.horizontalMovementTag == "Melee Enemy";
+        if (isCollideWithDangerousObstacle) {
+            Damage();
+        }
+    }
 
-        if (isCollideWithDangerousObstacle || isTouchingWithMeleeEnemy) {
-            if (!invulnerable) {
-                TakeDamage();
-                Knockback();
-                invulnerability();
-                Invoke("resetInvulnerability", 3.0f);
-            }
+    public void Damage() {
+        if (!invulnerable) {
+            TakeDamage();
+            Knockback();
+            invulnerability();
+            Invoke("resetInvulnerability", 3.0f);
         }
     }
 

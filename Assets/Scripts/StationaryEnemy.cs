@@ -3,17 +3,21 @@ using System.Collections;
 
 public class StationaryEnemy : MonoBehaviour {
     public int health;
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    
+    void Update() {
+        if(health <= 0) {
+            Destroy(gameObject);
+        }
+    }
 
-    void Damage(int damage) {
+    public void Damage(int dmg) {
+        health -= dmg;
+        print("health: " + health);
+    }
 
+    void OnTriggerEnter2D(Collider2D col) {
+        if (!col.isTrigger && col.CompareTag("Player")) {
+            col.SendMessageUpwards("Damage");
+        }
     }
 }

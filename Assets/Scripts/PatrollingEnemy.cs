@@ -39,9 +39,10 @@ public class PatrollingEnemy : MonoBehaviour {
             velocity.y = 0;
         }
     }
-
-    void Damage(int dmg) {
-        print("damage: " + dmg);
+    //Deals damage to player
+    void OnTriggerStay2D(Collider2D col) {
+        if (!col.isTrigger && col.CompareTag("Player")) {
+            col.SendMessageUpwards("Damage");
+        }
     }
-
 }

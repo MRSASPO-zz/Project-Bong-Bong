@@ -8,8 +8,9 @@ TagManager:
   - Invisible Wall
   - WallJumpable
   - Dangerous Obstacle
-  - Melee Enemy
+  - Melee Enemy (Through)
   - Lethal
+  - Melee Enemy
   layers:
   - Default
   - TransparentFX
