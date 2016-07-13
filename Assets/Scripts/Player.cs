@@ -21,7 +21,7 @@ public class Player : MonoBehaviour {
     //these public values are there to attach to each of the Child game object within the Player Manager object
     public GameObject char1;
     public GameObject char2;
-    public GameObject char3;
+    //public GameObject char3;
 
     readonly int maxHealth = 3;
     public int damage;
@@ -69,7 +69,7 @@ public class Player : MonoBehaviour {
         selectedChar = 0;
         char1.SetActive(true);
         char2.SetActive(false);
-        char3.SetActive(false);
+        //char3.SetActive(false);
     }
 
     void Update() {
@@ -88,9 +88,10 @@ public class Player : MonoBehaviour {
         } else if (char2.activeSelf) {
             //CODE HERE for Kaku's punch attack, nothing about wall sliding or jumping because he doesn't use it
             MeleeButtonPressed(joystickInput);
-        } else if (char3.activeSelf) {
+        } 
+        //else if (char3.activeSelf) {
             //CODE HERE for Kone's ranged attack
-        }
+        //}
 
         velocity.y += gravity * Time.deltaTime; //apply gravity
         controller.Move(velocity * Time.deltaTime, joystickInput); //move character
@@ -169,23 +170,24 @@ public class Player : MonoBehaviour {
 
     private void characterSwap() {
         //Check for assignment, if not assigned then returns
-        selectedChar = (selectedChar + 1) % 3;
+        //selectedChar = (selectedChar + 1) % 3;
+        selectedChar = (selectedChar + 1) % 2;
         switch (selectedChar) {
             case 0: //1st char
                 char1.SetActive(true);
                 char2.SetActive(false);
-                char3.SetActive(false);
+                //char3.SetActive(false);
                 break;
             case 1://2nd char
                 char1.SetActive(false);
                 char2.SetActive(true);
-                char3.SetActive(false);
+                //char3.SetActive(false);
                 break;
-            case 2://last char
-                char1.SetActive(false);
-                char2.SetActive(false);
-                char3.SetActive(true);
-                break;
+            //case 2://last char
+                //char1.SetActive(false);
+                //char2.SetActive(false);
+                //char3.SetActive(true);
+                //break;
         }
     }
 
@@ -253,15 +255,16 @@ public class Player : MonoBehaviour {
                 ref velocityXSmoothing,
                 (controller.collisions.below ? accelerationTimeGrounded : accelerationTimeAirborne)
                 );
-        } else if(char3.activeSelf) {
-            targetVelocityX = 0;
-            velocity.x = Mathf.SmoothDamp(
-                velocity.x,
-                targetVelocityX,
-                ref velocityXSmoothing,
-                (controller.collisions.below ? accelerationTimeGrounded : accelerationTimeAirborne)
-                );
-        }
+        } 
+        //else if(char3.activeSelf) {
+            //targetVelocityX = 0;
+            //velocity.x = Mathf.SmoothDamp(
+                //velocity.x,
+                //targetVelocityX,
+                //ref velocityXSmoothing,
+                //(controller.collisions.below ? accelerationTimeGrounded : accelerationTimeAirborne)
+                //);
+        //}
         
     }
 
