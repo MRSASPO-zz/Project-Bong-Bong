@@ -70,7 +70,6 @@ public class Controller2D : RayCastController {
             rayOriginFront += Vector2.up * (horizontalRaySpacing * i);
             rayOriginBack += Vector2.up * (horizontalRaySpacing * i);
             RaycastHit2D collisionHit = Physics2D.Raycast(rayOriginFront, Vector2.right * directionX, rayLength, collisionMask);
-            RaycastHit2D movementHit = Physics2D.Raycast(rayOriginFront, Vector2.right * directionX, rayLength, movingObjectsMask);
             RaycastHit2D backwardsHit = Physics2D.Raycast(rayOriginBack, Vector2.right * directionX * -1, rayLength, collisionMask);
             Debug.DrawRay(rayOriginFront, Vector2.right * directionX * rayLength, Color.red);
 
@@ -108,11 +107,6 @@ public class Controller2D : RayCastController {
                     collisions.horizontalColliderTag = collisionHit.collider.tag; //Check if the tag is the invisiblewall
                 }
             }
-
-            if (movementHit) {
-                collisions.horizontalMovementTag = movementHit.collider.tag;
-            }
-
             if (backwardsHit) {
                 collisions.left = (directionX == 1);
                 collisions.right = (directionX == -1);
@@ -129,7 +123,6 @@ public class Controller2D : RayCastController {
             Vector2 rayOrigin = (directionY == -1) ? raycastOrigins.bottomLeft : raycastOrigins.topLeft;
             rayOrigin += Vector2.right * (verticalRaySpacing * i + velocity.x);
             RaycastHit2D collisionHit = Physics2D.Raycast(rayOrigin, Vector2.up * directionY, rayLength, collisionMask);
-            RaycastHit2D movementHit = Physics2D.Raycast(rayOrigin, Vector2.right * directionY, rayLength, movingObjectsMask);
 
             Debug.DrawRay(rayOrigin, Vector2.up * directionY * rayLength, Color.red);
 
@@ -159,12 +152,6 @@ public class Controller2D : RayCastController {
                 collisions.above = (directionY == 1); //else set up to true
                 collisions.verticalColliderTag = collisionHit.collider.tag;
             }
-
-            if (movementHit) {
-                collisions.verticalMovementTag = movementHit.collider.tag;
-            }
-
-
         }
         if (collisions.climbingSlope) {
             float directionX = Mathf.Sign(velocity.x);
@@ -233,8 +220,6 @@ public class Controller2D : RayCastController {
         public bool fallingThroughPlatform;
         public string horizontalColliderTag;
         public string verticalColliderTag;
-        public string horizontalMovementTag;
-        public string verticalMovementTag;
 
         public void Reset() {
             above = below = false;
@@ -246,8 +231,6 @@ public class Controller2D : RayCastController {
             slopeAngle = 0;
             horizontalColliderTag = "";
             verticalColliderTag = "";
-            horizontalMovementTag = "";
-            verticalMovementTag = "";
         }
     }
 }

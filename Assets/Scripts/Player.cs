@@ -21,7 +21,7 @@ public class Player : MonoBehaviour {
     //these public values are there to attach to each of the Child game object within the Player Manager object
     public GameObject char1;
     public GameObject char2;
-    public GameObject char3;
+    //public GameObject char3;
 
     readonly int maxHealth = 3;
     public int damage;
@@ -29,7 +29,7 @@ public class Player : MonoBehaviour {
     //hidden values that deal with character movement are in this section
     float accelerationTimeAirborne = .2f;
     float accelerationTimeGrounded = .1f;
-    float timeToJumpApex = .3f;
+    float timeToJumpApex = .35f;
     float gravity;
     float maxJumpVelocity;
     float minJumpVelocity;
@@ -42,12 +42,21 @@ public class Player : MonoBehaviour {
     //value to help with character switch
     int selectedChar = 0;
 
-    void Start() {
+    [HideInInspector]
+    public bool melee;
+    public Collider2D attackTriggerLeft;
+    public Collider2D attackTriggerRight;
+    public float meleeAttackCooldown;
+    private float meeleeAttackTimer;
+
+    void Awake() {
         controller = GetComponent<Controller2D>(); //Attaches a controller2D script to gameobject
         setGravityPhysics();
         ActivateChar1();
         damage = 0;
         invulnerable = false;
+        attackTriggerRight.enabled = false;
+        attackTriggerLeft.enabled = false;
     }
 
     private void setGravityPhysics() {
@@ -60,7 +69,7 @@ public class Player : MonoBehaviour {
         selectedChar = 0;
         char1.SetActive(true);
         char2.SetActive(false);
-        char3.SetActive(false);
+        //char3.SetActive(false);
     }
 
     void Update() {
@@ -78,9 +87,11 @@ public class Player : MonoBehaviour {
             JumpButtonPressed(wallDirX, wallSliding);
         } else if (char2.activeSelf) {
             //CODE HERE for Kaku's punch attack, nothing about wall sliding or jumping because he doesn't use it
-        } else if (char3.activeSelf) {
+            MeleeButtonPressed(joystickInput);
+        } 
+        //else if (char3.activeSelf) {
             //CODE HERE for Kone's ranged attack
-        }
+        //}
 
         velocity.y += gravity * Time.deltaTime; //apply gravity
         controller.Move(velocity * Time.deltaTime, joystickInput); //move character
@@ -97,15 +108,17 @@ public class Player : MonoBehaviour {
 
     private void checkAndTriggerDamage() {
         bool isCollideWithDangerousObstacle = controller.collisions.horizontalColliderTag == "Dangerous Obstacle" || controller.collisions.verticalColliderTag == "Dangerous Obstacle";
-        bool isTouchingWithMeleeEnemy = controller.collisions.verticalMovementTag == "Melee Enemy" || controller.collisions.horizontalMovementTag == "Melee Enemy";
+        if (isCollideWithDangerousObstacle) {
+            Damage();
+        }
+    }
 
-        if (isCollideWithDangerousObstacle || isTouchingWithMeleeEnemy) {
-            if (!invulnerable) {
-                TakeDamage();
-                Knockback();
-                invulnerability();
-                Invoke("resetInvulnerability", 3.0f);
-            }
+    public void Damage() {
+        if (!invulnerable) {
+            TakeDamage();
+            Knockback();
+            invulnerability();
+            Invoke("resetInvulnerability", 3.0f);
         }
     }
 
@@ -157,24 +170,24 @@ public class Player : MonoBehaviour {
 
     private void characterSwap() {
         //Check for assignment, if not assigned then returns
-        print(selectedChar);
-        selectedChar = (selectedChar + 1) % 3;
+        //selectedChar = (selectedChar + 1) % 3;
+        selectedChar = (selectedChar + 1) % 2;
         switch (selectedChar) {
             case 0: //1st char
                 char1.SetActive(true);
                 char2.SetActive(false);
-                char3.SetActive(false);
+                //char3.SetActive(false);
                 break;
             case 1://2nd char
                 char1.SetActive(false);
                 char2.SetActive(true);
-                char3.SetActive(false);
+                //char3.SetActive(false);
                 break;
-            case 2://last char
-                char1.SetActive(false);
-                char2.SetActive(false);
-                char3.SetActive(true);
-                break;
+            //case 2://last char
+                //char1.SetActive(false);
+                //char2.SetActive(false);
+                //char3.SetActive(true);
+                //break;
         }
     }
 
@@ -199,8 +212,29 @@ public class Player : MonoBehaviour {
         }
     }
 
-    private void AttackButtonPressed() {
+    private void MeleeButtonPressed(Vector2 joyStickInput) {
+        if (CnInputManager.GetButtonDown("Jump") && !melee) {
+            melee = true;
+            meeleeAttackTimer = meleeAttackCooldown;
+            int dirX = controller.collisions.faceDirection;
+            if (dirX > 0) {
+                attackTriggerRight.enabled = true;
+            } else {
+                attackTriggerLeft.enabled = true;
+            }
+        }
+        if (melee) {
+            if (meeleeAttackTimer > 0) {
+                meeleeAttackTimer -= Time.deltaTime;
 
+                
+            } else {
+                melee = false;
+                attackTriggerLeft.enabled = false;
+                attackTriggerRight.enabled = false;
+            }
+        }
+        //anim.SetBool("Melee", melee);
     }
 
     private void setSmoothedVelocityXPhysics(Vector2 joystickInput) {
@@ -221,15 +255,16 @@ public class Player : MonoBehaviour {
                 ref velocityXSmoothing,
                 (controller.collisions.below ? accelerationTimeGrounded : accelerationTimeAirborne)
                 );
-        } else if(char3.activeSelf) {
-            targetVelocityX = 0;
-            velocity.x = Mathf.SmoothDamp(
-                velocity.x,
-                targetVelocityX,
-                ref velocityXSmoothing,
-                (controller.collisions.below ? accelerationTimeGrounded : accelerationTimeAirborne)
-                );
-        }
+        } 
+        //else if(char3.activeSelf) {
+            //targetVelocityX = 0;
+            //velocity.x = Mathf.SmoothDamp(
+                //velocity.x,
+                //targetVelocityX,
+                //ref velocityXSmoothing,
+                //(controller.collisions.below ? accelerationTimeGrounded : accelerationTimeAirborne)
+                //);
+        //}
         
     }
 

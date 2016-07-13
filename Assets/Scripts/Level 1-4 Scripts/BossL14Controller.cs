@@ -27,7 +27,6 @@ public class BossL14Controller : RayCastController {
         velocity.x = speed * Time.deltaTime;
         //y position follows player
         
-        Vector3 targetcurrentvelocity = target.velocity;
         transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x, target.transform.position.y - 11, transform.position.z), Time.deltaTime);
         //transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x, target.transform.position.y - 7, transform.position.z), speed * Time.deltaTime * 100);
         //transform.position = Vector3.SmoothDamp(transform.position, new Vector3(transform.position.x, target.transform.position.y - 4, transform.position.z), ref targetcurrentvelocity, 0.2f);

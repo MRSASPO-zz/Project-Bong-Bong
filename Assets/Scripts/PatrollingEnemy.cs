@@ -16,19 +16,19 @@ public class PatrollingEnemy : MonoBehaviour {
     void Start() {
         controller = GetComponent<Controller2D>();
         image = GetComponent<SpriteRenderer>();
+        image.flipX = !image.flipX;
         gravity = -(2 * 2.5f) / Mathf.Pow(0.3f, 2); //"max jump height" = 2.5, "time to apex" = 0.3f, equiv values for the player
-        directionX = -1; //initially moving leftwards
+        directionX = 1; //initially moving leftwards
     }
 
     void Update() {
-        Vector2 rayOrigin = (directionX == -1) ? controller.raycastOrigins.bottomLeft : controller.raycastOrigins.bottomRight;
+        Vector2 rayOrigin = (directionX == 1) ? controller.raycastOrigins.bottomRight : controller.raycastOrigins.bottomLeft;
         float rayLength = 2*.015f;
         RaycastHit2D collisionHit = Physics2D.Raycast(rayOrigin, Vector2.right * directionX, rayLength, enemyCollisionMask);
         RaycastHit2D wallHit = Physics2D.Raycast(rayOrigin, Vector2.right * directionX, rayLength, wallMask);
-        Debug.DrawRay(rayOrigin, Vector2.right * directionX * rayLength, Color.blue);
 
         if (collisionHit ||wallHit) {
-            directionX = directionX / -1;
+            directionX = directionX * -1;
             image.flipX = !image.flipX;
         }
         velocity.x = directionX * speed;
@@ -39,5 +39,10 @@ public class PatrollingEnemy : MonoBehaviour {
             velocity.y = 0;
         }
     }
-
+    //Deals damage to player
+    void OnTriggerStay2D(Collider2D col) {
+        if (!col.isTrigger && col.CompareTag("Player")) {
+            col.SendMessageUpwards("Damage");
+        }
+    }
 }
