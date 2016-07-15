@@ -1,0 +1,347 @@
+fileFormatVersion: 2
+guid: e50b9ae43a8470543bc2ed53fc464cb0
+timeCreated: 1468561520
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: The Slaver_0
+    21300002: The Slaver_1
+    21300004: The Slaver_2
+    21300006: The Slaver_3
+    21300008: The Slaver_4
+    21300010: The Slaver_5
+    21300012: The Slaver_6
+    21300014: The Slaver_7
+    21300016: The Slaver_8
+    21300018: The Slaver_9
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 32
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: The Slaver_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 38, y: 27}
+        - {x: 38, y: 34}
+        - {x: 50, y: 28}
+        - {x: 57, y: 30}
+        - {x: 57, y: 49}
+        - {x: 54, y: 96}
+        - {x: 53, y: 99}
+        - {x: 58, y: 109}
+        - {x: 55, y: 116}
+        - {x: 52, y: 118}
+        - {x: 32, y: 118}
+        - {x: 22, y: 116}
+        - {x: 7, y: 118}
+        - {x: -58, y: 118}
+        - {x: -128, y: 63}
+        - {x: -128, y: -20}
+        - {x: -96, y: -124}
+        - {x: 85, y: -124}
+        - {x: 128, y: -7}
+        - {x: 128, y: 10}
+    - name: The Slaver_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 38, y: 27}
+        - {x: 38, y: 34}
+        - {x: 50, y: 28}
+        - {x: 57, y: 30}
+        - {x: 57, y: 49}
+        - {x: 54, y: 96}
+        - {x: 53, y: 99}
+        - {x: 58, y: 109}
+        - {x: 55, y: 116}
+        - {x: 52, y: 118}
+        - {x: 32, y: 118}
+        - {x: 22, y: 116}
+        - {x: 7, y: 118}
+        - {x: -58, y: 118}
+        - {x: -128, y: 63}
+        - {x: -128, y: -20}
+        - {x: -96, y: -124}
+        - {x: 85, y: -124}
+        - {x: 128, y: -7}
+        - {x: 128, y: 10}
+    - name: The Slaver_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 38, y: 29}
+        - {x: 38, y: 36}
+        - {x: 50, y: 30}
+        - {x: 57, y: 32}
+        - {x: 68, y: 58}
+        - {x: 58, y: 120}
+        - {x: -80, y: 120}
+        - {x: -128, y: 13}
+        - {x: -128, y: -26}
+        - {x: -77, y: -128}
+        - {x: 87, y: -128}
+        - {x: 128, y: -5}
+        - {x: 128, y: 10}
+    - name: The Slaver_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 38, y: 28}
+        - {x: 38, y: 35}
+        - {x: 50, y: 29}
+        - {x: 57, y: 31}
+        - {x: 57, y: 50}
+        - {x: 54, y: 97}
+        - {x: 53, y: 100}
+        - {x: 58, y: 110}
+        - {x: 55, y: 117}
+        - {x: 52, y: 119}
+        - {x: 32, y: 119}
+        - {x: 22, y: 117}
+        - {x: 7, y: 119}
+        - {x: -57, y: 119}
+        - {x: -128, y: 59}
+        - {x: -128, y: -48}
+        - {x: -93, y: -126}
+        - {x: 95, y: -126}
+        - {x: 128, y: -7}
+        - {x: 128, y: 10}
+    - name: The Slaver_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 45, y: -128}
+        - {x: 102, y: -117}
+        - {x: 128, y: -8}
+        - {x: 128, y: 20}
+        - {x: 38, y: 30}
+        - {x: 38, y: 37}
+        - {x: 50, y: 31}
+        - {x: 57, y: 33}
+        - {x: 68, y: 59}
+        - {x: 58, y: 121}
+        - {x: -70, y: 121}
+        - {x: -128, y: 12}
+        - {x: -128, y: -27}
+        - {x: -77, y: -128}
+        - {x: -52, y: -128}
+        - {x: -18, y: -111}
+        - {x: -19, y: -108}
+        - {x: 32, y: -128}
+    - name: The Slaver_5
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 38, y: 31}
+        - {x: 38, y: 38}
+        - {x: 50, y: 32}
+        - {x: 57, y: 34}
+        - {x: 68, y: 60}
+        - {x: 58, y: 122}
+        - {x: -66, y: 122}
+        - {x: -54, y: 53}
+        - {x: -71, y: 14}
+        - {x: -34, y: 19}
+        - {x: -127, y: 9}
+        - {x: -128, y: 9}
+        - {x: -128, y: -4}
+        - {x: -91, y: -92}
+        - {x: -67, y: -128}
+        - {x: 82, y: -128}
+        - {x: 128, y: -59}
+        - {x: 128, y: 12}
+    - name: The Slaver_6
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 38, y: 32}
+        - {x: 38, y: 39}
+        - {x: 50, y: 33}
+        - {x: 57, y: 35}
+        - {x: 68, y: 61}
+        - {x: 58, y: 123}
+        - {x: -114, y: 123}
+        - {x: -128, y: 104}
+        - {x: -128, y: -39}
+        - {x: -79, y: -128}
+        - {x: 68, y: -128}
+        - {x: 98, y: -93}
+        - {x: 128, y: -5}
+        - {x: 128, y: 10}
+    - name: The Slaver_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 38, y: 41}
+        - {x: 50, y: 35}
+        - {x: 57, y: 37}
+        - {x: 57, y: 56}
+        - {x: 67, y: 116}
+        - {x: 62, y: 125}
+        - {x: -46, y: 125}
+        - {x: -50, y: 121}
+        - {x: -128, y: 17}
+        - {x: -128, y: -4}
+        - {x: -92, y: -107}
+        - {x: -64, y: -128}
+        - {x: 84, y: -128}
+        - {x: 128, y: -111}
+        - {x: 128, y: 22}
+        - {x: 38, y: 34}
+    - name: The Slaver_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 38, y: 32}
+        - {x: 38, y: 39}
+        - {x: 50, y: 33}
+        - {x: 57, y: 35}
+        - {x: 68, y: 61}
+        - {x: 58, y: 123}
+        - {x: -105, y: 123}
+        - {x: -128, y: 65}
+        - {x: -128, y: -5}
+        - {x: -100, y: -128}
+        - {x: 102, y: -128}
+        - {x: 128, y: -9}
+        - {x: 128, y: 10}
+    - name: The Slaver_9
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 38, y: 31}
+        - {x: 38, y: 38}
+        - {x: 50, y: 32}
+        - {x: 57, y: 34}
+        - {x: 68, y: 60}
+        - {x: 58, y: 122}
+        - {x: -66, y: 122}
+        - {x: -54, y: 53}
+        - {x: -71, y: 14}
+        - {x: -34, y: 19}
+        - {x: -127, y: 9}
+        - {x: -128, y: 9}
+        - {x: -128, y: -4}
+        - {x: -91, y: -113}
+        - {x: -51, y: -128}
+        - {x: 86, y: -128}
+        - {x: 128, y: -6}
+        - {x: 128, y: 10}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

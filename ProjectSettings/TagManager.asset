@@ -12,6 +12,8 @@ TagManager:
   - Lethal
   - Melee Enemy
   - Trackable
+  - Power Up
+  - Boss
   layers:
   - Default
   - TransparentFX
