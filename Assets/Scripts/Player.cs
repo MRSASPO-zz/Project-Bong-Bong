@@ -25,6 +25,7 @@ public class Player : MonoBehaviour {
 
     readonly int maxHealth = 3;
     public int damage;
+    public bool poweredUp = false;
 
     //hidden values that deal with character movement are in this section
     float accelerationTimeAirborne = .2f;
@@ -104,6 +105,21 @@ public class Player : MonoBehaviour {
 
         checkAndTriggerDamage();
         checkAndTriggerDeath();
+    }
+
+
+
+    private void checkAndPowerUp()
+    {
+        bool pickedUpPowerUp = false;
+        if (!poweredUp)
+        {
+            pickedUpPowerUp = controller.collisions.horizontalColliderTag == "Power Up" || controller.collisions.verticalColliderTag == "Power Up";
+        }
+        if (pickedUpPowerUp)
+        {
+            pickedUpPowerUp = true;
+        }
     }
 
     private void checkAndTriggerDamage() {

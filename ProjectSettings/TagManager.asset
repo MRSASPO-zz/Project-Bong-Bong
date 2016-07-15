@@ -11,6 +11,8 @@ TagManager:
   - Melee Enemy (Through)
   - Lethal
   - Melee Enemy
+  - Power Up
+  - Boss
   layers:
   - Default
   - TransparentFX

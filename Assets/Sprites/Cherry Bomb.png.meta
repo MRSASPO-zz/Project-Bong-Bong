@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: c8e84a55ddd31594c979e66c06bf92e2
-timeCreated: 1468485441
+timeCreated: 1468560009
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -60,7 +60,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: -16, y: 16}
@@ -71,14 +71,22 @@ TextureImporter:
     - name: Cherry Bomb_1
       rect:
         serializedVersion: 2
-        x: 35
+        x: 32
         y: 0
-        width: 29
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 14, y: 16}
+        - {x: -5, y: 16}
+        - {x: -14, y: 11}
+        - {x: -15, y: 8}
+        - {x: -15, y: -13}
+        - {x: -14, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 6}
     outline: []
   spritePackingTag: 
   userData: 
