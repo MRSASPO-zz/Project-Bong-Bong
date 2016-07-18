@@ -11,7 +11,7 @@ TagManager:
   - Melee Enemy (Through)
   - Lethal
   - Melee Enemy
-  - Trackable
+  - Target Indicator
   - Power Up
   - Boss
   layers:

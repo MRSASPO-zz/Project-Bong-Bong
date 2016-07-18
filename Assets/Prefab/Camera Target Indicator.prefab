@@ -11,7 +11,7 @@ GameObject:
   - 114: {fileID: 11408800}
   m_Layer: 0
   m_Name: Camera Target Indicator
-  m_TagString: Untagged
+  m_TagString: Target Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42,6 +42,7 @@ MonoBehaviour:
   arrowPrefab: {fileID: 192242, guid: fe8ec4771a377434093c8884bf3760be, type: 2}
   reduxScale: 0.8
   camera: {fileID: 0}
+  trackedObjects: []
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

@@ -5,11 +5,15 @@ using System.Collections.Generic;
 public class CameraTargetIndicator : MonoBehaviour {
     public GameObject arrowPrefab;
     public float reduxScale = 0.9f;
+    public Camera camera;
 
     List<GameObject> arrowPool = new List<GameObject>();
     int arrowPoolCursor = 0;
+    List<Transform> trackedObjects = new List<Transform>();
 
-    public Camera camera;
+    public void addToList(Transform t) {
+        trackedObjects.Add(t);
+    }
 
     void LateUpdate() {
         resetPool();
@@ -19,9 +23,8 @@ public class CameraTargetIndicator : MonoBehaviour {
         float height = camBounds.max.y - camBounds.min.y;
         float width = camBounds.max.x - camBounds.min.x;
 
-        GameObject[] trackedObjects = GameObject.FindGameObjectsWithTag("Trackable");
-        foreach(GameObject obj in trackedObjects) {
-            Vector3 target = obj.transform.position;
+        foreach(Transform obj in trackedObjects) {
+            Vector3 target = obj.position;
             //Check point is not in camera view
             bool isInRectangle = (Mathf.Abs(target.x - camOrigin.x) - 0.5f) <= width / 2 && (Mathf.Abs(target.y - camOrigin.y) - 0.5f) <= height / 2;
 

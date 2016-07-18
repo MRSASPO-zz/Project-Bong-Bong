@@ -1,11 +1,12 @@
 fileFormatVersion: 2
-guid: 891ace8087ad4dd49be02ba4ceba7d89
-timeCreated: 1466498925
+guid: 772ee9334273913458b6fdfce8f34550
+timeCreated: 1468840536
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Moving Platform (3x3)_0
-    21300002: Moving Platform (3x3)_1
+    21300000: Missile_0
+    21300002: Missile_1
+    21300004: Missile_2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -46,42 +47,45 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 16
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Moving Platform (3x3)_0
+    - name: Missile_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 96
-        height: 32
+        width: 30
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -48, y: 16}
-        - {x: -48, y: -16}
-        - {x: 48, y: -16}
-        - {x: 48, y: 16}
-    - name: Moving Platform (3x3)_1
+      outline: []
+    - name: Missile_1
       rect:
         serializedVersion: 2
-        x: 96
+        x: 30
         y: 0
-        width: 96
-        height: 32
+        width: 30
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -48, y: 16}
-        - {x: -48, y: -16}
-        - {x: 48, y: -16}
-        - {x: 48, y: 16}
+      outline: []
+    - name: Missile_2
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     outline: []
   spritePackingTag: 
   userData: 
