@@ -26,9 +26,9 @@ TagManager:
   - Player
   - Obstacle
   - Enemy WP
-  - Enemy
+  - Blocking Enemy
   - Camera
-  - 
+  - Laser End
   - 
   - 
   - 

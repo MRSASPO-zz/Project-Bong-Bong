@@ -16,9 +16,9 @@ public class PatrollingEnemy : MonoBehaviour {
     void Start() {
         controller = GetComponent<Controller2D>();
         image = GetComponent<SpriteRenderer>();
-        image.flipX = !image.flipX;
+        //image.flipX = !image.flipX;
         gravity = -(2 * 2.5f) / Mathf.Pow(0.3f, 2); //"max jump height" = 2.5, "time to apex" = 0.3f, equiv values for the player
-        directionX = 1; //initially moving leftwards
+        directionX = -1; //initially moving leftwards
     }
 
     void Update() {

@@ -9,5 +9,9 @@ public class MeleeAttackTrigger : MonoBehaviour {
         if (col.CompareTag("Melee Enemy")) {
             col.SendMessageUpwards("Damage", damage);
         }
+
+        if (col.CompareTag("Boss")) {
+            col.SendMessageUpwards("Damage", damage);
+        }
     }
 }

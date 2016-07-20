@@ -12,7 +12,7 @@ GameObject:
   - 61: {fileID: 6197328}
   - 50: {fileID: 5043618}
   - 114: {fileID: 11409708}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: Tall Knight
   m_TagString: Melee Enemy
   m_Icon: {fileID: 0}

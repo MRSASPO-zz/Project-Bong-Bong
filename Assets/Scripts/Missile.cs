@@ -9,11 +9,11 @@ public class Missile : MonoBehaviour {
     public float speed = 15;
     public float autoExplodeTime = 5f;
 
-    //public GameObject explosion; //prefab for explosion?
+    public GameObject explosion; //prefab for explosion
 
 	void Start () {
         target = GameObject.FindGameObjectWithTag("Player").transform;
-        //StartCoroutine(AutoExplode());
+        StartCoroutine(AutoExplode());
     }
 	
 	// Update is called once per frame
@@ -33,7 +33,7 @@ public class Missile : MonoBehaviour {
     }
 
     void ExplodeSelf() {
-        //Instantiate(explosion, transform.position, Quarternion.identity);
+        Instantiate(explosion, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 
