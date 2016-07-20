@@ -4,7 +4,21 @@ using System.Collections;
 public class Boss : MonoBehaviour
 {
     private int bossMaxHealth = 3;
+    private bool invulnerable = false;
     public int bossDamage = 0;
+
+    void Update()
+    {
+        if (bossIsDead())
+        {
+            Destroy(this);
+        }
+    }
+
+    private bool bossIsDead()
+    {
+        return getBossHealth()==0;
+    }
 
     public int getBossHealth()
     {
@@ -18,11 +32,46 @@ public class Boss : MonoBehaviour
     }
 
 
-    void OnTriggerEnter2D(Collider2D bomb)
+    void OnTriggerEnter2D(Collider2D contact)
     {
-        if (bomb.tag.Equals("Bomb"))
+        if (contact.tag.Equals("Lethal"))
         {
-            Destroy(bomb.gameObject);
+            TakeLethalDamage();
         }
+    }
+
+    private int GetBossMaxHealth()
+    {
+        return bossMaxHealth;
+    }
+
+    public void Damage()
+    {
+        if (!invulnerable)
+        {
+            TakeDamage();
+            invulnerability();
+            Invoke("resetInvulnerability", 1.0f);
+        }
+    }
+
+    public void invulnerability()
+    {
+        invulnerable = true;
+    }
+
+    public void resetInvulnerability()
+    {
+        invulnerable = false;
+    }
+
+    public void TakeDamage()
+    {
+        bossDamage += 1;
+    }
+
+    public void TakeLethalDamage()
+    {
+        bossDamage = bossMaxHealth;
     }
 }

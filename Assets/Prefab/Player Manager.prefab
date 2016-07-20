@@ -119,7 +119,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 183086}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3, y: -15, z: 0}
+  m_LocalPosition: {x: 3.86, y: -71.84, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 481160}
@@ -315,6 +315,7 @@ MonoBehaviour:
   char1: {fileID: 186246}
   char2: {fileID: 100098}
   damage: 3
+  poweredUp: 0
   velocity: {x: 0, y: 0, z: 0}
   melee: 0
   attackTriggerLeft: {fileID: 6160536}
@@ -357,6 +358,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
+  player: {fileID: 11403126}
 --- !u!114 &11495888
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -369,6 +371,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
+  player: {fileID: 11403126}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

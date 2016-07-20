@@ -25,7 +25,7 @@ public class Player : MonoBehaviour {
 
     readonly int maxHealth = 3;
     public int damage;
-    public bool poweredUp = false;
+    private bool poweredUp = false;
 
     //hidden values that deal with character movement are in this section
     float accelerationTimeAirborne = .2f;
@@ -102,24 +102,25 @@ public class Player : MonoBehaviour {
         }
 
         characterSwapButtonPressed();
-
         checkAndTriggerDamage();
         checkAndTriggerDeath();
     }
 
-
-
-    private void checkAndPowerUp()
+   public bool isPoweredUp()
     {
-        bool pickedUpPowerUp = false;
-        if (!poweredUp)
-        {
-            pickedUpPowerUp = controller.collisions.horizontalColliderTag == "Power Up" || controller.collisions.verticalColliderTag == "Power Up";
-        }
-        if (pickedUpPowerUp)
-        {
-            pickedUpPowerUp = true;
-        }
+        return poweredUp;
+    }
+
+    public void Power()
+    {
+        print("WORK NOW");
+        poweredUp = true;
+    }
+
+    public void Depower()
+    {
+        print("NO WORK NOW");
+        poweredUp = false;
     }
 
     private void checkAndTriggerDamage() {
