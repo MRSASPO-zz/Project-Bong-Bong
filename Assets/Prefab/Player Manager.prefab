@@ -64,6 +64,7 @@ GameObject:
   - 61: {fileID: 6141054}
   - 114: {fileID: 11432486}
   - 114: {fileID: 11403126}
+  - 50: {fileID: 5091054}
   m_Layer: 8
   m_Name: Player Manager
   m_TagString: Player
@@ -119,7 +120,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 183086}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: 3.86, y: -71.84, z: 0}
+=======
+  m_LocalPosition: {x: 3, y: -23, z: 0}
+>>>>>>> bcbb62377a7475534d5f4b818610f81abd846db7
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 481160}
@@ -252,6 +257,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!50 &5091054
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 183086}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!61 &6129556
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -332,12 +354,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1477a1548c596f24b9430f80bcad6e9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movingObjectsMask:
-    serializedVersion: 2
-    m_Bits: 2048
   collisionMask:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 2560
   horizontalRayCount: 5
   verticalRayCount: 5
   horizontalRaySpacing: 0

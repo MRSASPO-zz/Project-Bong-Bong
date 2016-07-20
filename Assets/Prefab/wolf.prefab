@@ -13,7 +13,7 @@ GameObject:
   - 114: {fileID: 11468166}
   - 114: {fileID: 11422180}
   - 50: {fileID: 5084050}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: wolf
   m_TagString: Melee Enemy
   m_Icon: {fileID: 0}
@@ -92,9 +92,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1477a1548c596f24b9430f80bcad6e9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movingObjectsMask:
-    serializedVersion: 2
-    m_Bits: 0
   collisionMask:
     serializedVersion: 2
     m_Bits: 512

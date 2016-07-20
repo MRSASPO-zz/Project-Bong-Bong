@@ -12,7 +12,6 @@ public class CameraFollow : MonoBehaviour {
     //min and max_x for the camera's size, to set the boundaries of the camera, offset is to the center of the camera
     public float min_x = 0;
     public float max_x = 50;
-    const float CAMERA_OFFSET = 15f;
 
     FocusArea focusArea;
 
@@ -23,9 +22,11 @@ public class CameraFollow : MonoBehaviour {
     float smoothVelocityY;
 
     bool lookAheadStopped;
+    Camera camera;
 
     void Start() {
         focusArea = new FocusArea(target.collider.bounds, focusAreaSize);
+        camera = GetComponent<Camera>();
     }
 
     void LateUpdate() {
@@ -54,8 +55,12 @@ public class CameraFollow : MonoBehaviour {
 
         Vector3 goalTransformedPosition = (Vector3)focusPosition + Vector3.forward * -10;
 
+        Bounds camBounds = CameraExtensions.OrthographicBounds(camera);
+        float height = camBounds.max.y - camBounds.min.y;
+        float width = camBounds.max.x - camBounds.min.x;
+
         //Change the clamp value if needed
-        transform.position = new Vector3(Mathf.Clamp(goalTransformedPosition.x, min_x+CAMERA_OFFSET, max_x-CAMERA_OFFSET), 
+        transform.position = new Vector3(Mathf.Clamp(goalTransformedPosition.x, min_x+width/2, max_x-width/2), 
             goalTransformedPosition.y, 
             goalTransformedPosition.z);
     }

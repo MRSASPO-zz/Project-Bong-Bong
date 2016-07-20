@@ -3,7 +3,6 @@ using System.Collections;
 
 [RequireComponent(typeof(BoxCollider2D))]
 public class RayCastController : MonoBehaviour {
-    public LayerMask movingObjectsMask;
     public LayerMask collisionMask;
 
     public const float skinWidth = .015f;

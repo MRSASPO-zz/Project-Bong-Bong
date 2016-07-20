@@ -11,6 +11,7 @@ TagManager:
   - Melee Enemy (Through)
   - Lethal
   - Melee Enemy
+  - Target Indicator
   - Power Up
   - Boss
   layers:
@@ -25,9 +26,9 @@ TagManager:
   - Player
   - Obstacle
   - Enemy WP
-  - Enemy
-  - 
-  - 
+  - Blocking Enemy
+  - Camera
+  - Laser End
   - 
   - 
   - 
