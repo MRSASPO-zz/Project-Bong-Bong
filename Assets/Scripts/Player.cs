@@ -20,7 +20,7 @@ public class Player : MonoBehaviour {
 
     readonly int maxHealth = 3;
     public int damage;
-    private bool poweredUp = false;
+    private int poweredUp = 0;
 
     //hidden values that deal with character movement are in this section
     float accelerationTimeAirborne = .2f;
@@ -101,19 +101,21 @@ public class Player : MonoBehaviour {
 
    public bool isPoweredUp()
     {
-        return poweredUp;
+        return poweredUp>0;
     }
 
     public void Power()
     {
-        print("WORK NOW");
-        poweredUp = true;
+        //print("WORK NOW");
+        poweredUp +=1;
+        print(poweredUp);
     }
 
     public void Depower()
     {
-        print("NO WORK NOW");
-        poweredUp = false;
+        //print("NO WORK NOW");
+        poweredUp -= 1;
+        print(poweredUp);
     }
 
     private void checkAndTriggerDamage() {
@@ -158,6 +160,26 @@ public class Player : MonoBehaviour {
         else
         {
             velocity.y = -maxJumpVelocity;
+        }
+    }
+
+    public void StrongKnockback()
+    {
+        if (controller.collisions.velocityOld.x < 0)
+        {
+            velocity.x = maxJumpVelocity*2;
+        }
+        else if (controller.collisions.velocityOld.x > 0)
+        {
+            velocity.x = -maxJumpVelocity*2;
+        }
+        if (controller.collisions.velocityOld.y <= 0)
+        {
+            velocity.y = maxJumpVelocity*2;
+        }
+        else
+        {
+            velocity.y = -maxJumpVelocity*2;
         }
     }
 

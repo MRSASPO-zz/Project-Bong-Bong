@@ -11,7 +11,7 @@ public class Boss : MonoBehaviour
     {
         if (bossIsDead())
         {
-            Destroy(this);
+            Destroy(gameObject);
         }
     }
 
