@@ -161,7 +161,7 @@ public class Player : MonoBehaviour {
         }
     }
 
-    private void Knockback()
+    public void Knockback()
     {
         if (controller.collisions.velocityOld.x < 0)
         {

@@ -77,10 +77,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyCollisionMask:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 1024
   wallMask:
     serializedVersion: 2
-    m_Bits: 1024
+    m_Bits: 512
   speed: 4
 --- !u!114 &11453168
 MonoBehaviour:
@@ -115,7 +115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f78b4f68518c7d46b62ee088402508b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerup: {fileID: 182220, guid: 75989fb4180cc9d4eb9112a8a6ce33cc, type: 2}
+  powerup: {fileID: 182670, guid: 6c2ac228dc6608442893f6cd2ad173e7, type: 2}
 --- !u!212 &21224354
 SpriteRenderer:
   m_ObjectHideFlags: 1

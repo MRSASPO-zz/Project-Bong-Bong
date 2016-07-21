@@ -58,7 +58,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: -0.19750977}
   serializedVersion: 2
@@ -98,10 +98,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyCollisionMask:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 1024
   wallMask:
     serializedVersion: 2
-    m_Bits: 1024
+    m_Bits: 512
   speed: 4
 --- !u!212 &21269200
 SpriteRenderer:
