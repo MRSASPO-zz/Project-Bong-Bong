@@ -14,6 +14,7 @@ TagManager:
   - Target Indicator
   - Power Up
   - Boss
+  - Lever
   layers:
   - Default
   - TransparentFX

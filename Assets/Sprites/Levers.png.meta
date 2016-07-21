@@ -1,0 +1,221 @@
+fileFormatVersion: 2
+guid: fa7635060d0f8b54f9eb3266e2bbd598
+timeCreated: 1469099829
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Levers_0
+    21300002: Levers_1
+    21300004: Levers_2
+    21300006: Levers_3
+    21300008: Levers_4
+    21300010: Levers_5
+    21300012: Levers_6
+    21300014: Levers_7
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 24
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Levers_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: 6}
+        - {x: -28, y: -32}
+        - {x: 28, y: -32}
+        - {x: 28, y: -8}
+        - {x: -12, y: 32}
+    - name: Levers_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28, y: -32}
+        - {x: 28, y: -32}
+        - {x: 32, y: -20}
+        - {x: 32, y: 32}
+        - {x: 5, y: 32}
+        - {x: -28, y: 15}
+      - - {x: -28, y: 14}
+        - {x: -25, y: 15}
+        - {x: -25, y: 18}
+        - {x: -28, y: 19}
+        - {x: -30, y: 17}
+    - name: Levers_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: 6}
+        - {x: -28, y: -32}
+        - {x: 28, y: -32}
+        - {x: 28, y: -8}
+        - {x: -12, y: 32}
+    - name: Levers_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28, y: -32}
+        - {x: 28, y: -32}
+        - {x: 32, y: -20}
+        - {x: 32, y: 32}
+        - {x: 5, y: 32}
+        - {x: -28, y: 15}
+      - - {x: -28, y: 14}
+        - {x: -25, y: 15}
+        - {x: -25, y: 18}
+        - {x: -28, y: 19}
+        - {x: -30, y: 17}
+    - name: Levers_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: 6}
+        - {x: -28, y: -32}
+        - {x: 28, y: -32}
+        - {x: 28, y: -8}
+        - {x: -12, y: 32}
+    - name: Levers_5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28, y: -32}
+        - {x: 28, y: -32}
+        - {x: 32, y: -20}
+        - {x: 32, y: 32}
+        - {x: 5, y: 32}
+        - {x: -28, y: 15}
+      - - {x: -28, y: 14}
+        - {x: -25, y: 15}
+        - {x: -25, y: 18}
+        - {x: -28, y: 19}
+        - {x: -30, y: 17}
+    - name: Levers_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: 6}
+        - {x: -28, y: -32}
+        - {x: 28, y: -32}
+        - {x: 28, y: -8}
+        - {x: -12, y: 32}
+    - name: Levers_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28, y: -32}
+        - {x: 28, y: -32}
+        - {x: 32, y: -20}
+        - {x: 32, y: 32}
+        - {x: 5, y: 32}
+        - {x: -28, y: 15}
+      - - {x: -28, y: 14}
+        - {x: -25, y: 15}
+        - {x: -25, y: 18}
+        - {x: -28, y: 19}
+        - {x: -30, y: 17}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -113,7 +113,7 @@ public class ScientistBoss : MonoBehaviour {
         firing = false;
     }
 
-    private void startFiring() {
+    public void startFiring() {
         if (firingReady && !teleporting) {
             firingReady = false;
             firingTimer = firingCd;

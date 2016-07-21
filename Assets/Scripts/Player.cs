@@ -18,11 +18,6 @@ public class Player : MonoBehaviour {
     public float timeToWallUnstick = 0;
     public Vector2 wallLeap = new Vector2(10, 20);        // jump off the wall
 
-    //these public values are there to attach to each of the Child game object within the Player Manager object
-    public GameObject char1;
-    public GameObject char2;
-    //public GameObject char3;
-
     readonly int maxHealth = 3;
     public int damage;
     private bool poweredUp = false;
@@ -56,7 +51,6 @@ public class Player : MonoBehaviour {
     void Awake() {
         controller = GetComponent<Controller2D>(); //Attaches a controller2D script to gameobject
         setGravityPhysics();
-        ActivateChar1();
         damage = 0;
         invulnerable = false;
         attackTriggerRight.enabled = false;
@@ -71,13 +65,6 @@ public class Player : MonoBehaviour {
         minJumpVelocity = Mathf.Sqrt(2 * Mathf.Abs(gravity) * minJumpHeight);
     }
 
-    private void ActivateChar1() {
-        selectedChar = 0;
-        char1.SetActive(true);
-        char2.SetActive(false);
-        //char3.SetActive(false);
-    }
-
     void Update() {
         Vector2 joystickInput = new Vector2(CnInputManager.GetAxisRaw("Horizontal"), CnInputManager.GetAxisRaw("Vertical"));
 
@@ -90,21 +77,15 @@ public class Player : MonoBehaviour {
         int wallDirX = (controller.collisions.left) ? -1 : 1; //if facing left, wallDirX = -1, else 1
         setSmoothedVelocityXPhysics(joystickInput);
 
-        if (char1.activeSelf) {
-            //Maru, maru can jump but cannot do anything else
-            bool wallSliding = false;
-            if (isFallingAndTouchingWall()) {
-                wallSliding = true; // Set sprites here if wall jumping
-                setWallSlidePhysics(joystickInput, wallDirX);
-            }
-            JumpButtonPressed(wallDirX, wallSliding);
-        } else if (char2.activeSelf) {
-            //CODE HERE for Kaku's punch attack, nothing about wall sliding or jumping because he doesn't use it
-            MeleeButtonPressed(joystickInput);
-        } 
-        //else if (char3.activeSelf) {
-            //CODE HERE for Kone's ranged attack
-        //}
+        //Maru, maru can jump but cannot do anything else
+        bool wallSliding = false;
+        if (isFallingAndTouchingWall()) {
+            wallSliding = true; // Set sprites here if wall jumping
+            setWallSlidePhysics(joystickInput, wallDirX);
+        }
+
+        JumpButtonPressed(wallDirX, wallSliding);
+        MeleeButtonPressed(joystickInput);
 
         velocity.y += gravity * Time.deltaTime; //apply gravity
         controller.Move(velocity * Time.deltaTime, joystickInput); //move character
@@ -112,8 +93,7 @@ public class Player : MonoBehaviour {
         if (controller.collisions.above || controller.collisions.below) {
             velocity.y = 0;
         }
-
-        characterSwapButtonPressed();
+        //"Fire1"
         checkAndTriggerDamage();
         checkAndTriggerDeath();
         meleeCDTimer();
@@ -191,36 +171,6 @@ public class Player : MonoBehaviour {
         invulnerable = false;
     }
 
-    //When the swap is pressed
-    private void characterSwapButtonPressed() {
-        if (CnInputManager.GetButtonUp("Fire1")) {
-            characterSwap();
-        }
-    }
-
-    private void characterSwap() {
-        //Check for assignment, if not assigned then returns
-        //selectedChar = (selectedChar + 1) % 3;
-        selectedChar = (selectedChar + 1) % 2;
-        switch (selectedChar) {
-            case 0: //1st char
-                char1.SetActive(true);
-                char2.SetActive(false);
-                //char3.SetActive(false);
-                break;
-            case 1://2nd char
-                char1.SetActive(false);
-                char2.SetActive(true);
-                //char3.SetActive(false);
-                break;
-            //case 2://last char
-                //char1.SetActive(false);
-                //char2.SetActive(false);
-                //char3.SetActive(true);
-                //break;
-        }
-    }
-
     //These few functions deal with the several character based button inputs, the button used here is "Jump" but the character may not jump if its not char1 etc.
     private void JumpButtonPressed(int wallDirX, bool wallSliding) {
         if (CnInputManager.GetButtonDown("Jump")) {
@@ -243,7 +193,7 @@ public class Player : MonoBehaviour {
     }
 
     private void MeleeButtonPressed(Vector2 joyStickInput) {
-        if (CnInputManager.GetButtonDown("Jump") && !melee) {
+        if (CnInputManager.GetButtonDown("Fire1") && !melee) {
             melee = true;
             meeleeAttackTimer = meleeAttackCooldown;
             if (faceDir > 0) {
@@ -269,33 +219,13 @@ public class Player : MonoBehaviour {
 
     private void setSmoothedVelocityXPhysics(Vector2 joystickInput) {
         float targetVelocityX;
-        if (char1.activeSelf) {
-            targetVelocityX = joystickInput.x * moveSpeed;
-            velocity.x = Mathf.SmoothDamp(
-                velocity.x,
-                targetVelocityX,
-                ref velocityXSmoothing,
-                (controller.collisions.below ? accelerationTimeGrounded : accelerationTimeAirborne)
-                );
-        } else if (char2.activeSelf) {
-            targetVelocityX = joystickInput.x * moveSpeed/2;
-            velocity.x = Mathf.SmoothDamp(
-                velocity.x,
-                targetVelocityX,
-                ref velocityXSmoothing,
-                (controller.collisions.below ? accelerationTimeGrounded : accelerationTimeAirborne)
-                );
-        } 
-        //else if(char3.activeSelf) {
-            //targetVelocityX = 0;
-            //velocity.x = Mathf.SmoothDamp(
-                //velocity.x,
-                //targetVelocityX,
-                //ref velocityXSmoothing,
-                //(controller.collisions.below ? accelerationTimeGrounded : accelerationTimeAirborne)
-                //);
-        //}
-        
+        targetVelocityX = joystickInput.x * moveSpeed;
+        velocity.x = Mathf.SmoothDamp(
+            velocity.x,
+            targetVelocityX,
+            ref velocityXSmoothing,
+            (controller.collisions.below ? accelerationTimeGrounded : accelerationTimeAirborne)
+            );
     }
 
     private void setWallJumpPhysics(int wallDirX) {

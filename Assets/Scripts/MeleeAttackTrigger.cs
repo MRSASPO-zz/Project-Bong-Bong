@@ -19,5 +19,8 @@ public class MeleeAttackTrigger : MonoBehaviour {
                 player.Knockback();
             }
         }
+        if (col.CompareTag("Lever")) {
+            col.SendMessageUpwards("PushLever");
+        }
     }
 }
