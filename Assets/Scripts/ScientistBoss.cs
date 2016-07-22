@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.Events;
 
-public class ScientistBoss : MonoBehaviour {
+public class ScientistBoss : Boss {
     //char specific var
     Controller2D controller;
     Animator anim;
@@ -11,7 +12,12 @@ public class ScientistBoss : MonoBehaviour {
     float gravity;
     Vector3 velocity;
     BoxCollider2D collider;
+    SpriteRenderer spriteRenderer;
+    private bool invul;
     //3 states, attack, teleporting, idle
+
+    public UnityEvent ue = new UnityEvent();
+    public int health;
 
     //Attacking var
     public float missileFireRate = 1f;
@@ -43,6 +49,7 @@ public class ScientistBoss : MonoBehaviour {
         anim = GetComponent<Animator>();
         collider = GetComponent<BoxCollider2D>();
         defaultScale = transform.localScale;
+        spriteRenderer = GetComponent<SpriteRenderer>();
 
         setTeleportPoints();
         firingReady = true;
@@ -59,6 +66,11 @@ public class ScientistBoss : MonoBehaviour {
     }
 
     void Update () {
+        if(health <= 0) {
+            ue.Invoke();
+            Destroy(gameObject);
+            return;
+        }
         faceDir = ((this.transform.position.x - playerT.position.x) > 0) ? -1 : 1;
         Face(faceDir);
 
@@ -167,8 +179,43 @@ public class ScientistBoss : MonoBehaviour {
         }
     }
 
-    void Damage() {
-        print("I am damaged");
+    public void Damage() {
+        if (!invul) {
+            health--;
+            StartCoroutine(invulnerability());
+        }
+    }
+
+    public void LaserDamage() {
+        if (!invul) {
+            health-= 5;
+            StartCoroutine(invulnerability());
+        }
+    }
+
+    override public int getBossHealth() {
+        if(health <= 0) {
+            return 0;
+        } else {
+            float hp = (float)health;
+            hp /= 10;
+            return Mathf.CeilToInt(hp);
+        }
+    }
+
+    IEnumerator invulnerability() {
+        invul = true;
+        Color32 colorOriginal = spriteRenderer.color;
+        Color32 faded = colorOriginal;
+        faded.a /= 4; //reduces the alpha to give it a faded look
+        float startInvulTime = Time.time;
+        while ((Time.time - startInvulTime) < 3) {
+            spriteRenderer.color = faded;
+            yield return new WaitForSeconds(0.1f);
+            spriteRenderer.color = colorOriginal;
+            yield return new WaitForSeconds(0.2f);
+        }
+        invul = false;
     }
 
     void OnTriggerEnter2D(Collider2D col) {

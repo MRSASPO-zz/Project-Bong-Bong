@@ -2,8 +2,13 @@
 using System.Collections;
 
 public class AddToIndicate : MonoBehaviour {
-    
+    CameraTargetIndicator cTI;
     void Start() {
-        GameObject.FindGameObjectWithTag("Target Indicator").GetComponent<CameraTargetIndicator>().addToList(transform);
+        cTI = GameObject.FindGameObjectWithTag("Target Indicator").GetComponent<CameraTargetIndicator>();
+        cTI.addToList(transform);
+    }
+
+    public void removeFromList() {
+        cTI.removeFromList(transform);
     }
 }

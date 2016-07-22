@@ -15,6 +15,7 @@ TagManager:
   - Power Up
   - Boss
   - Lever
+  - Destroyable
   layers:
   - Default
   - TransparentFX

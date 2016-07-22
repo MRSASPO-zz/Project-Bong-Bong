@@ -32,7 +32,7 @@ public class Missile : MonoBehaviour {
         }
     }
 
-    void ExplodeSelf() {
+    public void ExplodeSelf() {
         Instantiate(explosion, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }

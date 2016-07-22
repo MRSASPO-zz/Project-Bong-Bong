@@ -25,6 +25,7 @@ public class Player : MonoBehaviour {
     //Animations
     private Animator anim;
     private Vector3 defaultScale;
+    private SpriteRenderer spriteRenderer;
 
     //hidden values that deal with character movement are in this section
     float accelerationTimeAirborne = .2f;
@@ -38,6 +39,7 @@ public class Player : MonoBehaviour {
     public Vector3 velocity;
     Controller2D controller; //Controller2D handles the actual movement of the transforms, Player class only deals with the physical calculations
     bool invulnerable; //Invulnerability period for player
+    public float invulTime = 3f;
 
     //value to help with character switch
     int selectedChar = 0;
@@ -51,8 +53,10 @@ public class Player : MonoBehaviour {
     private float faceDir;
     private float prevFaceDir;
 
+
     void Awake() {
         controller = GetComponent<Controller2D>(); //Attaches a controller2D script to gameobject
+        spriteRenderer = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
 
         setGravityPhysics();
@@ -156,10 +160,24 @@ public class Player : MonoBehaviour {
         if (!invulnerable) {
             TakeDamage();
             Knockback();
-            invulnerability();
-            Invoke("resetInvulnerability", 3.0f);
+            StartCoroutine(invulnerability());
             anim.Play("Damaged");
         }
+    }
+
+    IEnumerator invulnerability() {
+        invulnerable = true;
+        Color32 colorOriginal = spriteRenderer.color;
+        Color32 faded = colorOriginal;
+        faded.a /= 4; //reduces the alpha to give it a faded look
+        float startInvulTime = Time.time;
+        while((Time.time - startInvulTime) < invulTime) {
+            spriteRenderer.color = faded;
+            yield return new WaitForSeconds(0.1f);
+            spriteRenderer.color = colorOriginal;
+            yield return new WaitForSeconds(0.2f);
+        }
+        invulnerable = false;
     }
 
     private void checkAndTriggerDeath() {
@@ -209,16 +227,6 @@ public class Player : MonoBehaviour {
         {
             velocity.y = -maxJumpVelocity*2;
         }
-    }
-
-    public void invulnerability()
-    {
-        invulnerable = true;
-    }
-
-    public void resetInvulnerability()
-    {
-        invulnerable = false;
     }
 
     //These few functions deal with the several character based button inputs, the button used here is "Jump" but the character may not jump if its not char1 etc.

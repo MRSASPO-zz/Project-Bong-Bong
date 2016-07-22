@@ -6,6 +6,11 @@ public class Boss : MonoBehaviour
     private int bossMaxHealth = 3;
     private bool invulnerable = false;
     public int bossDamage = 0;
+    private SpriteRenderer sr;
+
+    void Awake() {
+        sr = GetComponent<SpriteRenderer>();
+    }
 
     void Update()
     {
@@ -20,7 +25,7 @@ public class Boss : MonoBehaviour
         return getBossHealth()==0;
     }
 
-    public int getBossHealth()
+    virtual public int getBossHealth()
     {
         if (bossDamage >= bossMaxHealth)
         {
@@ -50,18 +55,22 @@ public class Boss : MonoBehaviour
         if (!invulnerable)
         {
             TakeDamage();
-            invulnerability();
-            Invoke("resetInvulnerability", 1.0f);
+            StartCoroutine(invulnerability());
         }
     }
 
-    public void invulnerability()
-    {
+    IEnumerator invulnerability() {
         invulnerable = true;
-    }
-
-    public void resetInvulnerability()
-    {
+        Color32 colorOriginal = sr.color;
+        Color32 faded = colorOriginal;
+        faded.a /= 4; //reduces the alpha to give it a faded look
+        float startInvulTime = Time.time;
+        while ((Time.time - startInvulTime) < 1) {
+            sr.color = faded;
+            yield return new WaitForSeconds(0.1f);
+            sr.color = colorOriginal;
+            yield return new WaitForSeconds(0.2f);
+        }
         invulnerable = false;
     }
 
