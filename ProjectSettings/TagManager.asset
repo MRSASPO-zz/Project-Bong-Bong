@@ -16,6 +16,7 @@ TagManager:
   - Boss
   - Lever
   - Destroyable
+  - Floor
   layers:
   - Default
   - TransparentFX
