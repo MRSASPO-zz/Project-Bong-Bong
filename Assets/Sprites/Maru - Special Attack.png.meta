@@ -1,0 +1,651 @@
+fileFormatVersion: 2
+guid: b5a76173604199040975c92e31120552
+timeCreated: 1469173827
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Maru - Special Attack_0
+    21300002: Maru - Special Attack_1
+    21300004: Maru - Special Attack_2
+    21300006: Maru - Special Attack_3
+    21300008: Maru - Special Attack_4
+    21300010: Maru - Special Attack_5
+    21300012: Maru - Special Attack_6
+    21300014: Maru - Special Attack_7
+    21300016: Maru - Special Attack_8
+    21300018: Maru - Special Attack_9
+    21300020: Maru - Special Attack_10
+    21300022: Maru - Special Attack_11
+    21300024: Maru - Special Attack_12
+    21300026: Maru - Special Attack_13
+    21300028: Maru - Special Attack_14
+    21300030: Maru - Special Attack_15
+    21300032: Maru - Special Attack_16
+    21300034: Maru - Special Attack_17
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 32
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Maru - Special Attack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 80
+        height: 64
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 8}
+        - {x: -24, y: 5}
+        - {x: -24, y: 0}
+        - {x: -8, y: 0}
+        - {x: -8, y: 4}
+        - {x: -11, y: 8}
+      - - {x: 12, y: 0}
+        - {x: 28, y: 0}
+        - {x: 28, y: 2}
+        - {x: 24, y: 8}
+        - {x: 18, y: 8}
+        - {x: 12, y: 6}
+      - - {x: -22, y: 64}
+        - {x: -25, y: 61}
+        - {x: -25, y: 12}
+        - {x: 27, y: 12}
+        - {x: 29, y: 15}
+        - {x: 29, y: 60}
+        - {x: 18, y: 64}
+    - name: Maru - Special Attack_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 256
+        width: 80
+        height: 64
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 8}
+        - {x: -24, y: 5}
+        - {x: -24, y: 0}
+        - {x: -8, y: 0}
+        - {x: -8, y: 4}
+        - {x: -11, y: 8}
+      - - {x: 12, y: 0}
+        - {x: 28, y: 0}
+        - {x: 28, y: 2}
+        - {x: 24, y: 8}
+        - {x: 18, y: 8}
+        - {x: 12, y: 6}
+      - - {x: -17, y: 64}
+        - {x: -25, y: 52}
+        - {x: -25, y: 19}
+        - {x: -18, y: 12}
+        - {x: 28, y: 12}
+        - {x: 29, y: 13}
+        - {x: 29, y: 56}
+        - {x: 17, y: 64}
+    - name: Maru - Special Attack_2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 256
+        width: 80
+        height: 64
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 8}
+        - {x: -24, y: 5}
+        - {x: -24, y: 0}
+        - {x: -8, y: 0}
+        - {x: -8, y: 4}
+        - {x: -11, y: 8}
+      - - {x: 12, y: 0}
+        - {x: 28, y: 0}
+        - {x: 28, y: 2}
+        - {x: 24, y: 8}
+        - {x: 18, y: 8}
+        - {x: 12, y: 6}
+      - - {x: -25, y: 64}
+        - {x: -25, y: 21}
+        - {x: -16, y: 12}
+        - {x: 29, y: 12}
+        - {x: 29, y: 64}
+    - name: Maru - Special Attack_3
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 256
+        width: 80
+        height: 64
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 8}
+        - {x: -24, y: 5}
+        - {x: -24, y: 0}
+        - {x: -8, y: 0}
+        - {x: -8, y: 4}
+        - {x: -11, y: 8}
+      - - {x: 12, y: 0}
+        - {x: 28, y: 0}
+        - {x: 28, y: 2}
+        - {x: 24, y: 8}
+        - {x: 18, y: 8}
+        - {x: 12, y: 6}
+      - - {x: -25, y: 64}
+        - {x: -25, y: 21}
+        - {x: -16, y: 12}
+        - {x: 29, y: 12}
+        - {x: 29, y: 64}
+    - name: Maru - Special Attack_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 80
+        height: 64
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 8}
+        - {x: -24, y: 5}
+        - {x: -24, y: 0}
+        - {x: -8, y: 0}
+        - {x: -8, y: 4}
+        - {x: -11, y: 8}
+      - - {x: 12, y: 0}
+        - {x: 28, y: 0}
+        - {x: 28, y: 2}
+        - {x: 24, y: 8}
+        - {x: 18, y: 8}
+        - {x: 12, y: 6}
+      - - {x: -25, y: 64}
+        - {x: -25, y: 21}
+        - {x: -16, y: 12}
+        - {x: 29, y: 12}
+        - {x: 29, y: 64}
+    - name: Maru - Special Attack_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 192
+        width: 80
+        height: 64
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 8}
+        - {x: -24, y: 5}
+        - {x: -24, y: 0}
+        - {x: -8, y: 0}
+        - {x: -8, y: 4}
+        - {x: -11, y: 8}
+      - - {x: 12, y: 0}
+        - {x: 28, y: 0}
+        - {x: 28, y: 2}
+        - {x: 24, y: 8}
+        - {x: 18, y: 8}
+        - {x: 12, y: 6}
+      - - {x: -25, y: 64}
+        - {x: -25, y: 21}
+        - {x: -16, y: 12}
+        - {x: 29, y: 12}
+        - {x: 29, y: 64}
+    - name: Maru - Special Attack_6
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 80
+        height: 64
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 8}
+        - {x: -24, y: 5}
+        - {x: -24, y: 0}
+        - {x: -8, y: 0}
+        - {x: -8, y: 4}
+        - {x: -11, y: 8}
+      - - {x: 12, y: 0}
+        - {x: 28, y: 0}
+        - {x: 28, y: 2}
+        - {x: 24, y: 8}
+        - {x: 18, y: 8}
+        - {x: 12, y: 6}
+      - - {x: 24, y: 64}
+        - {x: -25, y: 64}
+        - {x: -25, y: 23}
+        - {x: -17, y: 12}
+        - {x: 23, y: 12}
+        - {x: 25, y: 13}
+        - {x: 37, y: 30}
+        - {x: 37, y: 49}
+        - {x: 35, y: 62}
+    - name: Maru - Special Attack_7
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 192
+        width: 80
+        height: 64
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 8}
+        - {x: -24, y: 5}
+        - {x: -24, y: 0}
+        - {x: -8, y: 0}
+        - {x: -8, y: 4}
+        - {x: -11, y: 8}
+      - - {x: 12, y: 0}
+        - {x: 28, y: 0}
+        - {x: 28, y: 2}
+        - {x: 24, y: 8}
+        - {x: 18, y: 8}
+        - {x: 12, y: 6}
+      - - {x: 20, y: 64}
+        - {x: -14, y: 64}
+        - {x: -25, y: 51}
+        - {x: -25, y: 14}
+        - {x: -19, y: 12}
+        - {x: 35, y: 12}
+        - {x: 44, y: 32}
+        - {x: 44, y: 43}
+        - {x: 34, y: 59}
+    - name: Maru - Special Attack_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 80
+        height: 64
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 8}
+        - {x: -24, y: 5}
+        - {x: -24, y: 0}
+        - {x: -8, y: 0}
+        - {x: -8, y: 4}
+        - {x: -11, y: 8}
+      - - {x: 12, y: 0}
+        - {x: 28, y: 0}
+        - {x: 28, y: 2}
+        - {x: 24, y: 8}
+        - {x: 18, y: 8}
+        - {x: 12, y: 6}
+      - - {x: -13, y: 64}
+        - {x: -25, y: 52}
+        - {x: -25, y: 14}
+        - {x: -19, y: 12}
+        - {x: 44, y: 12}
+        - {x: 47, y: 16}
+        - {x: 47, y: 45}
+        - {x: 27, y: 64}
+    - name: Maru - Special Attack_9
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 128
+        width: 80
+        height: 64
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 8}
+        - {x: -24, y: 5}
+        - {x: -24, y: 0}
+        - {x: -8, y: 0}
+        - {x: -8, y: 4}
+        - {x: -11, y: 8}
+      - - {x: 12, y: 0}
+        - {x: 28, y: 0}
+        - {x: 28, y: 2}
+        - {x: 24, y: 8}
+        - {x: 18, y: 8}
+        - {x: 12, y: 6}
+      - - {x: 18, y: 64}
+        - {x: -22, y: 64}
+        - {x: -25, y: 62}
+        - {x: -25, y: 24}
+        - {x: -17, y: 12}
+        - {x: 28, y: 12}
+        - {x: 40, y: 28}
+        - {x: 40, y: 38}
+        - {x: 33, y: 58}
+    - name: Maru - Special Attack_10
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 80
+        height: 64
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 8}
+        - {x: -24, y: 5}
+        - {x: -24, y: 0}
+        - {x: -8, y: 0}
+        - {x: -8, y: 4}
+        - {x: -11, y: 8}
+      - - {x: 12, y: 0}
+        - {x: 28, y: 0}
+        - {x: 28, y: 2}
+        - {x: 24, y: 8}
+        - {x: 18, y: 8}
+        - {x: 12, y: 6}
+      - - {x: -13, y: 64}
+        - {x: -25, y: 52}
+        - {x: -25, y: 14}
+        - {x: -16, y: 12}
+        - {x: 33, y: 12}
+        - {x: 33, y: 48}
+        - {x: 21, y: 64}
+    - name: Maru - Special Attack_11
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 128
+        width: 80
+        height: 64
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 8}
+        - {x: -24, y: 5}
+        - {x: -24, y: 0}
+        - {x: -8, y: 0}
+        - {x: -8, y: 4}
+        - {x: -11, y: 8}
+      - - {x: 12, y: 0}
+        - {x: 28, y: 0}
+        - {x: 28, y: 2}
+        - {x: 24, y: 8}
+        - {x: 18, y: 8}
+        - {x: 12, y: 6}
+      - - {x: -15, y: 64}
+        - {x: -25, y: 52}
+        - {x: -25, y: 24}
+        - {x: -8, y: 12}
+        - {x: 34, y: 12}
+        - {x: 34, y: 61}
+        - {x: 23, y: 64}
+    - name: Maru - Special Attack_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 80
+        height: 64
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 8}
+        - {x: -24, y: 5}
+        - {x: -24, y: 0}
+        - {x: -8, y: 0}
+        - {x: -8, y: 4}
+        - {x: -11, y: 8}
+      - - {x: 12, y: 0}
+        - {x: 28, y: 0}
+        - {x: 28, y: 2}
+        - {x: 24, y: 8}
+        - {x: 18, y: 8}
+        - {x: 12, y: 6}
+      - - {x: 30, y: 54}
+        - {x: 24, y: 64}
+        - {x: -18, y: 64}
+        - {x: -25, y: 63}
+        - {x: -25, y: 31}
+        - {x: -24, y: 24}
+        - {x: -14, y: 12}
+        - {x: 20, y: 12}
+        - {x: 40, y: 24}
+        - {x: 40, y: 33}
+    - name: Maru - Special Attack_13
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 80
+        height: 64
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 8}
+        - {x: -24, y: 5}
+        - {x: -24, y: 0}
+        - {x: -8, y: 0}
+        - {x: -8, y: 4}
+        - {x: -11, y: 8}
+      - - {x: 12, y: 0}
+        - {x: 28, y: 0}
+        - {x: 28, y: 2}
+        - {x: 24, y: 8}
+        - {x: 18, y: 8}
+        - {x: 12, y: 6}
+      - - {x: -15, y: 64}
+        - {x: -25, y: 54}
+        - {x: -25, y: 27}
+        - {x: -19, y: 12}
+        - {x: 26, y: 12}
+        - {x: 29, y: 21}
+        - {x: 29, y: 63}
+        - {x: 26, y: 64}
+      - - {x: 33, y: 46}
+        - {x: 31, y: 41}
+        - {x: 31, y: 33}
+        - {x: 35, y: 31}
+        - {x: 45, y: 31}
+        - {x: 46, y: 33}
+        - {x: 46, y: 45}
+        - {x: 44, y: 46}
+    - name: Maru - Special Attack_14
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 80
+        height: 64
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 8}
+        - {x: -24, y: 5}
+        - {x: -24, y: 0}
+        - {x: -8, y: 0}
+        - {x: -8, y: 4}
+        - {x: -11, y: 8}
+      - - {x: 12, y: 0}
+        - {x: 28, y: 0}
+        - {x: 28, y: 2}
+        - {x: 24, y: 8}
+        - {x: 18, y: 8}
+        - {x: 12, y: 6}
+      - - {x: -15, y: 64}
+        - {x: -25, y: 54}
+        - {x: -25, y: 27}
+        - {x: -19, y: 12}
+        - {x: 26, y: 12}
+        - {x: 29, y: 21}
+        - {x: 29, y: 63}
+        - {x: 26, y: 64}
+      - - {x: 36, y: 57}
+        - {x: 30, y: 53}
+        - {x: 30, y: 43}
+        - {x: 32, y: 37}
+        - {x: 44, y: 37}
+        - {x: 50, y: 40}
+        - {x: 50, y: 52}
+        - {x: 48, y: 57}
+    - name: Maru - Special Attack_15
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 64
+        width: 80
+        height: 64
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 8}
+        - {x: -24, y: 5}
+        - {x: -24, y: 0}
+        - {x: -8, y: 0}
+        - {x: -8, y: 4}
+        - {x: -11, y: 8}
+      - - {x: 12, y: 0}
+        - {x: 28, y: 0}
+        - {x: 28, y: 2}
+        - {x: 24, y: 8}
+        - {x: 18, y: 8}
+        - {x: 12, y: 6}
+      - - {x: -15, y: 64}
+        - {x: -25, y: 54}
+        - {x: -25, y: 27}
+        - {x: -19, y: 12}
+        - {x: 26, y: 12}
+        - {x: 29, y: 21}
+        - {x: 29, y: 63}
+        - {x: 26, y: 64}
+      - - {x: 35, y: 60}
+        - {x: 29, y: 56}
+        - {x: 29, y: 38}
+        - {x: 32, y: 34}
+        - {x: 41, y: 34}
+        - {x: 44, y: 35}
+        - {x: 47, y: 38}
+        - {x: 48, y: 54}
+        - {x: 42, y: 60}
+    - name: Maru - Special Attack_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 80
+        height: 64
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 8}
+        - {x: -24, y: 5}
+        - {x: -24, y: 0}
+        - {x: -8, y: 0}
+        - {x: -8, y: 4}
+        - {x: -11, y: 8}
+      - - {x: 12, y: 0}
+        - {x: 28, y: 0}
+        - {x: 28, y: 2}
+        - {x: 24, y: 8}
+        - {x: 18, y: 8}
+        - {x: 12, y: 6}
+      - - {x: 36, y: 35}
+        - {x: 48, y: 37}
+        - {x: 50, y: 42}
+        - {x: 50, y: 64}
+        - {x: -20, y: 64}
+        - {x: -25, y: 61}
+        - {x: -25, y: 13}
+        - {x: -19, y: 12}
+        - {x: 17, y: 12}
+        - {x: 38, y: 26}
+        - {x: 37, y: 32}
+        - {x: 32, y: 37}
+    - name: Maru - Special Attack_17
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 80
+        height: 64
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 8}
+        - {x: -24, y: 5}
+        - {x: -24, y: 0}
+        - {x: -8, y: 0}
+        - {x: -8, y: 4}
+        - {x: -11, y: 8}
+      - - {x: 12, y: 0}
+        - {x: 28, y: 0}
+        - {x: 28, y: 2}
+        - {x: 24, y: 8}
+        - {x: 18, y: 8}
+        - {x: 12, y: 6}
+      - - {x: -22, y: 64}
+        - {x: -25, y: 61}
+        - {x: -25, y: 12}
+        - {x: 27, y: 12}
+        - {x: 29, y: 15}
+        - {x: 29, y: 60}
+        - {x: 18, y: 64}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

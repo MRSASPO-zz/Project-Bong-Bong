@@ -22,6 +22,10 @@ public class Player : MonoBehaviour {
     public int damage;
     private int poweredUp = 0;
 
+    //Animations
+    private Animator anim;
+    private Vector3 defaultScale;
+
     //hidden values that deal with character movement are in this section
     float accelerationTimeAirborne = .2f;
     float accelerationTimeGrounded = .1f;
@@ -40,7 +44,6 @@ public class Player : MonoBehaviour {
 
     [HideInInspector]
     public bool melee;
-    public Collider2D attackTriggerLeft;
     public Collider2D attackTriggerRight;
     public float meleeAttackCooldown;
     private float meeleeAttackTimer;
@@ -50,13 +53,15 @@ public class Player : MonoBehaviour {
 
     void Awake() {
         controller = GetComponent<Controller2D>(); //Attaches a controller2D script to gameobject
+        anim = GetComponent<Animator>();
+
         setGravityPhysics();
         damage = 0;
         invulnerable = false;
         attackTriggerRight.enabled = false;
-        attackTriggerLeft.enabled = false;
         faceDir = 1;
         prevFaceDir = 1;
+        defaultScale = transform.localScale;
     }
 
     private void setGravityPhysics() {
@@ -70,10 +75,12 @@ public class Player : MonoBehaviour {
 
         prevFaceDir = faceDir;
         faceDir = joystickInput.x; //get the input
-        if(faceDir == 0) {
+        if (faceDir == 0) {
             faceDir = prevFaceDir;
         }
-        
+
+        Face(Mathf.Sign(faceDir));
+
         int wallDirX = (controller.collisions.left) ? -1 : 1; //if facing left, wallDirX = -1, else 1
         setSmoothedVelocityXPhysics(joystickInput);
 
@@ -88,7 +95,11 @@ public class Player : MonoBehaviour {
         MeleeButtonPressed(joystickInput);
 
         velocity.y += gravity * Time.deltaTime; //apply gravity
+
         controller.Move(velocity * Time.deltaTime, joystickInput); //move character
+
+        //At the moment no jump animations yet, so considering only the x axis
+        //playIdleOrWalk();
 
         if (controller.collisions.above || controller.collisions.below) {
             velocity.y = 0;
@@ -97,9 +108,25 @@ public class Player : MonoBehaviour {
         checkAndTriggerDamage();
         checkAndTriggerDeath();
         meleeCDTimer();
+
+        if(!melee && !invulnerable) {
+            playIdleOrWalk();
+        }
     }
 
-   public bool isPoweredUp()
+    public void playIdleOrWalk() {
+        if (Mathf.Abs(velocity.x) > 0.001) {
+            anim.Play("Walking");
+        } else {
+            anim.Play("Idle");
+        }
+    }
+
+    void Face(float direction) {
+        transform.localScale = new Vector3(defaultScale.x * direction, defaultScale.y, defaultScale.z);
+    }
+
+    public bool isPoweredUp()
     {
         return poweredUp>0;
     }
@@ -131,6 +158,7 @@ public class Player : MonoBehaviour {
             Knockback();
             invulnerability();
             Invoke("resetInvulnerability", 3.0f);
+            anim.Play("Damaged");
         }
     }
 
@@ -218,13 +246,13 @@ public class Player : MonoBehaviour {
         if (CnInputManager.GetButtonDown("Fire1") && !melee) {
             melee = true;
             meeleeAttackTimer = meleeAttackCooldown;
-            if (faceDir > 0) {
-                attackTriggerRight.enabled = true;
-            } else if (faceDir < 0) {
-                attackTriggerLeft.enabled = true;
+            attackTriggerRight.enabled = true;
+            if (isPoweredUp()) {
+                anim.Play("Power Attack");
+            } else {
+                anim.Play("Attacking");
             }
         }
-        //anim.SetBool("Melee", melee);
     }
 
     private void meleeCDTimer() {
@@ -233,10 +261,9 @@ public class Player : MonoBehaviour {
                 meeleeAttackTimer -= Time.deltaTime;
             } else {
                 melee = false;
-                attackTriggerLeft.enabled = false;
                 attackTriggerRight.enabled = false;
             }
-        }
+        } 
     }
 
     private void setSmoothedVelocityXPhysics(Vector2 joystickInput) {
