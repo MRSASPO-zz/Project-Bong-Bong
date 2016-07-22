@@ -15,6 +15,10 @@ public class CameraTargetIndicator : MonoBehaviour {
         trackedObjects.Add(t);
     }
 
+    public void removeFromList(Transform t) {
+        trackedObjects.Remove(t);
+    }
+
     void LateUpdate() {
         resetPool();
 

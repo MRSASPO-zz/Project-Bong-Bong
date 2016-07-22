@@ -43,10 +43,10 @@ public class LaserBeam : MonoBehaviour {
         //isCoolingDown = false;
     }
 
-    void Update() {
+    //void Update() {
         //shootLaser();
         //firingCDTimer();
-    }
+    //}
 
     public void shootLaser() {
         if (activated) {
@@ -129,8 +129,14 @@ public class LaserBeam : MonoBehaviour {
                     
                     reachedEnd = true;
                 }
-                if(hit.collider.CompareTag("Player") || hit.collider.CompareTag("Boss")) {
+                if(hit.collider.CompareTag("Player")) {
                     hit.collider.SendMessageUpwards("Damage");
+                }
+                if (hit.collider.CompareTag("Boss")) {
+                    hit.collider.SendMessageUpwards("LaserDamage");
+                }
+                if (hit.collider.CompareTag("Destroyable")) {
+                    hit.collider.SendMessageUpwards("ExplodeSelf");
                 }
             }
             if (!reachedEnd) {

@@ -15,7 +15,7 @@ GameObject:
   - 50: {fileID: 5070158}
   m_Layer: 0
   m_Name: Missile
-  m_TagString: Untagged
+  m_TagString: Destroyable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92,8 +92,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damping: 4
-  speed: 6
-  autoExplodeTime: 4
+  speed: 9
+  autoExplodeTime: 3
   explosion: {fileID: 179530, guid: 286ca7c37126667429f26bfdb267c56f, type: 2}
 --- !u!212 &21281308
 SpriteRenderer:
