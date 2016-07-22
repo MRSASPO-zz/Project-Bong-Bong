@@ -76,7 +76,7 @@ MonoBehaviour:
   - {fileID: 21300022, guid: c2888de1d1e6d08449bcb8cf780971dd, type: 3}
   distance: 150
   direction: 3
-  laserOnTime: 5
+  laserOnTime: 3
   activated: 1
 --- !u!120 &12048640
 LineRenderer:

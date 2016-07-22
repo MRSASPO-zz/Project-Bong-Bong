@@ -10,14 +10,23 @@ public class LaserManager : MonoBehaviour {
     public LaserBeam[] phaseOneBeams;
     Dictionary<int, LaserBeam[]> phaseBeamDictionary = new Dictionary<int, LaserBeam[]>();
 
-    public float cooldownTime;
-    private bool isCoolingDown;
-    public float cooldownTimer;
+    public float cooldownTime = 8;
+    public bool isCoolingDown;
+    float cooldownTimer;
     
 	void Awake () {
         isCoolingDown = false;
+        currentPhase = 0;
         phaseBeamDictionary.Add(0, phaseZeroBeams);
         phaseBeamDictionary.Add(1, phaseOneBeams);
+        foreach (LaserBeam beam in phaseBeamDictionary[0]) {
+            beam.activated = true;
+            beam.refresh(isCoolingDown);
+        }
+        foreach (LaserBeam beam in phaseBeamDictionary[1]) {
+            beam.activated = false;
+            beam.refresh(isCoolingDown);
+        }
     }
 	
 	void Update () {
@@ -41,9 +50,21 @@ public class LaserManager : MonoBehaviour {
             } else {
                 isCoolingDown = false;
                 foreach (LaserBeam beam in phaseBeamDictionary[currentPhase]) {
-                    beam.refresh();
+                    beam.refresh(isCoolingDown);
                 }
             }
+        }
+    }
+
+    public void swapPhase(int phaseNo) {
+        foreach (LaserBeam beam in phaseBeamDictionary[currentPhase]) {
+            beam.activated = false;
+            beam.refresh(isCoolingDown);
+        }
+        currentPhase = phaseNo % 2;
+        foreach (LaserBeam beam in phaseBeamDictionary[currentPhase]) {
+            beam.activated = true;
+            beam.refresh(isCoolingDown);
         }
     }
 }

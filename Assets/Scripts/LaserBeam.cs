@@ -57,8 +57,16 @@ public class LaserBeam : MonoBehaviour {
         }
     }
 
-    public void refresh() {
-        spriteRenderer.sprite = images[0];
+    public void refresh(bool isCooldown) {
+        if (activated) {
+            if (isCooldown) {
+                spriteRenderer.sprite = images[1];
+            } else {
+                spriteRenderer.sprite = images[0];
+            }
+        } else {
+            spriteRenderer.sprite =images[2];
+        }
     }
 
     private void startFiring() {

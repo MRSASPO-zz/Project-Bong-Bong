@@ -62,11 +62,11 @@ public class ScientistBoss : MonoBehaviour {
         faceDir = ((this.transform.position.x - playerT.position.x) > 0) ? -1 : 1;
         Face(faceDir);
 
-        //startFiring();
-        //firingCDTimer();
+        startFiring();
+        firingCDTimer();
 
-        //beginTeleport();
-        //TeleportCdTimer();
+        beginTeleport();
+        TeleportCdTimer();
 
         DropBoss(); //Unrelated to boss mechanics
     }
