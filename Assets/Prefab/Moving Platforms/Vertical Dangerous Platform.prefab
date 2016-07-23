@@ -229,9 +229,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9832b2dd4abc25448ae0f19a8d4e69a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movingObjectsMask:
-    serializedVersion: 2
-    m_Bits: 0
   collisionMask:
     serializedVersion: 2
     m_Bits: 0

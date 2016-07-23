@@ -93,7 +93,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damping: 4
   speed: 6
-  autoExplodeTime: 3
+  autoExplodeTime: 2
   explosion: {fileID: 179530, guid: 286ca7c37126667429f26bfdb267c56f, type: 2}
 --- !u!212 &21271010
 SpriteRenderer:

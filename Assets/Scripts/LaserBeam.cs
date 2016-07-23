@@ -28,7 +28,7 @@ public class LaserBeam : MonoBehaviour {
     float laserOnTimer;
     
     public bool activated;
-
+    public bool isFireForever;
     //public float cooldownTime;
     //public bool isCoolingDown;
     //float cooldownTimer;
@@ -44,10 +44,11 @@ public class LaserBeam : MonoBehaviour {
         //isCoolingDown = false;
     }
 
-    //void Update() {
-        //shootLaser();
-        //firingCDTimer();
-    //}
+    void Start() {
+        if (isFireForever) {
+            shootLaser();
+        }
+    }
 
     public void shootLaser() {
         if (activated) {
@@ -96,10 +97,12 @@ public class LaserBeam : MonoBehaviour {
 
     void laserTimerFiring() {
         if (laserOn) {
-            if(laserOnTimer > 0) {
-                laserOnTimer -= Time.deltaTime;
-            } else {
-                laserOn = false;
+            if(!isFireForever) {
+                if (laserOnTimer > 0) {
+                    laserOnTimer -= Time.deltaTime;
+                } else {
+                    laserOn = false;
+                }
             }
         }
     }
@@ -128,17 +131,22 @@ public class LaserBeam : MonoBehaviour {
             } else {
                 line.SetPosition(1, ray.GetPoint(distance));
             }
-            RaycastHit2D[] hits = Physics2D.RaycastAll (transform.position, directionDictionary[direction], travelled);
+
+            RaycastHit2D[] hits = Physics2D.RaycastAll (transform.position, directionDictionary[direction], Mathf.Abs(travelled));
+            //Debug.DrawRay(transform.position, directionDictionary[direction]* Mathf.Abs(travelled), Color.cyan);
             foreach(RaycastHit2D hit in hits) {
+                
                 if(hit.collider.CompareTag("Player")) {
                     hit.collider.SendMessageUpwards("Damage");
                 }
                 if (hit.collider.CompareTag("Boss")) {
                     hit.collider.SendMessageUpwards("LaserDamage");
                 }
-                //if (hit.collider.CompareTag("Destroyable")) {
-                  //  hit.collider.SendMessageUpwards("ExplodeSelf");
-                //}
+                if (isFireForever) {
+                    if (hit.collider.CompareTag("Destroyable")) {
+                        hit.collider.SendMessageUpwards("ExplodeSelf");
+                    }
+                }
             }
             laserTimerFiring();
             yield return null;
