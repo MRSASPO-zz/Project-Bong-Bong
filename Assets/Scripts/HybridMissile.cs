@@ -4,11 +4,18 @@ using System.Collections;
 public class HybridMissile : MonoBehaviour
 {
     public float speed;
-    public int threshold;
+    private int threshold;
     private int passes = 0;
     public GameObject explosion; //prefab for explosion
 
+    void Start()
+    {
+        threshold = Random.Range(0, 2);
+    }
+
     // Update is called once per frame
+
+
     void Update()
     {
         transform.Translate(0, -speed, 0);

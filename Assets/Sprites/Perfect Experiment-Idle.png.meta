@@ -1,0 +1,305 @@
+fileFormatVersion: 2
+guid: 48abbf6180e251c4084fbe3c204113ee
+timeCreated: 1469241531
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Perfect Experiment-Idle_0
+    21300002: Perfect Experiment-Idle_1
+    21300004: Perfect Experiment-Idle_2
+    21300006: Perfect Experiment-Idle_3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 32
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Perfect Experiment-Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 320
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -76, y: -81}
+        - {x: -91, y: -81}
+        - {x: -94, y: -86}
+        - {x: -94, y: -105}
+        - {x: -84, y: -128}
+        - {x: -79, y: -128}
+        - {x: -71, y: -112}
+        - {x: -69, y: -106}
+        - {x: -69, y: -84}
+      - - {x: -55, y: -81}
+        - {x: -57, y: -86}
+        - {x: -57, y: -116}
+        - {x: -47, y: -128}
+        - {x: -38, y: -128}
+        - {x: -32, y: -104}
+        - {x: -32, y: -85}
+        - {x: -38, y: -81}
+      - - {x: 20, y: -81}
+        - {x: 0, y: -81}
+        - {x: -2, y: -85}
+        - {x: -2, y: -114}
+        - {x: 8, y: -128}
+        - {x: 13, y: -128}
+        - {x: 18, y: -118}
+        - {x: 23, y: -101}
+        - {x: 23, y: -83}
+      - - {x: 76, y: -81}
+        - {x: 56, y: -81}
+        - {x: 54, y: -85}
+        - {x: 54, y: -114}
+        - {x: 64, y: -128}
+        - {x: 69, y: -128}
+        - {x: 74, y: -118}
+        - {x: 79, y: -101}
+        - {x: 79, y: -83}
+      - - {x: -36, y: 62}
+        - {x: -109, y: 62}
+        - {x: -109, y: -55}
+        - {x: -85, y: -72}
+        - {x: 42, y: -72}
+        - {x: 100, y: -38}
+        - {x: 100, y: -22}
+        - {x: -31, y: 61}
+      - - {x: -82, y: 82}
+        - {x: -70, y: 65}
+        - {x: -40, y: 65}
+        - {x: -35, y: 67}
+        - {x: -35, y: 107}
+        - {x: -75, y: 107}
+        - {x: -82, y: 106}
+    - name: Perfect Experiment-Idle_1
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 320
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -76, y: -81}
+        - {x: -91, y: -81}
+        - {x: -94, y: -86}
+        - {x: -94, y: -105}
+        - {x: -84, y: -128}
+        - {x: -79, y: -128}
+        - {x: -71, y: -112}
+        - {x: -69, y: -106}
+        - {x: -69, y: -84}
+      - - {x: -55, y: -81}
+        - {x: -57, y: -86}
+        - {x: -57, y: -116}
+        - {x: -47, y: -128}
+        - {x: -38, y: -128}
+        - {x: -32, y: -104}
+        - {x: -32, y: -85}
+        - {x: -38, y: -81}
+      - - {x: 20, y: -81}
+        - {x: 0, y: -81}
+        - {x: -2, y: -85}
+        - {x: -2, y: -114}
+        - {x: 8, y: -128}
+        - {x: 13, y: -128}
+        - {x: 18, y: -118}
+        - {x: 23, y: -101}
+        - {x: 23, y: -83}
+      - - {x: 76, y: -81}
+        - {x: 56, y: -81}
+        - {x: 54, y: -85}
+        - {x: 54, y: -114}
+        - {x: 64, y: -128}
+        - {x: 69, y: -128}
+        - {x: 74, y: -118}
+        - {x: 79, y: -101}
+        - {x: 79, y: -83}
+      - - {x: -32, y: 50}
+        - {x: -44, y: 52}
+        - {x: -107, y: 52}
+        - {x: -109, y: 31}
+        - {x: -109, y: -57}
+        - {x: -87, y: -82}
+        - {x: -1, y: -82}
+        - {x: 28, y: -74}
+        - {x: 100, y: -37}
+        - {x: 99, y: -34}
+        - {x: 29, y: 3}
+      - - {x: -82, y: 90}
+        - {x: -70, y: 73}
+        - {x: -40, y: 73}
+        - {x: -35, y: 75}
+        - {x: -35, y: 115}
+        - {x: -75, y: 115}
+        - {x: -82, y: 114}
+    - name: Perfect Experiment-Idle_2
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 320
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -76, y: -81}
+        - {x: -91, y: -81}
+        - {x: -94, y: -86}
+        - {x: -94, y: -105}
+        - {x: -84, y: -128}
+        - {x: -79, y: -128}
+        - {x: -71, y: -112}
+        - {x: -69, y: -106}
+        - {x: -69, y: -84}
+      - - {x: -55, y: -81}
+        - {x: -57, y: -86}
+        - {x: -57, y: -116}
+        - {x: -47, y: -128}
+        - {x: -38, y: -128}
+        - {x: -32, y: -104}
+        - {x: -32, y: -85}
+        - {x: -38, y: -81}
+      - - {x: 20, y: -81}
+        - {x: 0, y: -81}
+        - {x: -2, y: -85}
+        - {x: -2, y: -114}
+        - {x: 8, y: -128}
+        - {x: 13, y: -128}
+        - {x: 18, y: -118}
+        - {x: 23, y: -101}
+        - {x: 23, y: -83}
+      - - {x: 76, y: -81}
+        - {x: 56, y: -81}
+        - {x: 54, y: -85}
+        - {x: 54, y: -114}
+        - {x: 64, y: -128}
+        - {x: 69, y: -128}
+        - {x: 74, y: -118}
+        - {x: 79, y: -101}
+        - {x: 79, y: -83}
+      - - {x: -76, y: 105}
+        - {x: -81, y: 100}
+        - {x: -83, y: 90}
+        - {x: -76, y: 77}
+        - {x: -106, y: 79}
+        - {x: -109, y: 45}
+        - {x: -109, y: -39}
+        - {x: -78, y: -66}
+        - {x: 8, y: -66}
+        - {x: 100, y: -33}
+        - {x: 100, y: 7}
+        - {x: -6, y: 105}
+    - name: Perfect Experiment-Idle_3
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 320
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -76, y: -81}
+        - {x: -91, y: -81}
+        - {x: -94, y: -86}
+        - {x: -94, y: -105}
+        - {x: -84, y: -128}
+        - {x: -79, y: -128}
+        - {x: -71, y: -112}
+        - {x: -69, y: -106}
+        - {x: -69, y: -84}
+      - - {x: -55, y: -81}
+        - {x: -57, y: -86}
+        - {x: -57, y: -116}
+        - {x: -47, y: -128}
+        - {x: -38, y: -128}
+        - {x: -32, y: -104}
+        - {x: -32, y: -85}
+        - {x: -38, y: -81}
+      - - {x: 20, y: -81}
+        - {x: 0, y: -81}
+        - {x: -2, y: -85}
+        - {x: -2, y: -114}
+        - {x: 8, y: -128}
+        - {x: 13, y: -128}
+        - {x: 18, y: -118}
+        - {x: 23, y: -101}
+        - {x: 23, y: -83}
+      - - {x: 76, y: -81}
+        - {x: 56, y: -81}
+        - {x: 54, y: -85}
+        - {x: 54, y: -114}
+        - {x: 64, y: -128}
+        - {x: 69, y: -128}
+        - {x: 74, y: -118}
+        - {x: 79, y: -101}
+        - {x: 79, y: -83}
+      - - {x: -36, y: 62}
+        - {x: -109, y: 62}
+        - {x: -109, y: -55}
+        - {x: -85, y: -72}
+        - {x: 42, y: -72}
+        - {x: 100, y: -38}
+        - {x: 100, y: -22}
+        - {x: -31, y: 61}
+      - - {x: -87, y: 107}
+        - {x: -87, y: 91}
+        - {x: -79, y: 71}
+        - {x: -66, y: 65}
+        - {x: -39, y: 65}
+        - {x: -35, y: 68}
+        - {x: -35, y: 107}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
