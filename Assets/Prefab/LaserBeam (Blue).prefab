@@ -75,6 +75,9 @@ MonoBehaviour:
   - {fileID: 21300012, guid: c2888de1d1e6d08449bcb8cf780971dd, type: 3}
   - {fileID: 21300016, guid: c2888de1d1e6d08449bcb8cf780971dd, type: 3}
   distance: 150
+  endMask:
+    serializedVersion: 2
+    m_Bits: 8192
   direction: 1
   laserOnTime: 3
   activated: 1

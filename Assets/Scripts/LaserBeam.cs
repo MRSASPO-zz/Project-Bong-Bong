@@ -11,6 +11,7 @@ public class LaserBeam : MonoBehaviour {
     public SpriteRenderer spriteRenderer;
     public Sprite[] images;
     public float distance = 150f;
+    public LayerMask endMask;
 
     [Range(0, 3)]
     // 0 => right
@@ -114,33 +115,30 @@ public class LaserBeam : MonoBehaviour {
 
             line.material.mainTextureOffset = new Vector2(Time.time*10, Time.time*10);
             line.SetPosition(0, ray.origin);
-            
-            RaycastHit2D[] hits = Physics2D.RaycastAll (transform.position, directionDictionary[direction], distance);
-            bool reachedEnd = false;
-            foreach(RaycastHit2D hit in hits) {
-                if(hit.collider.gameObject.layer == LayerMask.NameToLayer("Laser End")) {
-                    if (direction == 0 || direction == 2) {
-                        float travelled = hit.point.x - transform.position.x;
-                        line.SetPosition(1, new Vector3(travelled, 0, 0));
-                    } else if (direction == 1 || direction == 3) {
-                        float travelled = hit.point.y - transform.position.y;
-                        line.SetPosition(1, new Vector3(0, travelled, 0));
-                    }
-                    
-                    reachedEnd = true;
+            RaycastHit2D hitEnd = Physics2D.Raycast(transform.position, directionDictionary[direction], distance, endMask);
+            float travelled = distance;
+            if (hitEnd) {
+                if (direction == 0 || direction == 2) {
+                    travelled = hitEnd.point.x - transform.position.x;
+                    line.SetPosition(1, new Vector3(travelled, 0, 0));
+                } else if (direction == 1 || direction == 3) {
+                    travelled = hitEnd.point.y - transform.position.y;
+                    line.SetPosition(1, new Vector3(0, travelled, 0));
                 }
+            } else {
+                line.SetPosition(1, ray.GetPoint(distance));
+            }
+            RaycastHit2D[] hits = Physics2D.RaycastAll (transform.position, directionDictionary[direction], travelled);
+            foreach(RaycastHit2D hit in hits) {
                 if(hit.collider.CompareTag("Player")) {
                     hit.collider.SendMessageUpwards("Damage");
                 }
                 if (hit.collider.CompareTag("Boss")) {
                     hit.collider.SendMessageUpwards("LaserDamage");
                 }
-                if (hit.collider.CompareTag("Destroyable")) {
-                    hit.collider.SendMessageUpwards("ExplodeSelf");
-                }
-            }
-            if (!reachedEnd) {
-                line.SetPosition(1, ray.GetPoint(distance));
+                //if (hit.collider.CompareTag("Destroyable")) {
+                  //  hit.collider.SendMessageUpwards("ExplodeSelf");
+                //}
             }
             laserTimerFiring();
             yield return null;

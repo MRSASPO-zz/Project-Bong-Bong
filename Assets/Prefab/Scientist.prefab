@@ -127,7 +127,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bossDamage: 0
-  invulnerable: 0
   ue:
     m_PersistentCalls:
       m_Calls:

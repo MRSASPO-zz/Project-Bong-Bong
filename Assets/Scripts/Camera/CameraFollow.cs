@@ -12,6 +12,8 @@ public class CameraFollow : MonoBehaviour {
     //min and max_x for the camera's size, to set the boundaries of the camera, offset is to the center of the camera
     public float min_x = 0;
     public float max_x = 50;
+    float prev_min_x;
+    float prev_max_x;
 
     FocusArea focusArea;
 
