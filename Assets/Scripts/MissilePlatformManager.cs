@@ -6,10 +6,11 @@ public class MissilePlatformManager : MonoBehaviour {
     public MissilePlatform[] missilePlatforms;
     private int shotsFired = 0;
     private int shotThreshold = 5;
-    private float fireDelay = 2f;
-	
-	// Update is called once per frame
-	void Update () {
+    private float fireDelay = 4f;
+    private float fireDelayTimer = 0;
+
+    // Update is called once per frame
+    void Update () {
 	    if (shotsFired < shotThreshold)
         {
             if (determineMissileType())
@@ -24,7 +25,15 @@ public class MissilePlatformManager : MonoBehaviour {
         }
         else if(shotsFired == shotThreshold)
         {
-            resetFire();
+            if (fireDelayTimer <= 0)
+            {
+                fireDelayTimer = fireDelay;
+                resetFire();
+            }
+            else
+            {
+                fireDelayTimer -= Time.deltaTime;
+            }
         }
 	}
 

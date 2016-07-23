@@ -41,7 +41,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 6
-  m_GIWorkflowMode: 1
+  m_GIWorkflowMode: 0
   m_LightmapsMode: 1
   m_GISettings:
     serializedVersion: 2
@@ -205,52 +205,6 @@ MonoBehaviour:
 Transform:
   m_PrefabParentObject: {fileID: 439610, guid: a3a45a177cfa5684a97fc2ba88e7e0c2, type: 2}
   m_PrefabInternal: {fileID: 62618019}
---- !u!1001 &65685173
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 381889336}
-    m_Modifications:
-    - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 11.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -25.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
-      propertyPath: m_Name
-      value: Stone Collapsing Ground (4)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &76155142
 Prefab:
   m_ObjectHideFlags: 0
@@ -346,11 +300,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_RootOrder
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_Name
       value: Stone Collapsing Ground (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
@@ -448,15 +406,37 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_RootOrder
-      value: 21
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_Name
       value: Stone Collapsing Ground (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &148749913 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 187676, guid: a3a45a177cfa5684a97fc2ba88e7e0c2, type: 2}
+  m_PrefabInternal: {fileID: 212586878}
+--- !u!61 &148749914
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 148749913}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1001 &184443829
 Prefab:
   m_ObjectHideFlags: 0
@@ -575,15 +555,37 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_RootOrder
-      value: 28
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_Name
       value: Stone Collapsing Ground (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &204938910 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 187676, guid: a3a45a177cfa5684a97fc2ba88e7e0c2, type: 2}
+  m_PrefabInternal: {fileID: 1409666108}
+--- !u!61 &204938911
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 204938910}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1001 &209795745
 Prefab:
   m_ObjectHideFlags: 0
@@ -723,11 +725,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_RootOrder
-      value: 23
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_Name
       value: Stone Collapsing Ground (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
@@ -792,52 +798,6 @@ MonoBehaviour:
 Transform:
   m_PrefabParentObject: {fileID: 439610, guid: a3a45a177cfa5684a97fc2ba88e7e0c2, type: 2}
   m_PrefabInternal: {fileID: 278910127}
---- !u!1001 &308344950
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 381889336}
-    m_Modifications:
-    - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 19.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -25.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
-      propertyPath: m_RootOrder
-      value: 19
-      objectReference: {fileID: 0}
-    - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
-      propertyPath: m_Name
-      value: Stone Collapsing Ground (19)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &321357405
 Prefab:
   m_ObjectHideFlags: 0
@@ -935,11 +895,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_Name
       value: Stone Collapsing Ground (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
@@ -969,11 +933,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1448961558}
   - {fileID: 465806350}
   - {fileID: 1538995242}
   - {fileID: 1670738534}
-  - {fileID: 1237353075}
   - {fileID: 1495479137}
   - {fileID: 921816291}
   - {fileID: 2081083050}
@@ -984,11 +946,9 @@ Transform:
   - {fileID: 1845986819}
   - {fileID: 677031314}
   - {fileID: 447846312}
-  - {fileID: 1429137526}
   - {fileID: 1962302894}
   - {fileID: 1574822017}
   - {fileID: 1048458707}
-  - {fileID: 1257075349}
   - {fileID: 816002099}
   - {fileID: 1142225568}
   - {fileID: 564832675}
@@ -1000,7 +960,7 @@ Transform:
   - {fileID: 685916601}
   - {fileID: 464676704}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
 --- !u!1001 &389868799
 Prefab:
   m_ObjectHideFlags: 0
@@ -1038,19 +998,59 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_Name
       value: Stone Collapsing Ground (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &430615052 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 187676, guid: a3a45a177cfa5684a97fc2ba88e7e0c2, type: 2}
+  m_PrefabInternal: {fileID: 696082803}
+--- !u!61 &430615053
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 430615052}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!4 &447846312 stripped
 Transform:
   m_PrefabParentObject: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
   m_PrefabInternal: {fileID: 1962177927}
+--- !u!1 &451323005 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 187676, guid: a3a45a177cfa5684a97fc2ba88e7e0c2, type: 2}
+  m_PrefabInternal: {fileID: 469253132}
+--- !u!61 &451323006
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 451323005}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1001 &459742243
 Prefab:
   m_ObjectHideFlags: 0
@@ -1195,7 +1195,7 @@ Transform:
   - {fileID: 502787191}
   - {fileID: 1441654619}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
 --- !u!4 &502787191 stripped
 Transform:
   m_PrefabParentObject: {fileID: 483044, guid: 1918c4cc51942a44ab6a181ca547cdad, type: 2}
@@ -1237,11 +1237,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_Name
       value: Stone Collapsing Ground (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
@@ -1407,11 +1411,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_Name
       value: Stone Collapsing Ground (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
@@ -1492,6 +1500,24 @@ MonoBehaviour:
 Transform:
   m_PrefabParentObject: {fileID: 439610, guid: a3a45a177cfa5684a97fc2ba88e7e0c2, type: 2}
   m_PrefabInternal: {fileID: 696082803}
+--- !u!1 &763241254 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 192862, guid: dba99aaf012daea49ace8fff57384631, type: 2}
+  m_PrefabInternal: {fileID: 121977012}
+--- !u!61 &763241255
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 763241254}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1001 &767893633
 Prefab:
   m_ObjectHideFlags: 0
@@ -1529,15 +1555,55 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_RootOrder
-      value: 20
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_Name
       value: Stone Collapsing Ground (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &773604775 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 187676, guid: a3a45a177cfa5684a97fc2ba88e7e0c2, type: 2}
+  m_PrefabInternal: {fileID: 2100224262}
+--- !u!61 &773604776
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 773604775}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+--- !u!1 &781290719 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 187676, guid: a3a45a177cfa5684a97fc2ba88e7e0c2, type: 2}
+  m_PrefabInternal: {fileID: 1642493984}
+--- !u!61 &781290720
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 781290719}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1001 &814747507
 Prefab:
   m_ObjectHideFlags: 0
@@ -1662,6 +1728,24 @@ MonoBehaviour:
 Transform:
   m_PrefabParentObject: {fileID: 439610, guid: a3a45a177cfa5684a97fc2ba88e7e0c2, type: 2}
   m_PrefabInternal: {fileID: 844529838}
+--- !u!1 &855751278 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 187676, guid: a3a45a177cfa5684a97fc2ba88e7e0c2, type: 2}
+  m_PrefabInternal: {fileID: 321357405}
+--- !u!61 &855751279
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 855751278}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1001 &857895896
 Prefab:
   m_ObjectHideFlags: 0
@@ -1759,11 +1843,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_Name
       value: Stone Collapsing Ground (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
@@ -1772,6 +1860,24 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
   m_PrefabInternal: {fileID: 1000755082}
+--- !u!1 &890650382 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 187676, guid: a3a45a177cfa5684a97fc2ba88e7e0c2, type: 2}
+  m_PrefabInternal: {fileID: 62618019}
+--- !u!61 &890650383
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 890650382}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1001 &893284503
 Prefab:
   m_ObjectHideFlags: 0
@@ -1909,15 +2015,37 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_Name
       value: Stone Collapsing Ground (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &912153374 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 187676, guid: a3a45a177cfa5684a97fc2ba88e7e0c2, type: 2}
+  m_PrefabInternal: {fileID: 598891999}
+--- !u!61 &912153375
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 912153374}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!4 &921816291 stripped
 Transform:
   m_PrefabParentObject: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
@@ -1959,11 +2087,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_Name
       value: Stone Collapsing Ground (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
@@ -2088,6 +2220,24 @@ MonoBehaviour:
 Transform:
   m_PrefabParentObject: {fileID: 439610, guid: a3a45a177cfa5684a97fc2ba88e7e0c2, type: 2}
   m_PrefabInternal: {fileID: 955932979}
+--- !u!1 &971497674 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 187676, guid: a3a45a177cfa5684a97fc2ba88e7e0c2, type: 2}
+  m_PrefabInternal: {fileID: 278910127}
+--- !u!61 &971497675
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 971497674}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1001 &975313864
 Prefab:
   m_ObjectHideFlags: 0
@@ -2125,11 +2275,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_RootOrder
-      value: 18
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_Name
       value: Stone Collapsing Ground (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
@@ -2171,11 +2325,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_Name
       value: Stone Collapsing Ground (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
@@ -2217,11 +2375,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_RootOrder
-      value: 24
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_Name
       value: Stone Collapsing Ground (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
@@ -2327,7 +2489,25 @@ Transform:
   - {fileID: 1322146413}
   - {fileID: 696082805}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
+--- !u!1 &980263121 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 187676, guid: a3a45a177cfa5684a97fc2ba88e7e0c2, type: 2}
+  m_PrefabInternal: {fileID: 1322146411}
+--- !u!61 &980263122
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 980263121}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!114 &986543090 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11403126, guid: 72a2d5ce34c69be449465f3f5b8ae49f,
@@ -2371,11 +2551,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_RootOrder
-      value: 26
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_Name
       value: Stone Collapsing Ground (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
@@ -2388,6 +2572,24 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
   m_PrefabInternal: {fileID: 1165529181}
+--- !u!1 &1026119417 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 187676, guid: a3a45a177cfa5684a97fc2ba88e7e0c2, type: 2}
+  m_PrefabInternal: {fileID: 955932979}
+--- !u!61 &1026119418
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1026119417}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!4 &1048458707 stripped
 Transform:
   m_PrefabParentObject: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
@@ -2452,6 +2654,24 @@ MonoBehaviour:
 Transform:
   m_PrefabParentObject: {fileID: 439610, guid: a3a45a177cfa5684a97fc2ba88e7e0c2, type: 2}
   m_PrefabInternal: {fileID: 1058697513}
+--- !u!1 &1084229046 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 187676, guid: a3a45a177cfa5684a97fc2ba88e7e0c2, type: 2}
+  m_PrefabInternal: {fileID: 1659192889}
+--- !u!61 &1084229047
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1084229046}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1001 &1085537234
 Prefab:
   m_ObjectHideFlags: 0
@@ -2489,15 +2709,55 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_Name
       value: Stone Collapsing Ground (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1103935982 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 187676, guid: a3a45a177cfa5684a97fc2ba88e7e0c2, type: 2}
+  m_PrefabInternal: {fileID: 857895896}
+--- !u!61 &1103935983
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1103935982}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+--- !u!1 &1115628127 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 187676, guid: a3a45a177cfa5684a97fc2ba88e7e0c2, type: 2}
+  m_PrefabInternal: {fileID: 1482028952}
+--- !u!61 &1115628128
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1115628127}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1001 &1130856666
 Prefab:
   m_ObjectHideFlags: 0
@@ -2625,15 +2885,37 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_RootOrder
-      value: 25
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_Name
       value: Stone Collapsing Ground (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1202450529 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 187676, guid: a3a45a177cfa5684a97fc2ba88e7e0c2, type: 2}
+  m_PrefabInternal: {fileID: 1568079477}
+--- !u!61 &1202450530
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1202450529}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1001 &1225408044
 Prefab:
   m_ObjectHideFlags: 0
@@ -2694,10 +2976,6 @@ MonoBehaviour:
 Transform:
   m_PrefabParentObject: {fileID: 439610, guid: a3a45a177cfa5684a97fc2ba88e7e0c2, type: 2}
   m_PrefabInternal: {fileID: 1225408044}
---- !u!4 &1237353075 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
-  m_PrefabInternal: {fileID: 65685173}
 --- !u!1001 &1243633753
 Prefab:
   m_ObjectHideFlags: 0
@@ -2740,6 +3018,18 @@ Prefab:
     - target: {fileID: 129502, guid: e28bdcaaa0b7c4c42a67db879b0ed6ad, type: 2}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 133970, guid: e28bdcaaa0b7c4c42a67db879b0ed6ad, type: 2}
+      propertyPath: m_TagString
+      value: Lethal
+      objectReference: {fileID: 0}
+    - target: {fileID: 137938, guid: e28bdcaaa0b7c4c42a67db879b0ed6ad, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 136986, guid: e28bdcaaa0b7c4c42a67db879b0ed6ad, type: 2}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e28bdcaaa0b7c4c42a67db879b0ed6ad, type: 2}
@@ -2804,10 +3094,6 @@ MonoBehaviour:
 Transform:
   m_PrefabParentObject: {fileID: 439610, guid: a3a45a177cfa5684a97fc2ba88e7e0c2, type: 2}
   m_PrefabInternal: {fileID: 1256772393}
---- !u!4 &1257075349 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
-  m_PrefabInternal: {fileID: 308344950}
 --- !u!1001 &1257219944
 Prefab:
   m_ObjectHideFlags: 0
@@ -2845,11 +3131,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_Name
       value: Stone Collapsing Ground (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
@@ -2891,11 +3181,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_RootOrder
-      value: 16
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_Name
       value: Stone Collapsing Ground (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
@@ -2937,11 +3231,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_RootOrder
-      value: 27
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_Name
       value: Stone Collapsing Ground (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
@@ -3043,11 +3341,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_Name
       value: Stone Collapsing Ground (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
@@ -3056,6 +3358,24 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
   m_PrefabInternal: {fileID: 262543256}
+--- !u!1 &1297150755 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 187676, guid: a3a45a177cfa5684a97fc2ba88e7e0c2, type: 2}
+  m_PrefabInternal: {fileID: 1794429212}
+--- !u!61 &1297150756
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1297150755}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1001 &1322146411
 Prefab:
   m_ObjectHideFlags: 0
@@ -3157,11 +3477,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_RootOrder
-      value: 17
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_Name
       value: Stone Collapsing Ground (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
@@ -3286,10 +3610,24 @@ MonoBehaviour:
 Transform:
   m_PrefabParentObject: {fileID: 439610, guid: a3a45a177cfa5684a97fc2ba88e7e0c2, type: 2}
   m_PrefabInternal: {fileID: 1409666108}
---- !u!4 &1429137526 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
-  m_PrefabInternal: {fileID: 1587726784}
+--- !u!1 &1440753926 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 187676, guid: a3a45a177cfa5684a97fc2ba88e7e0c2, type: 2}
+  m_PrefabInternal: {fileID: 1770044}
+--- !u!61 &1440753927
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1440753926}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!4 &1441654619 stripped
 Transform:
   m_PrefabParentObject: {fileID: 483044, guid: 1918c4cc51942a44ab6a181ca547cdad, type: 2}
@@ -3323,11 +3661,7 @@ Transform:
   - {fileID: 1327408647}
   - {fileID: 685221180}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
---- !u!4 &1448961558 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
-  m_PrefabInternal: {fileID: 1763657742}
+  m_RootOrder: 10
 --- !u!224 &1480730944 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 22405870, guid: 802bf176819ba4647ba70a452b68285d,
@@ -3457,6 +3791,24 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
   m_PrefabInternal: {fileID: 516773888}
+--- !u!1 &1501071255 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 187676, guid: a3a45a177cfa5684a97fc2ba88e7e0c2, type: 2}
+  m_PrefabInternal: {fileID: 184443829}
+--- !u!61 &1501071256
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1501071255}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!4 &1523715191 stripped
 Transform:
   m_PrefabParentObject: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
@@ -3585,52 +3937,6 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
   m_PrefabInternal: {fileID: 1330764767}
---- !u!1001 &1587726784
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 381889336}
-    m_Modifications:
-    - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 26.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -30.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
-      propertyPath: m_RootOrder
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
-      propertyPath: m_Name
-      value: Stone Collapsing Ground (15)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &1595462165
 Prefab:
   m_ObjectHideFlags: 0
@@ -3668,11 +3974,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_RootOrder
-      value: 12
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_Name
       value: Stone Collapsing Ground (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
@@ -3737,6 +4047,24 @@ MonoBehaviour:
 Transform:
   m_PrefabParentObject: {fileID: 439610, guid: a3a45a177cfa5684a97fc2ba88e7e0c2, type: 2}
   m_PrefabInternal: {fileID: 1642493984}
+--- !u!1 &1655337122 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 187676, guid: a3a45a177cfa5684a97fc2ba88e7e0c2, type: 2}
+  m_PrefabInternal: {fileID: 1058697513}
+--- !u!61 &1655337123
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1655337122}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1001 &1659192889
 Prefab:
   m_ObjectHideFlags: 0
@@ -3797,6 +4125,24 @@ MonoBehaviour:
 Transform:
   m_PrefabParentObject: {fileID: 439610, guid: a3a45a177cfa5684a97fc2ba88e7e0c2, type: 2}
   m_PrefabInternal: {fileID: 1659192889}
+--- !u!1 &1660262979 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 187676, guid: a3a45a177cfa5684a97fc2ba88e7e0c2, type: 2}
+  m_PrefabInternal: {fileID: 814747507}
+--- !u!61 &1660262980
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1660262979}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!4 &1670738534 stripped
 Transform:
   m_PrefabParentObject: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
@@ -3851,48 +4197,60 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1918c4cc51942a44ab6a181ca547cdad, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &1763657742
-Prefab:
+--- !u!1 &1716507296 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 112230, guid: 8d6b17793eb00564aa391527fa2fd07f, type: 2}
+  m_PrefabInternal: {fileID: 1557156437}
+--- !u!61 &1716507297
+BoxCollider2D:
   m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1716507296}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 381889336}
-    m_Modifications:
-    - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 4.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -30.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
-  m_IsPrefabParent: 0
+  m_Size: {x: 1, y: 1}
+--- !u!1 &1744641297 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 187676, guid: a3a45a177cfa5684a97fc2ba88e7e0c2, type: 2}
+  m_PrefabInternal: {fileID: 1274375399}
+--- !u!61 &1744641298
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1744641297}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+--- !u!1 &1769414830 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 187676, guid: a3a45a177cfa5684a97fc2ba88e7e0c2, type: 2}
+  m_PrefabInternal: {fileID: 1256772393}
+--- !u!61 &1769414831
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1769414830}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1001 &1794429212
 Prefab:
   m_ObjectHideFlags: 0
@@ -3990,11 +4348,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_RootOrder
-      value: 29
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_Name
       value: Stone Collapsing Ground (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
@@ -4003,6 +4365,60 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
   m_PrefabInternal: {fileID: 1595462165}
+--- !u!1 &1849066309 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 187676, guid: a3a45a177cfa5684a97fc2ba88e7e0c2, type: 2}
+  m_PrefabInternal: {fileID: 1996866163}
+--- !u!61 &1849066310
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1849066309}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+--- !u!1 &1875543187 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 187676, guid: a3a45a177cfa5684a97fc2ba88e7e0c2, type: 2}
+  m_PrefabInternal: {fileID: 942087733}
+--- !u!61 &1875543188
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1875543187}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+--- !u!1 &1909720089 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 187676, guid: a3a45a177cfa5684a97fc2ba88e7e0c2, type: 2}
+  m_PrefabInternal: {fileID: 844529838}
+--- !u!61 &1909720090
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1909720089}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1001 &1962177927
 Prefab:
   m_ObjectHideFlags: 0
@@ -4040,11 +4456,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_RootOrder
-      value: 14
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
       propertyPath: m_Name
       value: Stone Collapsing Ground (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
@@ -4103,6 +4523,48 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
   m_PrefabInternal: {fileID: 977600459}
+--- !u!1001 &1993711732
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 406160, guid: a4c3f185e2acbd54dba81d75c500b784, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 15.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 406160, guid: a4c3f185e2acbd54dba81d75c500b784, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -24
+      objectReference: {fileID: 0}
+    - target: {fileID: 406160, guid: a4c3f185e2acbd54dba81d75c500b784, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 406160, guid: a4c3f185e2acbd54dba81d75c500b784, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 406160, guid: a4c3f185e2acbd54dba81d75c500b784, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 406160, guid: a4c3f185e2acbd54dba81d75c500b784, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 406160, guid: a4c3f185e2acbd54dba81d75c500b784, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 406160, guid: a4c3f185e2acbd54dba81d75c500b784, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: a4c3f185e2acbd54dba81d75c500b784, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &1996866163
 Prefab:
   m_ObjectHideFlags: 0
@@ -4163,6 +4625,42 @@ MonoBehaviour:
 Transform:
   m_PrefabParentObject: {fileID: 439610, guid: a3a45a177cfa5684a97fc2ba88e7e0c2, type: 2}
   m_PrefabInternal: {fileID: 1996866163}
+--- !u!1 &2005818362 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 187676, guid: a3a45a177cfa5684a97fc2ba88e7e0c2, type: 2}
+  m_PrefabInternal: {fileID: 541375555}
+--- !u!61 &2005818363
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2005818362}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+--- !u!1 &2032848885 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 187676, guid: a3a45a177cfa5684a97fc2ba88e7e0c2, type: 2}
+  m_PrefabInternal: {fileID: 1485020171}
+--- !u!61 &2032848886
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2032848885}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1001 &2040574312
 Prefab:
   m_ObjectHideFlags: 0
@@ -4373,3 +4871,21 @@ MonoBehaviour:
 Transform:
   m_PrefabParentObject: {fileID: 439610, guid: a3a45a177cfa5684a97fc2ba88e7e0c2, type: 2}
   m_PrefabInternal: {fileID: 2100224262}
+--- !u!1 &2133650958 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 187676, guid: a3a45a177cfa5684a97fc2ba88e7e0c2, type: 2}
+  m_PrefabInternal: {fileID: 1225408044}
+--- !u!61 &2133650959
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2133650958}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
