@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <!--Tiled2Unity generated xml data-->
 <!--Do not modify by hand-->
-<!--Last exported: 24/07/2016 19:12:45-->
+<!--Last exported: 24/07/2016 21:30:42-->
 <Tiled2Unity version="1.0.6.0">
   <AssignMaterial mesh="mesh_0001" material="Bricks" />
   <AssignMaterial mesh="mesh_0002" material="Bricks" />
@@ -64,6 +64,17 @@
           <Path>156,-31 155,-31 155,-32 156,-32</Path>
           <Path>141,-32 140,-32 140,-33 141,-33</Path>
         </PolygonCollider2D>
+      </GameObject>
+    </GameObject>
+    <GameObject name="Invisible Wall" x="0" y="0" z="0">
+      <GameObject name="RectangleObject" x="0" y="-5.9375" rotation="0" tag="Invisible Wall" layer="Obstacle">
+        <BoxCollider2D width="0.5625" height="35.5" />
+      </GameObject>
+      <GameObject name="RectangleObject" x="-0.84375" y="-52.125" rotation="0" tag="Invisible Wall" layer="Obstacle">
+        <BoxCollider2D width="218.34375" height="1.1875" />
+      </GameObject>
+      <GameObject name="RectangleObject" x="214.96875" y="-3" rotation="0" tag="Invisible Wall" layer="Obstacle">
+        <BoxCollider2D width="0.5625" height="35.5" />
       </GameObject>
     </GameObject>
   </Prefab>

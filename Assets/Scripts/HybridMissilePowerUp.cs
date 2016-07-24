@@ -13,7 +13,7 @@ public class HybridMissilePowerUp : MonoBehaviour {
         // Update is called once per frame
         void Update()
         {
-            transform.Translate(0, -speed, 0);
+            transform.Translate(0, -speed*Time.timeScale, 0);
         }
 
     void OnTriggerEnter2D(Collider2D col)

@@ -11,7 +11,7 @@ public class RisingLava : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        speed += .035f;
+        speed += .035f*Time.timeScale;
         transform.position = new Vector3(transform.position.x, speed, transform.position.z);
     }
 }
