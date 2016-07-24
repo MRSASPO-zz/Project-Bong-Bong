@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 126002, guid: 70ad6f47d0292414da932051556c63c6, type: 2}
-  firingCd: 1.5
+  firingCd: 2
   projectileOffset: {x: 0, y: 0, z: 0}
   range: 25
 --- !u!212 &21220736

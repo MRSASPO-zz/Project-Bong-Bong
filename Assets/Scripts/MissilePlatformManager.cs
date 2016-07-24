@@ -5,7 +5,7 @@ public class MissilePlatformManager : MonoBehaviour {
 
     public MissilePlatform[] missilePlatforms;
     private int shotsFired = 0;
-    private int shotThreshold = 5;
+    private int shotThreshold = 10;
     private float fireDelay = 4f;
     private float fireDelayTimer = 0;
 
