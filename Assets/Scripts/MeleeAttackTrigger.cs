@@ -16,7 +16,6 @@ public class MeleeAttackTrigger : MonoBehaviour {
             {
                 col.SendMessageUpwards("Damage");
                 player.Depower();
-                player.StrongKnockback();
             }
         }
         if (col.CompareTag("Lever")) {
