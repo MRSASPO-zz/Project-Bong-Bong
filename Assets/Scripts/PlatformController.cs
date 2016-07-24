@@ -33,6 +33,9 @@ public class PlatformController : RayCastController {
     }
 
     void Update() {
+        //if(Time.timeScale == 0) {
+          //  return;
+        //}
         UpdateRaycastOrigin();
 
         Vector3 velocity = CalculatePlatformMovement();
@@ -40,7 +43,7 @@ public class PlatformController : RayCastController {
         CalculatePassengerMovement(velocity);
 
         MovePassengers(true);
-        transform.Translate(velocity);
+        transform.Translate(velocity*Time.timeScale);
         MovePassengers(false);
     }
 

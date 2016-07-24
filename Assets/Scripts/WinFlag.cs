@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class LevelManager : MonoBehaviour {
+public class WinFlag : MonoBehaviour {
     public string levelName;
     Animator anim;
 

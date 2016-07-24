@@ -49,6 +49,7 @@ public class Controller2D : RayCastController {
             VerticalCollisions(ref velocity);
         }
 
+        velocity = velocity * Time.timeScale;
         transform.Translate(velocity);
 
         if (standingOnPlatform) {
