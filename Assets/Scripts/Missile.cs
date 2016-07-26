@@ -10,14 +10,42 @@ public class Missile : MonoBehaviour {
     public float autoExplodeTime = 5f;
 
     public GameObject explosion; //prefab for explosion
+    private BoxCollider2D collider;
+    private SpriteRenderer sr;
+    private float cliplength;
+    private bool isExploded;
 
-	void Start () {
+    GameObject AudioSourceGO;
+    AudioSource audioSource;
+
+    void Start () {
+        collider = GetComponent<BoxCollider2D>();
+        sr = GetComponent<SpriteRenderer>();
         target = GameObject.FindGameObjectWithTag("Player").transform;
+        attachAudioSource();
         StartCoroutine(AutoExplode());
+        isExploded = false;
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    private void attachAudioSource() {
+        this.AudioSourceGO = ObjectPoolManager.Instance.GetObject("AudioSourcePrefab");
+        this.audioSource = this.AudioSourceGO.GetComponent<AudioSource>();
+        this.audioSource.playOnAwake = false;
+        this.audioSource.maxDistance = 15;
+        this.audioSource.clip = AudioManager.audioClips["Missile Explosion Sound"];
+        this.cliplength = audioSource.clip.length;
+        audioSource.spatialBlend = 1;
+        this.AudioSourceGO.SetActive(true);
+    }
+
+    private void detachAudioSource() {
+        audioSource = null;
+        AudioSourceGO.SetActive(false);
+        AudioSourceGO = null;
+    }
+
+    // Update is called once per frame
+    void Update () {
         Vector3 posNormalised = target.position - transform.position; //also the direction
         float angle = Mathf.Atan2(posNormalised.y, posNormalised.x) * 180 / Mathf.PI + 180;
         Quaternion rotation = Quaternion.Euler(0, 0, angle);
@@ -33,7 +61,21 @@ public class Missile : MonoBehaviour {
     }
 
     public void ExplodeSelf() {
-        Instantiate(explosion, transform.position, Quaternion.identity);
+        collider.enabled = false;
+        sr.enabled = false;
+
+        if (!isExploded) {
+            isExploded = true;
+            AudioSourceGO.transform.position = this.transform.position;
+            audioSource.Play();
+            Instantiate(explosion, transform.position, Quaternion.identity);
+            StartCoroutine(detachAudioSourceAndDestroy());
+        }
+    }
+        
+    IEnumerator detachAudioSourceAndDestroy() {
+        yield return new WaitForSeconds(cliplength);
+        detachAudioSource();
         Destroy(gameObject);
     }
 

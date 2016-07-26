@@ -33,6 +33,9 @@ public class LaserBeam : MonoBehaviour {
     //public bool isCoolingDown;
     //float cooldownTimer;
 
+    private GameObject AudioSourceGO;
+    private AudioSource audioSource;
+
     void Awake() {
         line = GetComponent<LineRenderer>();
         directionDictionary.Add(0, Vector2.right);
@@ -45,9 +48,21 @@ public class LaserBeam : MonoBehaviour {
     }
 
     void Start() {
+        attachAudioSource();
         if (isFireForever) {
             shootLaser();
         }
+    }
+
+    private void attachAudioSource() {
+        this.AudioSourceGO = ObjectPoolManager.Instance.GetObject("AudioSourcePrefab");
+        this.audioSource = this.AudioSourceGO.GetComponent<AudioSource>();
+        this.audioSource.maxDistance = 20;
+        this.audioSource.clip = AudioManager.audioClips["Laser Sound"];
+        audioSource.rolloffMode = AudioRolloffMode.Custom;
+        audioSource.spatialBlend = 1;
+        audioSource.loop = true;
+        this.AudioSourceGO.SetActive(true);
     }
 
     public void shootLaser() {
@@ -74,6 +89,7 @@ public class LaserBeam : MonoBehaviour {
     private void startFiring() {
         laserOn = true;
         laserOnTimer = laserOnTime;
+        audioSource.Play();
         StartCoroutine(FireLaser());
 
         //if (!isCoolingDown) {
@@ -101,6 +117,7 @@ public class LaserBeam : MonoBehaviour {
                 if (laserOnTimer > 0) {
                     laserOnTimer -= Time.deltaTime;
                 } else {
+                    audioSource.loop = false;
                     laserOn = false;
                 }
             }
@@ -111,9 +128,9 @@ public class LaserBeam : MonoBehaviour {
     {
         spriteRenderer.sprite = images[1];
         line.enabled = true;
- 
         while (laserOn)
-        {   
+        {
+            AudioSourceGO.transform.position = transform.position;
             Ray2D ray = new Ray2D(Vector3.zero, directionDictionary[direction]);
 
             line.material.mainTextureOffset = new Vector2(Time.time*10, Time.time*10);

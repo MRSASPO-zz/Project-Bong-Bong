@@ -40,7 +40,10 @@ public class ScientistBoss : Boss {
     private float teleportingTimer;
     private System.Random rnd = new System.Random();
     private int positionIndex; //denotes the current position (NOTE that you should keep the 1st point of localWayPoint as (0, 0, 0) for it to work
-    //
+                               //
+
+    private GameObject AudioSourceGO;
+    private AudioSource audioSource;
 
     void Start () {
         controller = GetComponent<Controller2D>();
@@ -56,6 +59,17 @@ public class ScientistBoss : Boss {
         teleportReady = false;
         teleportingTimer = teleportCd;
         positionIndex = 0;
+        attachAudioSource();
+    }
+
+    private void attachAudioSource() {
+        this.AudioSourceGO = ObjectPoolManager.Instance.GetObject("AudioSourcePrefab");
+        this.audioSource = this.AudioSourceGO.GetComponent<AudioSource>();
+        this.audioSource.maxDistance = 80;
+        audioSource.spatialBlend = 1;
+        audioSource.rolloffMode = AudioRolloffMode.Custom;
+        audioSource.loop = false;
+        this.AudioSourceGO.SetActive(true);
     }
 
     private void setTeleportPoints() {
@@ -115,7 +129,8 @@ public class ScientistBoss : Boss {
             
             anim.Play("Firing", -1, 0f);
             anim.Play("Firing");
-            
+            audioSource.clip = AudioManager.audioClips["Gunshot Sound"];
+            audioSource.Play();
             GameObject missile = (GameObject)Instantiate(projectilePrefab, spawnPoint, rotation);
             //missile.transform.parent = transform;
             //Do something to the projectile after spawn
@@ -159,6 +174,7 @@ public class ScientistBoss : Boss {
         }
         positionIndex = rndInt;
         transform.position = globalWayPoints[positionIndex];
+        AudioSourceGO.transform.position = transform.position;
         anim.Play("Reappear");
         collider.isTrigger = true;
     }
