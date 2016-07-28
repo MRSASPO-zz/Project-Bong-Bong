@@ -35,6 +35,7 @@ public class Missile : MonoBehaviour {
         this.audioSource.clip = AudioManager.audioClips["Missile Explosion Sound"];
         this.cliplength = audioSource.clip.length;
         audioSource.spatialBlend = 1;
+        audioSource.rolloffMode = AudioRolloffMode.Custom;
         this.AudioSourceGO.SetActive(true);
     }
 

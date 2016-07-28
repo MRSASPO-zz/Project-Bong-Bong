@@ -2111,10 +2111,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 11487086, guid: ac88479a8944ad44f876095f5d36d308, type: 2}
-      propertyPath: localWayPoints.Array.data[1].x
-      value: -27
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ac88479a8944ad44f876095f5d36d308, type: 2}
   m_IsPrefabParent: 0
@@ -2246,10 +2242,6 @@ Prefab:
     - target: {fileID: 412184, guid: 5c2f54f484bf021418da04ccda73004a, type: 2}
       propertyPath: m_RootOrder
       value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 181440, guid: 5c2f54f484bf021418da04ccda73004a, type: 2}
-      propertyPath: m_TagString
-      value: Dangerous Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5c2f54f484bf021418da04ccda73004a, type: 2}
