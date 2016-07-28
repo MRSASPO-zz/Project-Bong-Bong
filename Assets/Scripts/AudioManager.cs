@@ -23,7 +23,7 @@ public class AudioManager : MonoBehaviour {
         foreach(AudioClip clip in clips) {
             audioClips[clip.name] = clip;
         }
-        bool createpool = ObjectPoolManager.Instance.createPool(audioSourcePrefab, 10, 100);
+        bool createpool = ObjectPoolManager.Instance.createPool(audioSourcePrefab, 10, 200);
         if (!createpool) {
             ObjectPoolManager.Instance.resetPool(audioSourcePrefab.name);
         }
