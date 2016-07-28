@@ -41,10 +41,8 @@ public class ScientistBoss : Boss {
     private System.Random rnd = new System.Random();
     private int positionIndex; //denotes the current position (NOTE that you should keep the 1st point of localWayPoint as (0, 0, 0) for it to work
                                //
-
-    private GameObject AudioSourceGO;
     private AudioSource audioSource;
-
+    
     void Start () {
         controller = GetComponent<Controller2D>();
         gravity = -(2 * 2.5f) / Mathf.Pow(0.3f, 2); //"max jump height" = 2.5, "time to apex" = 0.3f, equiv values for the player
@@ -53,23 +51,13 @@ public class ScientistBoss : Boss {
         collider = GetComponent<BoxCollider2D>();
         defaultScale = transform.localScale;
         spriteRenderer = GetComponent<SpriteRenderer>();
+        audioSource = GetComponent<AudioSource>();
 
         setTeleportPoints();
         firingReady = true;
         teleportReady = false;
         teleportingTimer = teleportCd;
         positionIndex = 0;
-        attachAudioSource();
-    }
-
-    private void attachAudioSource() {
-        this.AudioSourceGO = ObjectPoolManager.Instance.GetObject("AudioSourcePrefab");
-        this.audioSource = this.AudioSourceGO.GetComponent<AudioSource>();
-        this.audioSource.maxDistance = 80;
-        audioSource.spatialBlend = 1;
-        audioSource.rolloffMode = AudioRolloffMode.Custom;
-        audioSource.loop = false;
-        this.AudioSourceGO.SetActive(true);
     }
 
     private void setTeleportPoints() {
@@ -174,7 +162,6 @@ public class ScientistBoss : Boss {
         }
         positionIndex = rndInt;
         transform.position = globalWayPoints[positionIndex];
-        AudioSourceGO.transform.position = transform.position;
         anim.Play("Reappear");
         collider.isTrigger = true;
     }

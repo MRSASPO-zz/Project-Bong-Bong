@@ -53,17 +53,16 @@ public class Player : MonoBehaviour {
     private float faceDir;
     private float prevFaceDir;
 
-    public GameObject AudioSourceGO;
     private AudioSource audioSource;
 
     void Awake() {
         controller = GetComponent<Controller2D>(); //Attaches a controller2D script to gameobject
         spriteRenderer = GetComponent<SpriteRenderer>();
-        anim = GetComponent<Animator>();       
+        anim = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Start() {
-        attachAudioSource();
         setGravityPhysics();
         damage = 0;
         invulnerable = false;
@@ -77,16 +76,6 @@ public class Player : MonoBehaviour {
         gravity = -(2 * maxJumpHeight) / Mathf.Pow(timeToJumpApex, 2);
         maxJumpVelocity = Mathf.Abs(gravity) * timeToJumpApex;
         minJumpVelocity = Mathf.Sqrt(2 * Mathf.Abs(gravity) * minJumpHeight);
-    }
-
-    private void attachAudioSource() {
-        this.AudioSourceGO = ObjectPoolManager.Instance.GetObject("AudioSourcePrefab");
-        this.audioSource = this.AudioSourceGO.GetComponent<AudioSource>();
-        this.audioSource.maxDistance = 30;
-        audioSource.spatialBlend = 1;
-        audioSource.rolloffMode = AudioRolloffMode.Logarithmic;
-        audioSource.loop = false;
-        this.AudioSourceGO.SetActive(true);
     }
 
     void Update() {
@@ -254,7 +243,6 @@ public class Player : MonoBehaviour {
                 }
             }
             if (controller.collisions.below) {
-                AudioSourceGO.transform.position = transform.position;
                 audioSource.clip = AudioManager.audioClips["Jump Sound"];
                 audioSource.Play();
                 velocity.y = maxJumpVelocity;
@@ -272,7 +260,6 @@ public class Player : MonoBehaviour {
         if (CnInputManager.GetButtonDown("Fire1") && !melee) {
             melee = true;
             meeleeAttackTimer = meleeAttackCooldown;
-            AudioSourceGO.transform.position = transform.position;
             audioSource.clip = AudioManager.audioClips["Punch Sound"];
             audioSource.Play();
             attackTriggerRight.enabled = true;
@@ -339,14 +326,7 @@ public class Player : MonoBehaviour {
     void Die()
     {
         //Restart
-        //detachAudioSource();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
-
-    private void detachAudioSource() {
-        audioSource = null;
-        AudioSourceGO.SetActive(false);
-        AudioSourceGO = null;
     }
 
     public int GetCurrHealth() {

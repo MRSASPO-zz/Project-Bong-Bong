@@ -10,25 +10,11 @@ public class RocketTurret : MonoBehaviour {
     bool firingReady;
     float firingTimer;
     Transform target;
-
-    GameObject AudioSourceGO;
-    AudioSource audioSource;
+    private AudioSource audioSource;
 
 	void Start () {
         target = GameObject.FindGameObjectWithTag("Player").transform;
-        attachAudioSource();
-    }
-
-    private void attachAudioSource() {
-        this.AudioSourceGO = ObjectPoolManager.Instance.GetObject("AudioSourcePrefab");
-        this.audioSource = this.AudioSourceGO.GetComponent<AudioSource>();
-        this.audioSource.playOnAwake = false;
-        this.audioSource.maxDistance = range;
-        this.audioSource.clip = AudioManager.audioClips["Gunshot Sound"];
-        audioSource.spatialBlend = 1;
-        audioSource.loop = false;
-        audioSource.rolloffMode = AudioRolloffMode.Custom;
-        this.AudioSourceGO.SetActive(true);
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update () {
@@ -60,7 +46,7 @@ public class RocketTurret : MonoBehaviour {
             Vector3 spawnPoint = new Vector3(transform.position.x, transform.position.y, transform.position.z);
             spawnPoint = spawnPoint + projectileOffset;
             Quaternion rotation = Quaternion.Euler(0, 0, -90);
-            AudioSourceGO.transform.position = this.transform.position;
+            audioSource.clip = AudioManager.audioClips["Gunshot Sound"];
             audioSource.Play();
             GameObject missile = (GameObject)Instantiate(projectilePrefab, spawnPoint, rotation);
         }
