@@ -8,7 +8,6 @@ public class WinFlag : MonoBehaviour {
     Animator anim;
 
     void Awake() {
-        print(SceneManager.GetActiveScene().name);
         anim = GetComponent<Animator>();
     }
 
@@ -25,9 +24,9 @@ public class WinFlag : MonoBehaviour {
             int currentChapterNo = (int)char.GetNumericValue(levelString[0]); //-1 to get the index
             int currentLevelNo = (int)char.GetNumericValue(levelString[1]); // -1 to get the index
             if(SceneManager.GetActiveScene().name.Equals("Scenes/Level 2-4A")) {
-                
+                print(currentChapterNo + " " + currentLevelNo);
             } else if (SceneManager.GetActiveScene().name.Equals("Scenes/Level 2-4B")) {
-                
+                print(currentChapterNo + " " + currentLevelNo);
             } else {
                 if (currentLevelNo + 1 > 4) {
                     currentLevelNo = 1;

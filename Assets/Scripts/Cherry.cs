@@ -23,7 +23,7 @@ public class Cherry : MonoBehaviour {
     }
 
     IEnumerator detachAudioSourceAndDestroy() {
-        yield return new WaitForSeconds(audioSource.clip.length);
+        yield return new WaitForSeconds(audioSource.clip.length*2);
         detachAudioSource();
         Destroy(gameObject);
     }
@@ -34,7 +34,7 @@ public class Cherry : MonoBehaviour {
         this.audioSource.playOnAwake = false;
         this.audioSource.maxDistance = 15;
         this.audioSource.clip = AudioManager.audioClips["Powerup Pickup Sound"];
-        audioSource.spatialBlend = 1;
+        audioSource.spatialBlend = 0;
         audioSource.rolloffMode = AudioRolloffMode.Linear;
         this.AudioSourceGO.SetActive(true);
     }
