@@ -39,14 +39,20 @@ public class MissilePlatformManager : MonoBehaviour {
 
     private int GetRandomPlatform()
     {
-        int randomNumber = Random.Range(0,31);
+        int randomNumber = Random.Range(0,missilePlatforms.Length);
         return randomNumber;
     }
 
     private bool determineMissileType()
     {
-        int randomNumber = Random.Range(0, 40);
-        return randomNumber%7==0;
+        int randomNumber = Random.Range(0, 12);
+        if (randomNumber==0 || randomNumber == 4 || randomNumber == 8)
+        {
+            return true;
+        }else
+        {
+            return false;
+        }
     }
 
     private void resetFire()
