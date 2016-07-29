@@ -821,6 +821,10 @@ Prefab:
       propertyPath: m_TagString
       value: Dangerous Obstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 165848, guid: ecf7ef9a06eae3f448f33c06b9c48537, type: 2}
+      propertyPath: m_TagString
+      value: Dangerous Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ecf7ef9a06eae3f448f33c06b9c48537, type: 2}
   m_IsPrefabParent: 0
@@ -1382,6 +1386,18 @@ Prefab:
     - target: {fileID: 11427834, guid: 4366233b44bcc8940a176ee10515814b, type: 2}
       propertyPath: max_x
       value: 215
+      objectReference: {fileID: 0}
+    - target: {fileID: 2011302, guid: 4366233b44bcc8940a176ee10515814b, type: 2}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2011302, guid: 4366233b44bcc8940a176ee10515814b, type: 2}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2011302, guid: 4366233b44bcc8940a176ee10515814b, type: 2}
+      propertyPath: m_BackGroundColor.b
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4366233b44bcc8940a176ee10515814b, type: 2}

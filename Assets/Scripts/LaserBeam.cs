@@ -57,7 +57,7 @@ public class LaserBeam : MonoBehaviour {
     private void attachAudioSource() {
         this.AudioSourceGO = ObjectPoolManager.Instance.GetObject("AudioSourcePrefab");
         this.audioSource = this.AudioSourceGO.GetComponent<AudioSource>();
-        this.audioSource.maxDistance = 20;
+        this.audioSource.maxDistance = 15;
         this.audioSource.clip = AudioManager.audioClips["Laser Sound"];
         audioSource.rolloffMode = AudioRolloffMode.Custom;
         audioSource.spatialBlend = 1;

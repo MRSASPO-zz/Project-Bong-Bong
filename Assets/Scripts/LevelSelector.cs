@@ -6,20 +6,27 @@ using System.Text.RegularExpressions;
 
 public class LevelSelector : MonoBehaviour {
     public Text text;
-    public Color colour;
+    public bool isMainMenu;
+    private Color colour;
     private GameObject[] buttonGOs;
 
     void Awake() {
         SaveLoad.Load();
         Game.current = SaveLoad.currentGame;
-        buttonGOs = GameObject.FindGameObjectsWithTag("LevelButton");
-        colour = buttonGOs[0].GetComponent<Image>().color;
-        foreach(GameObject buttonGO in buttonGOs) {
-            string levelString = getLevelString(buttonGO.name);
-            if(Game.current.levelSaveData[(int)char.GetNumericValue(levelString[0]) - 1][(int)char.GetNumericValue(levelString[1]) - 1]) {
-                buttonGO.GetComponent<Image>().color = colour;
-            } else {
-                buttonGO.GetComponent<Image>().color = Color.red;
+
+        //Game.current.levelSaveData[2][0] = false;//this
+        //SaveLoad.Save();
+
+        if (!isMainMenu) {
+            buttonGOs = GameObject.FindGameObjectsWithTag("LevelButton");
+            colour = buttonGOs[0].GetComponent<Image>().color;
+            foreach (GameObject buttonGO in buttonGOs) {
+                string levelString = getLevelString(buttonGO.name);
+                if (Game.current.levelSaveData[(int)char.GetNumericValue(levelString[0]) - 1][(int)char.GetNumericValue(levelString[1]) - 1]) {
+                    buttonGO.GetComponent<Image>().color = colour;
+                } else {
+                    buttonGO.GetComponent<Image>().color = Color.red;
+                }
             }
         }
     }
@@ -29,7 +36,7 @@ public class LevelSelector : MonoBehaviour {
         return stripped;
     }
 
-    private void loadLevel(string levelName) {
+    public void loadLevel(string levelName) {
         Debug.Log("loading this level: " + levelName);
         SceneManager.LoadScene("Scenes/" + levelName);
     }
