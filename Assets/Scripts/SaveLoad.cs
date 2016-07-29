@@ -42,16 +42,13 @@ public class SaveLoad : MonoBehaviour {
 
     public void CheckAndLoadLevel(int chapterNo, int levelNo) {
         if(PlayerPrefsX.GetBoolArray("Chapter " + chapterNo)[levelNo - 1]) {
-<<<<<<< HEAD
             //LevelSelector.loadLevel("Level ");
-=======
             print("Chapter " + chapterNo);
             print(PlayerPrefsX.GetBoolArray("Chapter " + chapterNo)[levelNo - 1]);
             if(chapterNo == 2 && levelNo == 4) {
                 loadLevel("Level " + chapterNo + "-" + levelNo+"A");
             }
             loadLevel("Level "+chapterNo+"-"+levelNo);
->>>>>>> ef9037ddcc32c8d75f240a52a2b3a9f653c723d5
         }
     }
 
