@@ -928,7 +928,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 370699787}
-  m_Layer: 9
+  - 114: {fileID: 370699790}
+  - 61: {fileID: 370699789}
+  - 50: {fileID: 370699788}
+  m_Layer: 0
   m_Name: Chest Silo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -947,6 +950,49 @@ Transform:
   m_Children: []
   m_Father: {fileID: 223839056}
   m_RootOrder: 0
+--- !u!50 &370699788
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 370699786}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &370699789
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 370699786}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: -11.965408, y: -11.3849945}
+  serializedVersion: 2
+  m_Size: {x: 9.036484, y: 5.196808}
+--- !u!114 &370699790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 370699786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b302dc78adc56f542837b30cff6c99dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 126002, guid: 70ad6f47d0292414da932051556c63c6, type: 2}
 --- !u!1001 &379204657
 Prefab:
   m_ObjectHideFlags: 0
@@ -2554,11 +2600,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 476720, guid: 72a2d5ce34c69be449465f3f5b8ae49f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 35.3
+      value: 3.07
       objectReference: {fileID: 0}
     - target: {fileID: 476720, guid: 72a2d5ce34c69be449465f3f5b8ae49f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -110.2
+      value: -113.05
       objectReference: {fileID: 0}
     - target: {fileID: 476720, guid: 72a2d5ce34c69be449465f3f5b8ae49f, type: 2}
       propertyPath: m_LocalPosition.z
