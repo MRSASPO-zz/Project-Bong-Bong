@@ -3849,6 +3849,14 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 190748, guid: 8177b224d41bc2b40892e1b5b8f2c121, type: 2}
+      propertyPath: m_TagString
+      value: Dangerous Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 169388, guid: 8177b224d41bc2b40892e1b5b8f2c121, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8177b224d41bc2b40892e1b5b8f2c121, type: 2}
   m_IsPrefabParent: 0

@@ -749,6 +749,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 142312, guid: 2233e2e71e929004e86ceea71d500962, type: 2}
       propertyPath: m_TagString
+      value: Dangerous Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 111598, guid: 2233e2e71e929004e86ceea71d500962, type: 2}
+      propertyPath: m_TagString
       value: Lethal
       objectReference: {fileID: 0}
     m_RemovedComponents: []

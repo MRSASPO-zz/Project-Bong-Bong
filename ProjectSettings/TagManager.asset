@@ -19,6 +19,7 @@ TagManager:
   - Floor
   - ShowOnPause
   - HideOnPause
+  - LevelButton
   layers:
   - Default
   - TransparentFX
