@@ -2243,6 +2243,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 131922, guid: 5c2f54f484bf021418da04ccda73004a, type: 2}
+      propertyPath: m_TagString
+      value: Dangerous Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5c2f54f484bf021418da04ccda73004a, type: 2}
   m_IsPrefabParent: 0
