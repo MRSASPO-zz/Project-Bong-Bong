@@ -11,7 +11,7 @@ public class RaiseDoor : MonoBehaviour {
 	void Update () {
 	    if (boss.getBossHealth() == raiseThreshold)
         {
-            if (transform.position.y != ycoord)
+            if (transform.position.y <= ycoord)
             {
                 transform.Translate(0, 0.01f, 0);
             }

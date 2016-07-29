@@ -20,7 +20,7 @@ public class SaveLoad {
 
     public void CheckAndLoadLevel(int chapterNo, int levelNo) {
         if(PlayerPrefsX.GetBoolArray("Chapter " + chapterNo)[levelNo - 1]) {
-            LevelSelector.loadLevel("Level ");
+            //LevelSelector.loadLevel("Level ");
         }
     }
 }
