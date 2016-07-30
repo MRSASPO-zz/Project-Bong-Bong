@@ -247,6 +247,114 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 25164418}
   m_Script: {fileID: 11500000, guid: a20baac80ae6d6d42aa40561baddb5e8, type: 3}
+--- !u!1001 &27083323
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 90.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -80.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 148450, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing Ground (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 148450, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 5bff95a34557c584189322922c321311, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &27083324 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+  m_PrefabInternal: {fileID: 27083323}
+--- !u!1001 &32509685
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 102.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -94.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 58
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 2 (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &32509686 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_PrefabInternal: {fileID: 32509685}
 --- !u!1 &37981296
 GameObject:
   m_ObjectHideFlags: 0
@@ -358,6 +466,60 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 412794, guid: 7c5bc8d3753aab942954e7ac5f0b67b1, type: 2}
   m_PrefabInternal: {fileID: 1330768004}
+--- !u!1001 &45533817
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 94.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -94.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 2 (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &45533818 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_PrefabInternal: {fileID: 45533817}
 --- !u!1 &57838467 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
@@ -504,6 +666,160 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
   m_PrefabInternal: {fileID: 71805948}
+--- !u!1001 &73277896
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 85.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -94.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 41
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 2 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &73277897 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_PrefabInternal: {fileID: 73277896}
+--- !u!1001 &96385273
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 563866990}
+    m_Modifications:
+    - target: {fileID: 406160, guid: a4c3f185e2acbd54dba81d75c500b784, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 206.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 406160, guid: a4c3f185e2acbd54dba81d75c500b784, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -37
+      objectReference: {fileID: 0}
+    - target: {fileID: 406160, guid: a4c3f185e2acbd54dba81d75c500b784, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 406160, guid: a4c3f185e2acbd54dba81d75c500b784, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 406160, guid: a4c3f185e2acbd54dba81d75c500b784, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 406160, guid: a4c3f185e2acbd54dba81d75c500b784, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 406160, guid: a4c3f185e2acbd54dba81d75c500b784, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 406160, guid: a4c3f185e2acbd54dba81d75c500b784, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: a4c3f185e2acbd54dba81d75c500b784, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &96385274 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 406160, guid: a4c3f185e2acbd54dba81d75c500b784, type: 2}
+  m_PrefabInternal: {fileID: 96385273}
+--- !u!1001 &99748910
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 104.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -94.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 2 (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &99748911 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_PrefabInternal: {fileID: 99748910}
 --- !u!1001 &103864166
 Prefab:
   m_ObjectHideFlags: 0
@@ -666,23 +982,23 @@ Prefab:
       objectReference: {fileID: 1209447116}
     - target: {fileID: 22400390, guid: 802bf176819ba4647ba70a452b68285d, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 22423592, guid: 802bf176819ba4647ba70a452b68285d, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 22451666, guid: 802bf176819ba4647ba70a452b68285d, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 22431792, guid: 802bf176819ba4647ba70a452b68285d, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 22494024, guid: 802bf176819ba4647ba70a452b68285d, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 802bf176819ba4647ba70a452b68285d, type: 2}
@@ -748,6 +1064,56 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 144491665}
   m_Script: {fileID: 11500000, guid: a20baac80ae6d6d42aa40561baddb5e8, type: 3}
+--- !u!1001 &178266197
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 96.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -88.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &178266198 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_PrefabInternal: {fileID: 178266197}
 --- !u!1 &210617245 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
@@ -1058,6 +1424,60 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 252650640}
   m_Script: {fileID: 11500000, guid: a20baac80ae6d6d42aa40561baddb5e8, type: 3}
+--- !u!1001 &275099039
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 98.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -94.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 54
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 2 (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &275099040 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_PrefabInternal: {fileID: 275099039}
 --- !u!1001 &291003863
 Prefab:
   m_ObjectHideFlags: 0
@@ -1114,6 +1534,114 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 291003863}
   m_Script: {fileID: 11500000, guid: a20baac80ae6d6d42aa40561baddb5e8, type: 3}
+--- !u!1001 &291741408
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 99.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -94.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 2 (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &291741409 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_PrefabInternal: {fileID: 291741408}
+--- !u!1001 &294873678
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 87.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -94.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 43
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 2 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &294873679 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_PrefabInternal: {fileID: 294873678}
 --- !u!1001 &295850968
 Prefab:
   m_ObjectHideFlags: 0
@@ -1347,6 +1875,33 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 171a6880921c518428dbabeb749ef178, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &346225267
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 346225268}
+  m_Layer: 0
+  m_Name: Spawn Boss Here to Start Chase (Teleport OR Drop from the sky, up to you)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &346225268
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 346225267}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 130.5, y: -38.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 563866990}
+  m_RootOrder: 0
 --- !u!1 &351964838 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
@@ -1544,6 +2099,10 @@ Prefab:
       propertyPath: localWayPoints.Array.data[1].y
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 11494224, guid: 171a6880921c518428dbabeb749ef178, type: 2}
+      propertyPath: speed
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 171a6880921c518428dbabeb749ef178, type: 2}
   m_IsPrefabParent: 0
@@ -1680,6 +2239,110 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
   m_PrefabInternal: {fileID: 398355501}
+--- !u!1001 &407347299
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 102.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -88.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 131234, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &407347300 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+  m_PrefabInternal: {fileID: 407347299}
+--- !u!1001 &411932940
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 87.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -84.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 148450, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing Ground (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 148450, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 5bff95a34557c584189322922c321311, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &411932941 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+  m_PrefabInternal: {fileID: 411932940}
 --- !u!1 &413895422
 GameObject:
   m_ObjectHideFlags: 0
@@ -1708,6 +2371,7 @@ Transform:
   - {fileID: 1885277247}
   - {fileID: 1566647226}
   - {fileID: 635688840}
+  - {fileID: 801230299}
   m_Father: {fileID: 0}
   m_RootOrder: 1
 --- !u!1001 &414609461
@@ -1814,6 +2478,60 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
   m_PrefabInternal: {fileID: 426655919}
+--- !u!1001 &436160512
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 99.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -88.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &436160513 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_PrefabInternal: {fileID: 436160512}
 --- !u!1001 &441353255
 Prefab:
   m_ObjectHideFlags: 0
@@ -1872,6 +2590,33 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b364ed7278727304eaa766762a9b0fbd, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &447055891
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 447055892}
+  m_Layer: 0
+  m_Name: When Boss reaches here, UNLEASH THE SNEK and kill the boss
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &447055892
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 447055891}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 207, y: -37, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 563866990}
+  m_RootOrder: 2
 --- !u!1001 &452231696
 Prefab:
   m_ObjectHideFlags: 0
@@ -2115,6 +2860,60 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 433198, guid: 171a6880921c518428dbabeb749ef178, type: 2}
   m_PrefabInternal: {fileID: 333411608}
+--- !u!1001 &491094169
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 87.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -76.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 148450, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing Ground (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 148450, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 5bff95a34557c584189322922c321311, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &491094170 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+  m_PrefabInternal: {fileID: 491094169}
 --- !u!1001 &510814402
 Prefab:
   m_ObjectHideFlags: 0
@@ -2178,6 +2977,114 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1001 &517382312
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 81.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -67.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 148450, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing Ground (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 148450, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 5bff95a34557c584189322922c321311, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &517382313 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+  m_PrefabInternal: {fileID: 517382312}
+--- !u!1001 &517411855
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 81.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -59.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_RootOrder
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 131234, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 3 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 131234, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &517411856 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+  m_PrefabInternal: {fileID: 517411855}
 --- !u!1001 &530106385
 Prefab:
   m_ObjectHideFlags: 0
@@ -2253,6 +3160,60 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1001 &546004954
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 101.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -94.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 57
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 2 (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &546004955 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_PrefabInternal: {fileID: 546004954}
 --- !u!1 &557900873 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
@@ -2274,6 +3235,146 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1001 &562952708
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 84.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -63.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 148450, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing Ground (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 148450, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 5bff95a34557c584189322922c321311, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &562952709 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+  m_PrefabInternal: {fileID: 562952708}
+--- !u!1 &563866989
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 563866990}
+  m_Layer: 0
+  m_Name: ATTENTION VICTOR
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &563866990
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 563866989}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 346225268}
+  - {fileID: 1789690575}
+  - {fileID: 447055892}
+  - {fileID: 1360057405}
+  - {fileID: 96385274}
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+--- !u!1001 &584652400
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 89.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -94.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 2 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &584652401 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_PrefabInternal: {fileID: 584652400}
 --- !u!1001 &595192908
 Prefab:
   m_ObjectHideFlags: 0
@@ -2414,6 +3515,56 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f8bb48921938e7e4db96f6a6921c0aa9, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &686320204
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 95.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -88.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 154480, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: c4666816733eb594b961232e40282fda, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &686320205 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+  m_PrefabInternal: {fileID: 686320204}
 --- !u!1001 &688191384
 Prefab:
   m_ObjectHideFlags: 0
@@ -2466,6 +3617,60 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 688191384}
   m_Script: {fileID: 11500000, guid: a20baac80ae6d6d42aa40561baddb5e8, type: 3}
+--- !u!1001 &696091596
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 101.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -88.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &696091597 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_PrefabInternal: {fileID: 696091596}
 --- !u!1 &715807256
 GameObject:
   m_ObjectHideFlags: 0
@@ -2703,6 +3908,94 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 467960, guid: 6f5749ff67057684c95be106788ee807, type: 2}
   m_PrefabInternal: {fileID: 773352281}
+--- !u!1 &801230298
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 801230299}
+  m_Layer: 9
+  m_Name: Part 2
+  m_TagString: Floor
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &801230299
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 801230298}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 178266198}
+  - {fileID: 1643224110}
+  - {fileID: 2073777188}
+  - {fileID: 407347300}
+  - {fileID: 686320205}
+  - {fileID: 1833887691}
+  - {fileID: 436160513}
+  - {fileID: 1922584819}
+  - {fileID: 696091597}
+  - {fileID: 411932941}
+  - {fileID: 27083324}
+  - {fileID: 918397050}
+  - {fileID: 491094170}
+  - {fileID: 1184621143}
+  - {fileID: 1896403959}
+  - {fileID: 517382313}
+  - {fileID: 562952709}
+  - {fileID: 2027421229}
+  - {fileID: 2095741400}
+  - {fileID: 1513847284}
+  - {fileID: 1338169403}
+  - {fileID: 1014434264}
+  - {fileID: 517411856}
+  - {fileID: 1309371638}
+  - {fileID: 2139199716}
+  - {fileID: 895675423}
+  - {fileID: 1726405975}
+  - {fileID: 1186914487}
+  - {fileID: 1651841947}
+  - {fileID: 2005174895}
+  - {fileID: 940772715}
+  - {fileID: 1177311339}
+  - {fileID: 1299907584}
+  - {fileID: 983480527}
+  - {fileID: 1684231258}
+  - {fileID: 1714269749}
+  - {fileID: 1977634381}
+  - {fileID: 851284937}
+  - {fileID: 1201187475}
+  - {fileID: 1599705333}
+  - {fileID: 1435652371}
+  - {fileID: 73277897}
+  - {fileID: 1860096246}
+  - {fileID: 294873679}
+  - {fileID: 1433443757}
+  - {fileID: 584652401}
+  - {fileID: 1269203604}
+  - {fileID: 2138536455}
+  - {fileID: 1414816087}
+  - {fileID: 977959821}
+  - {fileID: 45533818}
+  - {fileID: 1065517380}
+  - {fileID: 849055087}
+  - {fileID: 1785353671}
+  - {fileID: 275099040}
+  - {fileID: 291741409}
+  - {fileID: 890090650}
+  - {fileID: 546004955}
+  - {fileID: 32509686}
+  - {fileID: 2088441407}
+  - {fileID: 99748911}
+  m_Father: {fileID: 413895423}
+  m_RootOrder: 3
 --- !u!1001 &822587589
 Prefab:
   m_ObjectHideFlags: 0
@@ -2799,6 +4092,114 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 424420, guid: 1c761a5ba835e2643a2d685c82f48732, type: 2}
   m_PrefabInternal: {fileID: 841856522}
+--- !u!1001 &849055086
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 96.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -94.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 2 (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &849055087 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_PrefabInternal: {fileID: 849055086}
+--- !u!1001 &851284936
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 80.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -94.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 37
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 2 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &851284937 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_PrefabInternal: {fileID: 851284936}
 --- !u!1001 &863327488
 Prefab:
   m_ObjectHideFlags: 0
@@ -2876,6 +4277,60 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1001 &890090649
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 100.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -94.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 56
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 2 (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &890090650 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_PrefabInternal: {fileID: 890090649}
 --- !u!1 &893656766 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
@@ -2897,6 +4352,114 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1001 &895675422
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 82.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -55.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_RootOrder
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 154480, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154480, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: c4666816733eb594b961232e40282fda, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &895675423 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+  m_PrefabInternal: {fileID: 895675422}
+--- !u!1001 &918397049
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 93.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -76.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 148450, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing Ground (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 148450, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 5bff95a34557c584189322922c321311, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &918397050 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+  m_PrefabInternal: {fileID: 918397049}
 --- !u!1001 &933517978
 Prefab:
   m_ObjectHideFlags: 0
@@ -2957,6 +4520,60 @@ MonoBehaviour:
 Transform:
   m_PrefabParentObject: {fileID: 457848, guid: f8bb48921938e7e4db96f6a6921c0aa9, type: 2}
   m_PrefabInternal: {fileID: 652823624}
+--- !u!1001 &940772714
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 83.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -55.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 2 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &940772715 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_PrefabInternal: {fileID: 940772714}
 --- !u!1001 &954735072
 Prefab:
   m_ObjectHideFlags: 0
@@ -3024,6 +4641,114 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1001 &977959820
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 93.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -94.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 49
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 2 (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &977959821 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_PrefabInternal: {fileID: 977959820}
+--- !u!1001 &983480526
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 84.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -94.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 33
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 2 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &983480527 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_PrefabInternal: {fileID: 983480526}
 --- !u!1001 &988696771
 Prefab:
   m_ObjectHideFlags: 0
@@ -3190,6 +4915,60 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1011634359}
   m_Script: {fileID: 11500000, guid: a20baac80ae6d6d42aa40561baddb5e8, type: 3}
+--- !u!1001 &1014434263
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 86.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -55.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_RootOrder
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 131234, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 3 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 131234, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1014434264 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+  m_PrefabInternal: {fileID: 1014434263}
 --- !u!1001 &1017537518
 Prefab:
   m_ObjectHideFlags: 0
@@ -3267,6 +5046,60 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1001 &1065517379
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 95.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -94.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 2 (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1065517380 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_PrefabInternal: {fileID: 1065517379}
 --- !u!1001 &1065584127
 Prefab:
   m_ObjectHideFlags: 0
@@ -3654,6 +5487,60 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1173425214}
   m_Script: {fileID: 11500000, guid: a20baac80ae6d6d42aa40561baddb5e8, type: 3}
+--- !u!1001 &1177311338
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 84.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -55.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 2 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1177311339 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_PrefabInternal: {fileID: 1177311338}
 --- !u!1 &1181630925
 GameObject:
   m_ObjectHideFlags: 0
@@ -3767,6 +5654,114 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1001 &1184621142
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 90.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -72.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 148450, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing Ground (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 148450, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 5bff95a34557c584189322922c321311, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1184621143 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+  m_PrefabInternal: {fileID: 1184621142}
+--- !u!1001 &1186914486
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 88.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -59.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 2 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1186914487 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_PrefabInternal: {fileID: 1186914486}
 --- !u!1001 &1194966745
 Prefab:
   m_ObjectHideFlags: 0
@@ -3817,6 +5812,60 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 480450, guid: d0bc48e65c04e8546baf6346cb52dc3d, type: 2}
   m_PrefabInternal: {fileID: 1194966745}
+--- !u!1001 &1201187474
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 79.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -94.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 2 (18)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1201187475 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_PrefabInternal: {fileID: 1201187474}
 --- !u!114 &1209447116 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11403126, guid: 72a2d5ce34c69be449465f3f5b8ae49f,
@@ -4068,6 +6117,168 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
   m_PrefabInternal: {fileID: 1268149608}
+--- !u!1001 &1269203603
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 90.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -94.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 46
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 2 (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1269203604 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_PrefabInternal: {fileID: 1269203603}
+--- !u!1001 &1299907583
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 85.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -55.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 2 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1299907584 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_PrefabInternal: {fileID: 1299907583}
+--- !u!1001 &1309371637
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 87.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -59.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_RootOrder
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 154480, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154480, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: c4666816733eb594b961232e40282fda, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1309371638 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+  m_PrefabInternal: {fileID: 1309371637}
 --- !u!1 &1317714606 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
@@ -4185,6 +6396,118 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1001 &1338169402
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 90.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -59.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_RootOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 131234, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 131234, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1338169403 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+  m_PrefabInternal: {fileID: 1338169402}
+--- !u!1 &1360057404
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1360057405}
+  - 212: {fileID: 1360057406}
+  m_Layer: 0
+  m_Name: Snek (Once Snek has killed boss, spawn the Finish Flag as below)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1360057405
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1360057404}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071067}
+  m_LocalPosition: {x: 213, y: -59, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 563866990}
+  m_RootOrder: 3
+--- !u!212 &1360057406
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1360057404}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300004, guid: 909fb0f03dd0a6449a1b750721c0c7a9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
 --- !u!1001 &1385866211
 Prefab:
   m_ObjectHideFlags: 0
@@ -4377,6 +6700,60 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
   m_PrefabInternal: {fileID: 1400117329}
+--- !u!1001 &1414816086
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 92.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -94.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 2 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1414816087 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_PrefabInternal: {fileID: 1414816086}
 --- !u!1 &1419521833
 GameObject:
   m_ObjectHideFlags: 0
@@ -4560,6 +6937,114 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 439098, guid: 46b2167b47eca4247bdbb6391b8a0a33, type: 2}
   m_PrefabInternal: {fileID: 1422568947}
+--- !u!1001 &1433443756
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 88.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -94.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 44
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 2 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1433443757 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_PrefabInternal: {fileID: 1433443756}
+--- !u!1001 &1435652370
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 78.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -94.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_RootOrder
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 154480, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 154480, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 1 (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: c4666816733eb594b961232e40282fda, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1435652371 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+  m_PrefabInternal: {fileID: 1435652370}
 --- !u!1 &1445740830 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
@@ -4691,6 +7176,60 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1501065079}
   m_Script: {fileID: 11500000, guid: a20baac80ae6d6d42aa40561baddb5e8, type: 3}
+--- !u!1001 &1513847283
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 79.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -51.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 148450, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing Ground (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 148450, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 5bff95a34557c584189322922c321311, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1513847284 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+  m_PrefabInternal: {fileID: 1513847283}
 --- !u!1001 &1532910701
 Prefab:
   m_ObjectHideFlags: 0
@@ -4903,6 +7442,60 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1001 &1599705332
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 105.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -94.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_RootOrder
+      value: 39
+      objectReference: {fileID: 0}
+    - target: {fileID: 131234, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 131234, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 3 (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1599705333 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 457740, guid: dff34748e9f569040a3862533d8e900c, type: 2}
+  m_PrefabInternal: {fileID: 1599705332}
 --- !u!1001 &1614523894
 Prefab:
   m_ObjectHideFlags: 0
@@ -5188,6 +7781,110 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1638444337}
   m_Script: {fileID: 11500000, guid: a20baac80ae6d6d42aa40561baddb5e8, type: 3}
+--- !u!1001 &1643224109
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 104.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -92.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 148450, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 5bff95a34557c584189322922c321311, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1643224110 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+  m_PrefabInternal: {fileID: 1643224109}
+--- !u!1001 &1651841946
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 80.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -59.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 2 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1651841947 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_PrefabInternal: {fileID: 1651841946}
 --- !u!1 &1662863890
 GameObject:
   m_ObjectHideFlags: 0
@@ -5285,6 +7982,60 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 480450, guid: d0bc48e65c04e8546baf6346cb52dc3d, type: 2}
   m_PrefabInternal: {fileID: 1675752931}
+--- !u!1001 &1684231257
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 83.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -94.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 2 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1684231258 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_PrefabInternal: {fileID: 1684231257}
 --- !u!1001 &1694688908
 Prefab:
   m_ObjectHideFlags: 0
@@ -5327,6 +8078,60 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 72a2d5ce34c69be449465f3f5b8ae49f, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &1714269748
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 82.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -94.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 2 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1714269749 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_PrefabInternal: {fileID: 1714269748}
 --- !u!1 &1723362020 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 148450, guid: 5bff95a34557c584189322922c321311, type: 2}
@@ -5348,6 +8153,60 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1001 &1726405974
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 89.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -59.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 2 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1726405975 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_PrefabInternal: {fileID: 1726405974}
 --- !u!1001 &1770942223
 Prefab:
   m_ObjectHideFlags: 0
@@ -5493,6 +8352,88 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1397311728}
   m_RootOrder: 0
+--- !u!1001 &1785353670
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 97.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -94.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 53
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 2 (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1785353671 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_PrefabInternal: {fileID: 1785353670}
+--- !u!1 &1789690574
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1789690575}
+  m_Layer: 0
+  m_Name: But only after Maru triggers an invisible colider here (MAKE IT A HIGH COLLIDER
+    SO EVEN IF MARU JUMPS IT WILL STILL COLLIDE)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1789690575
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1789690574}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 137, y: -41, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 563866990}
+  m_RootOrder: 1
 --- !u!1001 &1791066846
 Prefab:
   m_ObjectHideFlags: 0
@@ -5622,6 +8563,60 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
   m_PrefabInternal: {fileID: 1830194219}
+--- !u!1001 &1833887690
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 98.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -88.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1833887691 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_PrefabInternal: {fileID: 1833887690}
 --- !u!1001 &1839041856
 Prefab:
   m_ObjectHideFlags: 0
@@ -5848,6 +8843,60 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1001 &1860096245
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 86.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -94.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 42
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 2 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1860096246 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_PrefabInternal: {fileID: 1860096245}
 --- !u!1 &1866541769 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
@@ -5904,6 +8953,60 @@ Transform:
   - {fileID: 295850969}
   m_Father: {fileID: 413895423}
   m_RootOrder: 0
+--- !u!1001 &1896403958
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 87.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -67.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 148450, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing Ground (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 148450, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 5bff95a34557c584189322922c321311, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1896403959 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+  m_PrefabInternal: {fileID: 1896403958}
 --- !u!1001 &1913918319
 Prefab:
   m_ObjectHideFlags: 0
@@ -6070,6 +9173,60 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 480966, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
   m_PrefabInternal: {fileID: 1916221357}
+--- !u!1001 &1922584818
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 100.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -88.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1922584819 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_PrefabInternal: {fileID: 1922584818}
 --- !u!1 &1940641564
 GameObject:
   m_ObjectHideFlags: 0
@@ -6100,6 +9257,60 @@ Transform:
   - {fileID: 1850072330}
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!1001 &1977634380
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 81.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -94.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 2 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1977634381 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_PrefabInternal: {fileID: 1977634380}
 --- !u!1 &1988699791 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
@@ -6165,6 +9376,114 @@ Transform:
   - {fileID: 1145234056}
   m_Father: {fileID: 0}
   m_RootOrder: 8
+--- !u!1001 &2005174894
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 79.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -59.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 2 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &2005174895 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_PrefabInternal: {fileID: 2005174894}
+--- !u!1001 &2027421228
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 91.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -64.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 148450, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing Ground (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 148450, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 5bff95a34557c584189322922c321311, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &2027421229 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+  m_PrefabInternal: {fileID: 2027421228}
 --- !u!1001 &2034190023
 Prefab:
   m_ObjectHideFlags: 0
@@ -6336,6 +9655,168 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1001 &2073777187
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 97.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -88.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &2073777188 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_PrefabInternal: {fileID: 2073777187}
+--- !u!1001 &2088441406
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 103.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -94.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 59
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 2 (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &2088441407 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_PrefabInternal: {fileID: 2088441406}
+--- !u!1001 &2095741399
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 89.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -51.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 148450, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing Ground (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 148450, guid: 5bff95a34557c584189322922c321311, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 5bff95a34557c584189322922c321311, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &2095741400 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 441154, guid: 5bff95a34557c584189322922c321311, type: 2}
+  m_PrefabInternal: {fileID: 2095741399}
 --- !u!1001 &2126513526
 Prefab:
   m_ObjectHideFlags: 0
@@ -6444,6 +9925,114 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
   m_PrefabInternal: {fileID: 2127514215}
+--- !u!1001 &2138536454
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 91.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -94.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 47
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 2 (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111160, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &2138536455 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 424164, guid: 18eb465d85bd5074ab9278ff32ee8b7d, type: 2}
+  m_PrefabInternal: {fileID: 2138536454}
+--- !u!1001 &2139199715
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801230299}
+    m_Modifications:
+    - target: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 78.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -59.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_RootOrder
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 154480, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_Name
+      value: Brick Collapsing 1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154480, guid: c4666816733eb594b961232e40282fda, type: 2}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: c4666816733eb594b961232e40282fda, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &2139199716 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 479226, guid: c4666816733eb594b961232e40282fda, type: 2}
+  m_PrefabInternal: {fileID: 2139199715}
 --- !u!1 &2142948410 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 187882, guid: a4fdcb7eb4dba1849ab16460493da28a, type: 2}
