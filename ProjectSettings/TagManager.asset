@@ -20,6 +20,8 @@ TagManager:
   - ShowOnPause
   - HideOnPause
   - LevelButton
+  - BGM
+  - Options
   layers:
   - Default
   - TransparentFX

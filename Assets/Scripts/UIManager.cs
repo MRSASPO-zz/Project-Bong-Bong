@@ -3,13 +3,15 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour {
-    GameObject[] pauseObjects;
-    GameObject[] playObjects;
+    GameObject pauseObjects;
+    GameObject playObjects;
+    GameObject optionObjects;
     // Use this for initialization
     void Start() {
         Time.timeScale = 1;
-        pauseObjects = GameObject.FindGameObjectsWithTag("ShowOnPause");
-        playObjects = GameObject.FindGameObjectsWithTag("HideOnPause");
+        pauseObjects = GameObject.FindGameObjectWithTag("ShowOnPause");
+        playObjects = GameObject.FindGameObjectWithTag("HideOnPause");
+        optionObjects = GameObject.FindGameObjectWithTag("Options");
         hidePaused();
     }
 
@@ -38,22 +40,30 @@ public class UIManager : MonoBehaviour {
 
     //shows objects with ShowOnPause tag
     public void showPaused() {
-        foreach (GameObject g in pauseObjects) {
-            g.SetActive(true);
-        }
-        foreach (GameObject g in playObjects) {
-            g.SetActive(false);
-        }
+        pauseObjects.SetActive(true);
+        playObjects.SetActive(false);
+        optionObjects.SetActive(false);
     }
 
     //hides objects with ShowOnPause tag
     public void hidePaused() {
-        foreach (GameObject g in pauseObjects) {
-            g.SetActive(false);
-        }
-        foreach (GameObject g in playObjects) {
-            g.SetActive(true);
-        }
+        pauseObjects.SetActive(false);
+        playObjects.SetActive(true);
+        optionObjects.SetActive(false);
+        SaveLoad.Save();
+    }
+
+    public void showOptions() {
+        pauseObjects.SetActive(false);
+        playObjects.SetActive(false);
+        optionObjects.SetActive(true);
+    }
+
+    public void hideOptions() {
+        pauseObjects.SetActive(true);
+        playObjects.SetActive(false);
+        optionObjects.SetActive(false);
+        SaveLoad.Save();
     }
 
     public void loadLevel(string levelName) {

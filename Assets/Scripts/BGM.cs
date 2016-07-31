@@ -18,8 +18,9 @@ public class BGM : MonoBehaviour {
         } else {
             instance = this;
             audio = GetComponent<AudioSource>();
+            audio.ignoreListenerVolume = true;
             audio.clip = BGMusic[0];
-            audio.Play();
+            doLoadLevel();
         }
         DontDestroyOnLoad(this.gameObject);
     }
@@ -29,14 +30,18 @@ public class BGM : MonoBehaviour {
         return stripped;
     }
 
-    void OnLevelWasLoaded(int level) {        
+    private void doLoadLevel() {
+        OnLevelWasLoaded(0);
+    }
+
+    void OnLevelWasLoaded(int level) {
         string sceneName = SceneManager.GetActiveScene().name;
-        if(!(sceneName.Equals("Scenes/Main Menu") || sceneName.Equals("Scenes/Level Select"))) {
+        if (!(sceneName.Equals("Scenes/Main Menu") || sceneName.Equals("Scenes/Level Select") || sceneName.Equals("Main Menu") || sceneName.Equals("Level Select"))) {
             string levelString = getLevelString(sceneName);
             int chapterNo = (int)char.GetNumericValue(levelString[0]);
             switch (chapterNo) {
                 case 1:
-                    if (!audio.clip.Equals(BGMusic[1])){
+                    if (!audio.clip.Equals(BGMusic[1])) {
                         audio.Stop();
                         audio.clip = BGMusic[1];
                         audio.Play();
@@ -67,12 +72,22 @@ public class BGM : MonoBehaviour {
                     break;
             }
         } else {
-            print("reached");
             if (!audio.clip.Equals(BGMusic[0])) {
                 audio.Stop();
                 audio.clip = BGMusic[0];
                 audio.Play();
+            } else {
+                if (!audio.isPlaying) {
+                    audio.Play();
+                }
             }
         }
+    }
+
+    public void swapClip(int BGMusicIdx) {
+        audio.Stop();
+        print("here");
+        audio.clip = BGMusic[BGMusicIdx];
+        audio.Play();
     }
 }

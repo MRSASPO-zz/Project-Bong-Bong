@@ -23,7 +23,7 @@ public class Game{
             }
             levelSaveData.Add(subList);
         }
-        SFXvolume = 0.5f;
-        BGMvolume = 0.5f;
+        SFXvolume = 1f;
+        BGMvolume = 1f;
     }
 }

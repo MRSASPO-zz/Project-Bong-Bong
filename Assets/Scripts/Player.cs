@@ -79,6 +79,9 @@ public class Player : MonoBehaviour {
     }
 
     void Update() {
+        if(Time.timeScale == 0) {
+            return;
+        }
         Vector2 joystickInput = new Vector2(CnInputManager.GetAxisRaw("Horizontal"), CnInputManager.GetAxisRaw("Vertical"));
 
         prevFaceDir = faceDir;

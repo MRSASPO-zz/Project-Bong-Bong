@@ -52,6 +52,7 @@ public class ScientistBoss : Boss {
         defaultScale = transform.localScale;
         spriteRenderer = GetComponent<SpriteRenderer>();
         audioSource = GetComponent<AudioSource>();
+        ue.AddListener(delegate { GameObject.FindGameObjectWithTag("BGM").GetComponent<BGM>().swapClip(3); });
 
         setTeleportPoints();
         firingReady = true;

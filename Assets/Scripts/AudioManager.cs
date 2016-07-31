@@ -14,10 +14,10 @@ public class AudioManager : MonoBehaviour {
     void Awake() {
         if(_instance != null && _instance != this) {
             Destroy(gameObject);
+            return;
         } else {
             _instance = this;
         }
-
         
         DontDestroyOnLoad(gameObject);
         foreach(AudioClip clip in clips) {
@@ -28,4 +28,10 @@ public class AudioManager : MonoBehaviour {
             ObjectPoolManager.Instance.resetPool(audioSourcePrefab.name);
         }
     }
+
+    //public void setSFXvolume(float volume) {
+        //volume = Mathf.Clamp(volume, 0.0f, 1.0f);
+        //SFXvolume = volume;
+      //  AudioListener.volume = volume;
+    //}
 }
