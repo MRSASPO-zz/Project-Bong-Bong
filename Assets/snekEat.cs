@@ -1,30 +1,44 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.Events;
 
 public class snekEat : MonoBehaviour {
     public Vector3 heightToJump;
     public Vector3 targetPosition;
     public Vector3 originalPosition;
     private SpriteRenderer sr;
-    bool isUp;
+    public UnityEvent ue;
+    public Boss boss;
+
     // Use this for initialization
-    void Start () {
+    IEnumerator Start() {
         targetPosition = transform.position + heightToJump;
         originalPosition = transform.position;
         sr = GetComponent<SpriteRenderer>();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        float distance = Vector3.Distance(targetPosition, transform.position);
-        float sign = Mathf.Sign(targetPosition.y - transform.position.y);
-	    if((distance* sign) > 0) {
-            sr.flipX = false;
-            transform.Translate(heightToJump * Time.deltaTime, Space.World);
-        } else {
-            isUp = false;
-            sr.flipX = true;
-            transform.Translate(-heightToJump * Time.deltaTime, Space.World);
+        yield return StartCoroutine(MoveObject(transform, originalPosition, targetPosition, 3.0f, true));
+        yield return StartCoroutine(MoveObject(transform, targetPosition, originalPosition, 3.0f, false));
+    }
+
+    //public IEnumerator startMoving() {
+        
+    //}
+
+    void OnTriggerEnter2D(Collider2D col) {
+        if(col.gameObject.layer == LayerMask.NameToLayer("Blocking Enemy")) {
+            boss.Damage();
+            col.gameObject.SetActive(false);
+            ue.Invoke();
         }
-	}
+    }
+
+    IEnumerator MoveObject(Transform thisTrans, Vector3 startPos, Vector3 endPos, float time, bool isUp) {
+        sr.flipX = (isUp) ? false : true;
+        float i = 0.0f;
+        float rate = 3.0f / time;
+        while (i < 1.0f) {
+            i += Time.deltaTime*rate;
+            thisTrans.position = Vector3.Lerp(startPos, endPos, i);
+            yield return null;
+        }
+    }
 }
