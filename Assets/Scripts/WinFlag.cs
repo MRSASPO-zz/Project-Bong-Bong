@@ -16,27 +16,39 @@ public class WinFlag : MonoBehaviour {
 		SceneManager.LoadScene("Scenes/"+levelName);
 	}
 
+    private bool excludedLevels() {
+        string sceneName = SceneManager.GetActiveScene().name;
+        return sceneName.Equals("Scenes/Main Menu") ||
+            sceneName.Equals("Scenes/Level Select") ||
+            sceneName.Equals("Main Menu") ||
+            sceneName.Equals("Level Select") ||
+            sceneName.Equals("Scenes/Win") ||
+            sceneName.Equals("Win") ||
+            sceneName.Equals("Scenes/Level 2-4A") ||
+            sceneName.Equals("Level 2-4A") ||
+            sceneName.Equals("Scenes/Level 2-4B") ||
+            sceneName.Equals("Level 2-4B") ||
+            sceneName.Equals("Scenes/Level 3-4") ||
+            sceneName.Equals("Level 3-4");
+    }
+
     public void OnTriggerEnter2D(Collider2D hit) {
         if(hit.tag == "Player") {
             anim.Play("Win");
-            string levelString = getLevelString(SceneManager.GetActiveScene().name);
-
-            int currentChapterNo = (int)char.GetNumericValue(levelString[0]); //-1 to get the index
-            int currentLevelNo = (int)char.GetNumericValue(levelString[1]); // -1 to get the index
-            if(SceneManager.GetActiveScene().name.Equals("Scenes/Level 2-4A")) {
-                print(currentChapterNo + " " + currentLevelNo);
-            } else if (SceneManager.GetActiveScene().name.Equals("Scenes/Level 2-4B")) {
-                print(currentChapterNo + " " + currentLevelNo);
-            } else {
+            if(!excludedLevels()) {
+                string levelString = getLevelString(SceneManager.GetActiveScene().name);
+                int currentChapterNo = (int)char.GetNumericValue(levelString[0]); //-1 to get the index
+                int currentLevelNo = (int)char.GetNumericValue(levelString[1]); // -1 to get the index
                 if (currentLevelNo + 1 > 4) {
                     currentLevelNo = 1;
                     currentChapterNo += 1;
                 } else {
                     currentLevelNo += 1;
                 }
+                //print("currentChpNo and levelNo" + currentChapterNo + " " + currentLevelNo);
+                Game.current.levelSaveData[currentChapterNo - 1][currentLevelNo - 1] = true;
+                SaveLoad.Save();
             }
-            Game.current.levelSaveData[currentChapterNo-1][currentLevelNo-1] = true;
-            SaveLoad.Save();
             Invoke("loadLevel", 2f);
         }
     }

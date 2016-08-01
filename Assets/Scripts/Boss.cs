@@ -65,7 +65,7 @@ public class Boss : MonoBehaviour
         Color32 faded = colorOriginal;
         faded.a /= 4; //reduces the alpha to give it a faded look
         float startInvulTime = Time.time;
-        while ((Time.time - startInvulTime) < 1) {
+        while ((Time.time - startInvulTime) < 1.5) {
             sr.color = faded;
             yield return new WaitForSeconds(0.1f);
             sr.color = colorOriginal;

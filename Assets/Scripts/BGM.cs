@@ -36,7 +36,12 @@ public class BGM : MonoBehaviour {
 
     void OnLevelWasLoaded(int level) {
         string sceneName = SceneManager.GetActiveScene().name;
-        if (!(sceneName.Equals("Scenes/Main Menu") || sceneName.Equals("Scenes/Level Select") || sceneName.Equals("Main Menu") || sceneName.Equals("Level Select"))) {
+        if (!(sceneName.Equals("Scenes/Main Menu") 
+            || sceneName.Equals("Scenes/Level Select") 
+            || sceneName.Equals("Main Menu") 
+            || sceneName.Equals("Level Select") 
+            || sceneName.Equals("Scenes/Win") 
+            || sceneName.Equals("Win"))) {
             string levelString = getLevelString(sceneName);
             int chapterNo = (int)char.GetNumericValue(levelString[0]);
             switch (chapterNo) {

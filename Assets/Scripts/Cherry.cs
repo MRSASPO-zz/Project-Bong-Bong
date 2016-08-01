@@ -6,13 +6,14 @@ public class Cherry : MonoBehaviour {
     AudioSource audioSource;
 
     void Start() {
-        attachAudioSource();
+        
     }
 
     void OnTriggerEnter2D(Collider2D col)
     {
         if (col.CompareTag("Player"))
         {
+            attachAudioSource();
             AudioSourceGO.transform.position = transform.position;
             audioSource.Play();
             GetComponent<SpriteRenderer>().enabled = false;

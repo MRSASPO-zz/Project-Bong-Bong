@@ -184,6 +184,10 @@ Prefab:
       propertyPath: m_Name
       value: Dangerous Plant(64x64) (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 124268, guid: d0bc48e65c04e8546baf6346cb52dc3d, type: 2}
+      propertyPath: m_TagString
+      value: Dangerous Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d0bc48e65c04e8546baf6346cb52dc3d, type: 2}
   m_IsPrefabParent: 0
@@ -1018,19 +1022,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22463866, guid: 802bf176819ba4647ba70a452b68285d, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22416002, guid: 802bf176819ba4647ba70a452b68285d, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22439500, guid: 802bf176819ba4647ba70a452b68285d, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22451956, guid: 802bf176819ba4647ba70a452b68285d, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22461142, guid: 802bf176819ba4647ba70a452b68285d, type: 2}
       propertyPath: m_RootOrder
@@ -2600,6 +2604,14 @@ Prefab:
       propertyPath: m_TagString
       value: Floor
       objectReference: {fileID: 0}
+    - target: {fileID: 142820, guid: b364ed7278727304eaa766762a9b0fbd, type: 2}
+      propertyPath: m_TagString
+      value: Lethal
+      objectReference: {fileID: 0}
+    - target: {fileID: 198870, guid: b364ed7278727304eaa766762a9b0fbd, type: 2}
+      propertyPath: m_TagString
+      value: Dangerous Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b364ed7278727304eaa766762a9b0fbd, type: 2}
   m_IsPrefabParent: 0
@@ -3511,6 +3523,10 @@ Prefab:
     - target: {fileID: 11496900, guid: f8bb48921938e7e4db96f6a6921c0aa9, type: 2}
       propertyPath: isFireForever
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11496900, guid: f8bb48921938e7e4db96f6a6921c0aa9, type: 2}
+      propertyPath: laserOnTime
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f8bb48921938e7e4db96f6a6921c0aa9, type: 2}
@@ -5583,7 +5599,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1175762541}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 128.13, y: -43.13, z: 0}
+  m_LocalPosition: {x: 122.03, y: -43.07, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2042697899}
@@ -5934,6 +5950,10 @@ Prefab:
     - target: {fileID: 124268, guid: d0bc48e65c04e8546baf6346cb52dc3d, type: 2}
       propertyPath: m_Name
       value: Dangerous Plant(64x64) (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 124268, guid: d0bc48e65c04e8546baf6346cb52dc3d, type: 2}
+      propertyPath: m_TagString
+      value: Dangerous Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d0bc48e65c04e8546baf6346cb52dc3d, type: 2}
@@ -8016,6 +8036,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 124268, guid: d0bc48e65c04e8546baf6346cb52dc3d, type: 2}
+      propertyPath: m_TagString
+      value: Dangerous Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d0bc48e65c04e8546baf6346cb52dc3d, type: 2}
   m_IsPrefabParent: 0
@@ -8345,6 +8369,10 @@ Prefab:
     - target: {fileID: 124268, guid: d0bc48e65c04e8546baf6346cb52dc3d, type: 2}
       propertyPath: m_Name
       value: Dangerous Plant(64x64) (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 124268, guid: d0bc48e65c04e8546baf6346cb52dc3d, type: 2}
+      propertyPath: m_TagString
+      value: Dangerous Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d0bc48e65c04e8546baf6346cb52dc3d, type: 2}

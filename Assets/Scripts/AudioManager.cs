@@ -24,11 +24,19 @@ public class AudioManager : MonoBehaviour {
             audioClips[clip.name] = clip;
         }
         bool createpool = ObjectPoolManager.Instance.createPool(audioSourcePrefab, 10, 200);
+        print(createpool);
         if (!createpool) {
             ObjectPoolManager.Instance.resetPool(audioSourcePrefab.name);
         }
     }
 
+    void OnLevelWasLoaded(int level) {
+        bool createpool = ObjectPoolManager.Instance.createPool(audioSourcePrefab, 10, 200);
+        print(createpool);
+        if (!createpool) {
+            ObjectPoolManager.Instance.resetPool(audioSourcePrefab.name);
+        }
+    }
     //public void setSFXvolume(float volume) {
         //volume = Mathf.Clamp(volume, 0.0f, 1.0f);
         //SFXvolume = volume;
