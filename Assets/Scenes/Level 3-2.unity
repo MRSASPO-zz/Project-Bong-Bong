@@ -418,6 +418,22 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 22463866, guid: 802bf176819ba4647ba70a452b68285d, type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22416002, guid: 802bf176819ba4647ba70a452b68285d, type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22439500, guid: 802bf176819ba4647ba70a452b68285d, type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22451956, guid: 802bf176819ba4647ba70a452b68285d, type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 802bf176819ba4647ba70a452b68285d, type: 2}
   m_IsPrefabParent: 0
@@ -4253,7 +4269,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1913205159}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31.57, y: -30.89, z: 0}
+  m_LocalPosition: {x: 31.66, y: -30.89, z: 0}
   m_LocalScale: {x: 1, y: 1.0982668, z: 1}
   m_Children:
   - {fileID: 1692732463}
@@ -4688,7 +4704,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2088148464}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 69.57, y: -30.89, z: 0}
+  m_LocalPosition: {x: 69.34, y: -30.89, z: 0}
   m_LocalScale: {x: 1, y: 1.0982668, z: 1}
   m_Children:
   - {fileID: 815618063}
