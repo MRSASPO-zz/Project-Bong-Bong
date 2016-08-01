@@ -1022,19 +1022,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22463866, guid: 802bf176819ba4647ba70a452b68285d, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22416002, guid: 802bf176819ba4647ba70a452b68285d, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22439500, guid: 802bf176819ba4647ba70a452b68285d, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22451956, guid: 802bf176819ba4647ba70a452b68285d, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22461142, guid: 802bf176819ba4647ba70a452b68285d, type: 2}
       propertyPath: m_RootOrder
@@ -2609,6 +2609,14 @@ Prefab:
       value: Lethal
       objectReference: {fileID: 0}
     - target: {fileID: 198870, guid: b364ed7278727304eaa766762a9b0fbd, type: 2}
+      propertyPath: m_TagString
+      value: Dangerous Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 170208, guid: b364ed7278727304eaa766762a9b0fbd, type: 2}
+      propertyPath: m_TagString
+      value: Lethal
+      objectReference: {fileID: 0}
+    - target: {fileID: 185930, guid: b364ed7278727304eaa766762a9b0fbd, type: 2}
       propertyPath: m_TagString
       value: Dangerous Obstacle
       objectReference: {fileID: 0}
@@ -10143,27 +10151,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 61fecee3328c84060810b87ef2633df5, type: 2}
   m_PrefabInternal: {fileID: 2042697898}
---- !u!1 &2043530957 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 145230, guid: b364ed7278727304eaa766762a9b0fbd, type: 2}
-  m_PrefabInternal: {fileID: 441353255}
---- !u!50 &2043530960
-Rigidbody2D:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2043530957}
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1001 &2060931305
 Prefab:
   m_ObjectHideFlags: 0

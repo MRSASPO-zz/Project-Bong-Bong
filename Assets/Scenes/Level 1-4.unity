@@ -616,6 +616,22 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 719009681}
+    - target: {fileID: 22463866, guid: 802bf176819ba4647ba70a452b68285d, type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22416002, guid: 802bf176819ba4647ba70a452b68285d, type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22439500, guid: 802bf176819ba4647ba70a452b68285d, type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22451956, guid: 802bf176819ba4647ba70a452b68285d, type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 802bf176819ba4647ba70a452b68285d, type: 2}
   m_IsPrefabParent: 0
@@ -911,6 +927,38 @@ Prefab:
     - target: {fileID: 160562, guid: ada8612a0269ca04cbecc41b8fa7460a, type: 2}
       propertyPath: m_TagString
       value: Invisible Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 146724, guid: ada8612a0269ca04cbecc41b8fa7460a, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 105680, guid: ada8612a0269ca04cbecc41b8fa7460a, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 105680, guid: ada8612a0269ca04cbecc41b8fa7460a, type: 2}
+      propertyPath: m_TagString
+      value: Dangerous Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 174260, guid: ada8612a0269ca04cbecc41b8fa7460a, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 136870, guid: ada8612a0269ca04cbecc41b8fa7460a, type: 2}
+      propertyPath: m_TagString
+      value: Invisible Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 128360, guid: ada8612a0269ca04cbecc41b8fa7460a, type: 2}
+      propertyPath: m_TagString
+      value: Invisible Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 174260, guid: ada8612a0269ca04cbecc41b8fa7460a, type: 2}
+      propertyPath: m_TagString
+      value: Invisible Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 128360, guid: ada8612a0269ca04cbecc41b8fa7460a, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ada8612a0269ca04cbecc41b8fa7460a, type: 2}

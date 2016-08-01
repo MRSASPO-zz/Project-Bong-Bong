@@ -911,6 +911,22 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 621557363}
+    - target: {fileID: 22463866, guid: 802bf176819ba4647ba70a452b68285d, type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22416002, guid: 802bf176819ba4647ba70a452b68285d, type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22439500, guid: 802bf176819ba4647ba70a452b68285d, type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22451956, guid: 802bf176819ba4647ba70a452b68285d, type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 802bf176819ba4647ba70a452b68285d, type: 2}
   m_IsPrefabParent: 0
@@ -1034,6 +1050,18 @@ Prefab:
       value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 124868, guid: 753abdcdcb235794d8fa6a74bbc1b0a7, type: 2}
+      propertyPath: m_TagString
+      value: Dangerous Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 174926, guid: 753abdcdcb235794d8fa6a74bbc1b0a7, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 138956, guid: 753abdcdcb235794d8fa6a74bbc1b0a7, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 138956, guid: 753abdcdcb235794d8fa6a74bbc1b0a7, type: 2}
       propertyPath: m_TagString
       value: Dangerous Obstacle
       objectReference: {fileID: 0}
