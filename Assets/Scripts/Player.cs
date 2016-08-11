@@ -28,8 +28,8 @@ public class Player : MonoBehaviour {
     private SpriteRenderer spriteRenderer;
 
     //hidden values that deal with character movement are in this section
-    float accelerationTimeAirborne = .2f;
-    float accelerationTimeGrounded = .1f;
+    float accelerationTimeAirborne = 0.1f;
+    float accelerationTimeGrounded = 0.05f;
     float timeToJumpApex = .35f;
     float gravity;
     float maxJumpVelocity;
